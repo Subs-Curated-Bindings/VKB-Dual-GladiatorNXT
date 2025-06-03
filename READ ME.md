@@ -29,7 +29,7 @@ If you have an issue not found in the FAQ, please create a post in the "#vkb-sup
 - After you remove the TTS If you would like to activate the "play sound" freature you can do so by simply tell JG where to find your audio files. I have added some one I think are cool to a folder included in this package.
 - The Salvage and Mining audio files are for those who only mine OR salvage and want to hear a more personalized message. Auxillary is for those who mine or salvage. (This has no effect on the binds.)
 
-## Ediable PDF's
+## Editable PDF's
 
 The PDF versions are editable in Adobe Illustrator as well as Adobe Acrobat (The paid version, not free).
 
