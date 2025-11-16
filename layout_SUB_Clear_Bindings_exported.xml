@@ -32,23 +32,11 @@
   <option input="x" deadzone="0.049499996"/>
   <option input="y" deadzone="0.049499996"/>
  </deviceoptions>
- <options type="keyboard" instance="1" Product="Keyboard  {6F1D2B61-D5A0-11CF-BFC7-444553540000}">
-  <flight_move_pitch invert="1"/>
- </options>
+ <options type="keyboard" instance="1" Product="Keyboard  {6F1D2B61-D5A0-11CF-BFC7-444553540000}"/>
  <options type="joystick" instance="1" Product="vJoy Device  {BEAD1234-0000-0000-0000-504944564944}">
-  <fps_move_longitudinal invert="1"/>
-  <eva_move_strafe_longitudinal invert="1"/>
-  <flight_move_roll invert="1"/>
-  <mining invert="1"/>
-  <mining_throttle invert="0"/>
- </options>
- <options type="joystick" instance="2" Product="vJoy Device  {BEAD1234-0000-0000-0000-504944564944}">
-  <flight_move_pitch invert="1"/>
-  <flight_move_yaw invert="1"/>
   <flight_strafe_longitudinal invert="1"/>
-  <mining invert="1"/>
-  <mining_throttle invert="0"/>
  </options>
+ <options type="joystick" instance="2" Product="vJoy Device  {BEAD1234-0000-0000-0000-504944564944}"/>
  <modifiers />
  <actionmap name="spaceship_general">
   <action name="v_close_all_doors">
@@ -104,6 +92,9 @@
   <action name="v_mfd_movement_down_long">
    <rebind input="js2_ "/>
   </action>
+  <action name="v_mfd_movement_down_short">
+   <rebind input="js2_ "/>
+  </action>
   <action name="v_mfd_movement_left_long">
    <rebind input="js2_ "/>
   </action>
@@ -111,6 +102,9 @@
    <rebind input="js2_ "/>
   </action>
   <action name="v_mfd_movement_up_long">
+   <rebind input="js2_ "/>
+  </action>
+  <action name="v_mfd_movement_up_short">
    <rebind input="js2_ "/>
   </action>
  </actionmap>
@@ -201,10 +195,6 @@
    <rebind input="js2_ "/>
   </action>
   <action name="v_ifcs_toggle_gforce_safety">
-   <rebind input="js2_ "/>
-  </action>
-  <action name="v_ifcs_toggle_vector_decoupling">
-   <rebind input="kb1_ "/>
    <rebind input="js2_ "/>
   </action>
   <action name="v_pitch">
@@ -493,11 +483,6 @@
    <rebind input="js2_ "/>
   </action>
   <action name="v_toggle_running_lights">
-   <rebind input="js2_ "/>
-  </action>
- </actionmap>
- <actionmap name="stopwatch">
-  <action name="stopwatch_reset">
    <rebind input="js2_ "/>
   </action>
  </actionmap>
@@ -1118,9 +1103,6 @@
    <rebind input="js2_ "/>
   </action>
   <action name="foip_pushtotalk_proximity">
-   <rebind input="js2_ "/>
-  </action>
-  <action name="foip_viewownplayer">
    <rebind input="js2_ "/>
   </action>
  </actionmap>
