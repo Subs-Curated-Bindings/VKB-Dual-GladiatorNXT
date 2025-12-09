@@ -21,6 +21,7 @@
    <category label="@ui_CGOpticalTracking"/>
    <category label="@ui_CGInteraction"/>
    <category label="@ui_CCCamera"/>
+   <category label="@ui_test_yo_mama">
   </categories>
  </CustomisationUIHeader>
  <deviceoptions name="Mouse">
