@@ -31,8 +31,8 @@
 - 12.16.25 - Changed `Tobii Eyetracker Target` to `Eye Tracker Target` want to shed light on cheaper alternatives like [Beam Eye Tracker](https://beam.subliminal.gg) IMO EVERYONE should be using an EYE tracker. I you cant afford [Tobii Eyetracker 5](https://tobii.subliminal.gg) then beam works great for the low price.
 - 12.16.25 - Moved MFD binds to `R-C1 Hat` to make room for more targeting stuff.
 - 12.16.25 - Add the TTS beack... I thought it was causing issues but they didnt and people like having the audio confirmation. If you would like to remove it, mute it, adjust volumme. Jump to [Removing Or Muting Text To Speech](#removing-or-muting-text-to-speach)
-- Added notes the the JG profile to help people navigate it.
-- Added curves so so users with cleared action maps fies dont have to invert for ship axis. (FYI-Your inversion settings are saved in your `actionmaps.xml)
+- 12.16.25 - Added notes the the JG profile to help people navigate it.
+- 12.16.25 - Added curves so so users with cleared action maps fies dont have to invert for ship axis. (FYI-Your inversion settings are saved in your `actionmaps.xml)
 
 ## Instalation Video Guides
 
