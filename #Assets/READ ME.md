@@ -24,6 +24,7 @@
 
 ## Change Log
 
+- 12.16.25 - Added a bind for `Self Repair All`
 - 12.16.25 - Swapped Targeting Hat with Power Mangement Hat (I need center push on a targeting hat to make it 100% intuative so you dont have to reffer to the chart)
 - 12.16.25 - Changed the targeting hat to include subtargeting for 4.5 engineering combat. (Very important going forward in SC)
 - 12.16.25 - Added Pinning to the targeting hat (Great for multi-crew... very important in SC going forward lol)
