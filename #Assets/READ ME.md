@@ -6,7 +6,7 @@
 > [!NOTE]
 > These binds take me a really long time to make and keep updated. Here are a few ways you can ensure I can afford to spend the time to keep doing this. Ranging from most impactful to still awesome.
 > - Join on [Twtich](https://subs.twitch.tv/subliminalstv) Even if you don't watch live-streams this is a great way until we meet our first goal of 100 (Current 20/100)
-> - Join directly on [my store](https://store.subliminal.gg/supporters) - This is a great way if you don't have a twitch or amazon account. You can also tip when you download. The button is really small but its there in checkout.
+> - Join directly on [my store](https://store.subliminal.gg/l/supporters) - This is a great way if you don't have a twitch or amazon account. You can also tip when you download. The button is really small but its there in checkout.
 > - FREE Ways to support!! Have Amazon Prime? You get one [free Twitch Prime Sub](https://subs.twitch.tv/subliminalstv) per month! Finally come by and hang out while I'm live. Not only will you catch me playing but I might be updating these binds or keeping up on the latest SC news and info. I will be streaming to YouTube at the same in the near future.
 
 ## Navigation
