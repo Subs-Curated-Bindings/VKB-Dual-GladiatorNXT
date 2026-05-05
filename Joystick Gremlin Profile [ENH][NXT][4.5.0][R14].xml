@@ -7,7 +7,7 @@
             <mode>Auxiliary Mode</mode>
             <input-id>3</input-id>
             <action-configuration>
-                <root-action>1678a142-9393-4be2-aefa-6d11a38b791b</root-action>
+                <root-action>7fa07fa4-838f-4648-95c4-36cb69ab4d7f</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -17,7 +17,7 @@
             <mode>Modifier</mode>
             <input-id>1</input-id>
             <action-configuration>
-                <root-action>6e980e0b-7d9a-4974-86f1-23905d36441c</root-action>
+                <root-action>099632c8-efd8-4312-bc1c-732531c20124</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -27,7 +27,7 @@
             <mode>Modifier</mode>
             <input-id>2</input-id>
             <action-configuration>
-                <root-action>e76cc878-fbb5-497e-b9d2-5ee916e9104b</root-action>
+                <root-action>169fc4a2-187a-4f4b-a08f-bc58ad7088ad</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -37,7 +37,7 @@
             <mode>Modifier</mode>
             <input-id>3</input-id>
             <action-configuration>
-                <root-action>91658c4b-66f7-4d6c-aadd-6e35bf07c4d9</root-action>
+                <root-action>e2f2253e-f9c6-406f-bd4f-e3d4d0d5eb7e</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -47,7 +47,17 @@
             <mode>Modifier</mode>
             <input-id>4</input-id>
             <action-configuration>
-                <root-action>eb9491ee-f75d-459a-8ce3-80ee8e1adc93</root-action>
+                <root-action>6765e00d-bff1-47bd-aadf-16944920a205</root-action>
+                <behavior>button</behavior>
+            </action-configuration>
+        </input>
+        <input>
+            <device-id>7d12d5c0-43ea-11f0-800a-444553540000</device-id>
+            <input-type>button</input-type>
+            <mode>Modifier</mode>
+            <input-id>5</input-id>
+            <action-configuration>
+                <root-action>2208ffe5-fd4b-4e31-82a9-bc733943b876</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -57,7 +67,7 @@
             <mode>Modifier</mode>
             <input-id>6</input-id>
             <action-configuration>
-                <root-action>d7b905b4-3f64-462f-a63c-bf70ba421837</root-action>
+                <root-action>4ad68ef6-6c70-4b85-a0cb-7e0360b6db34</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -67,7 +77,7 @@
             <mode>Modifier</mode>
             <input-id>7</input-id>
             <action-configuration>
-                <root-action>38e9614f-2493-473d-8155-a5aaf0e022fa</root-action>
+                <root-action>7962fca4-4398-4952-b5d8-b96ad2899583</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -77,7 +87,7 @@
             <mode>Modifier</mode>
             <input-id>8</input-id>
             <action-configuration>
-                <root-action>425dc274-aebe-44fb-b8d2-da53ebd94402</root-action>
+                <root-action>7ce2a125-c33b-491a-984f-7ff889e5fd4b</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -87,7 +97,7 @@
             <mode>Modifier</mode>
             <input-id>9</input-id>
             <action-configuration>
-                <root-action>d4c86ad7-7be7-421a-9656-c4463437040b</root-action>
+                <root-action>f32314c1-fa02-4c2e-9ae7-419d184cd693</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -97,7 +107,7 @@
             <mode>Modifier</mode>
             <input-id>10</input-id>
             <action-configuration>
-                <root-action>de03c291-5ad7-4365-bf46-9aceaa2ef703</root-action>
+                <root-action>32ea2b00-4da7-4591-9095-d6eb3151fb4f</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -107,7 +117,7 @@
             <mode>Modifier</mode>
             <input-id>11</input-id>
             <action-configuration>
-                <root-action>6f6680fc-c02c-40e5-b5f5-a640f060fff7</root-action>
+                <root-action>3dca59bc-ce5e-4aac-9e1c-d67f012f494b</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -117,7 +127,7 @@
             <mode>Modifier</mode>
             <input-id>12</input-id>
             <action-configuration>
-                <root-action>78855eda-5bf0-4fd6-8f96-75c0a223a316</root-action>
+                <root-action>0ea284fc-5ff8-407a-94de-5aa42ecfeab5</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -127,7 +137,7 @@
             <mode>Modifier</mode>
             <input-id>13</input-id>
             <action-configuration>
-                <root-action>79489230-10b0-42cf-8ac5-67025fea7ccc</root-action>
+                <root-action>2c3a8639-3de7-4df5-9f3a-5fcb331ab8f2</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -137,7 +147,7 @@
             <mode>Modifier</mode>
             <input-id>14</input-id>
             <action-configuration>
-                <root-action>af80e200-8d6a-476f-98d3-4475eceee152</root-action>
+                <root-action>95f95f30-05ef-40fc-accb-cafd5352db4a</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -147,7 +157,7 @@
             <mode>Modifier</mode>
             <input-id>15</input-id>
             <action-configuration>
-                <root-action>27bad332-512a-4484-99f7-728256bc5bea</root-action>
+                <root-action>c3b101e9-f9fe-4cae-aed5-b188ac4f0a7a</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -157,7 +167,7 @@
             <mode>Modifier</mode>
             <input-id>16</input-id>
             <action-configuration>
-                <root-action>d5a1644b-1c14-4f6c-951b-168d61750e25</root-action>
+                <root-action>ef19b763-2417-455c-abed-37b1c2d52734</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -167,7 +177,7 @@
             <mode>Modifier</mode>
             <input-id>17</input-id>
             <action-configuration>
-                <root-action>5edcaa11-8455-4926-afcb-325628df990e</root-action>
+                <root-action>4c101dee-b528-4557-9543-d61cf384da07</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -177,7 +187,7 @@
             <mode>Modifier</mode>
             <input-id>18</input-id>
             <action-configuration>
-                <root-action>5e25b14b-ee0f-4d50-967a-c9f5b8aa8832</root-action>
+                <root-action>4404b8f3-5a84-4abe-8f55-67e32d925496</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -187,7 +197,7 @@
             <mode>Modifier</mode>
             <input-id>19</input-id>
             <action-configuration>
-                <root-action>43b8f83f-a6ec-4562-b3a4-03a2c4771799</root-action>
+                <root-action>4ef637d3-7245-4622-a22b-3b2bd4ce2aa5</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -197,7 +207,7 @@
             <mode>Modifier</mode>
             <input-id>20</input-id>
             <action-configuration>
-                <root-action>9d356995-7f5e-426f-aed7-d6bbbbcc7150</root-action>
+                <root-action>98fd1556-6a3c-44bf-ab55-b502038daadc</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -207,7 +217,7 @@
             <mode>Modifier</mode>
             <input-id>21</input-id>
             <action-configuration>
-                <root-action>63188439-27ce-4f0e-aca1-6168bcc0c62c</root-action>
+                <root-action>523d542e-dd87-4ec3-a2e3-522dd72dfce4</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -217,7 +227,7 @@
             <mode>Modifier</mode>
             <input-id>22</input-id>
             <action-configuration>
-                <root-action>54882685-0b16-4333-841c-3bd1df628fe6</root-action>
+                <root-action>404addc7-78e8-4097-beab-7be4bd5f9e96</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -227,7 +237,7 @@
             <mode>Modifier</mode>
             <input-id>23</input-id>
             <action-configuration>
-                <root-action>5c96e9f1-54bc-454b-9ffa-f632ea2a0fa4</root-action>
+                <root-action>3160fc08-30be-4b09-9465-ce47f91c4ee6</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -237,7 +247,7 @@
             <mode>Modifier</mode>
             <input-id>24</input-id>
             <action-configuration>
-                <root-action>13188c1d-5e81-477d-9bba-93c7f8321023</root-action>
+                <root-action>5f339ffe-6301-4dec-9eee-741ae474734d</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -247,7 +257,7 @@
             <mode>Modifier</mode>
             <input-id>25</input-id>
             <action-configuration>
-                <root-action>f1e1097c-d2da-4e50-85e5-61195f93f362</root-action>
+                <root-action>84c7805c-171b-46dc-8f74-89cf18e220fd</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -257,7 +267,7 @@
             <mode>Modifier</mode>
             <input-id>26</input-id>
             <action-configuration>
-                <root-action>208b74d3-c05f-4338-9b6f-f7eea0acd0a8</root-action>
+                <root-action>81cb4c9f-65e9-46a9-a22c-69352c89b92e</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -267,7 +277,7 @@
             <mode>Modifier</mode>
             <input-id>27</input-id>
             <action-configuration>
-                <root-action>5f24617a-0699-4163-9cb3-8123ee10e904</root-action>
+                <root-action>9fe720ce-5d55-4141-86dd-1642b61f8a4d</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -277,7 +287,7 @@
             <mode>Modifier</mode>
             <input-id>28</input-id>
             <action-configuration>
-                <root-action>c99949b7-088f-4047-ac08-98c68d28f621</root-action>
+                <root-action>9f829dfc-50cc-4973-bab9-5c4a98c7e69e</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -287,7 +297,7 @@
             <mode>Modifier</mode>
             <input-id>29</input-id>
             <action-configuration>
-                <root-action>c46f85eb-770e-4f39-94e0-2401cc7748ed</root-action>
+                <root-action>26dfeba0-e095-440a-956f-de0ed7e2256e</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -297,7 +307,7 @@
             <mode>Modifier</mode>
             <input-id>1</input-id>
             <action-configuration>
-                <root-action>5b519c7a-e240-41e8-bb7e-c69c1b049d6b</root-action>
+                <root-action>df3319b4-c17f-4f7c-8737-ed8f725eea54</root-action>
                 <behavior>hat</behavior>
             </action-configuration>
         </input>
@@ -307,7 +317,7 @@
             <mode>Nav Mode</mode>
             <input-id>3</input-id>
             <action-configuration>
-                <root-action>c4354e5c-d30f-4aa2-9ab0-c085c384dd7d</root-action>
+                <root-action>dccffd0d-0da3-44be-9d47-67426dfcb2fd</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -317,7 +327,7 @@
             <mode>Nav Mode</mode>
             <input-id>5</input-id>
             <action-configuration>
-                <root-action>33d647a3-a57f-4c41-966b-7da331c3b2a5</root-action>
+                <root-action>c9fc588e-5341-434d-88a9-726bb4cc3858</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -327,7 +337,7 @@
             <mode>SCM Mode</mode>
             <input-id>1</input-id>
             <action-configuration>
-                <root-action>47565345-ef4a-4309-87e1-8cd9833ff486</root-action>
+                <root-action>ea71b1cc-6041-4832-ae0d-32cfc6d82e82</root-action>
                 <behavior>axis</behavior>
             </action-configuration>
         </input>
@@ -337,7 +347,7 @@
             <mode>SCM Mode</mode>
             <input-id>2</input-id>
             <action-configuration>
-                <root-action>a27d1635-5929-4792-936c-e732e861e0df</root-action>
+                <root-action>5330e1e7-a995-4179-9dbd-2aad3ad72ab9</root-action>
                 <behavior>axis</behavior>
             </action-configuration>
         </input>
@@ -347,7 +357,7 @@
             <mode>SCM Mode</mode>
             <input-id>3</input-id>
             <action-configuration>
-                <root-action>6c3e5341-9082-4da1-bdc8-61ad71f43857</root-action>
+                <root-action>13fd1273-2ca9-4527-aefd-69c849619b9f</root-action>
                 <behavior>axis</behavior>
             </action-configuration>
         </input>
@@ -357,7 +367,7 @@
             <mode>SCM Mode</mode>
             <input-id>4</input-id>
             <action-configuration>
-                <root-action>25613ab9-73f6-4e57-a2e3-43b4e3d007fc</root-action>
+                <root-action>4dd463bc-29c3-4ea5-a2d6-b0c02859e25d</root-action>
                 <behavior>axis</behavior>
             </action-configuration>
         </input>
@@ -367,7 +377,7 @@
             <mode>SCM Mode</mode>
             <input-id>5</input-id>
             <action-configuration>
-                <root-action>98556bf7-67bf-4bae-9dd1-685ff5fcbbec</root-action>
+                <root-action>fa261465-9e19-47ac-88fb-55b2b500b8ea</root-action>
                 <behavior>axis</behavior>
             </action-configuration>
         </input>
@@ -377,7 +387,7 @@
             <mode>SCM Mode</mode>
             <input-id>6</input-id>
             <action-configuration>
-                <root-action>a9bd5e3c-5943-4c42-82e7-26acdc696d4d</root-action>
+                <root-action>93af65fa-4e55-4889-b2e8-ce68affe4b4d</root-action>
                 <behavior>axis</behavior>
             </action-configuration>
         </input>
@@ -387,7 +397,7 @@
             <mode>SCM Mode</mode>
             <input-id>1</input-id>
             <action-configuration>
-                <root-action>00756ccd-ab25-4889-b45a-4464977653a3</root-action>
+                <root-action>cda910d4-9f88-44db-b3a3-418e2d51eec7</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -397,7 +407,7 @@
             <mode>SCM Mode</mode>
             <input-id>2</input-id>
             <action-configuration>
-                <root-action>34f5bd7b-69f8-41f8-a764-55172c6e9494</root-action>
+                <root-action>d791ac16-f213-4e4e-8258-24e32aaef6c6</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -407,7 +417,7 @@
             <mode>SCM Mode</mode>
             <input-id>3</input-id>
             <action-configuration>
-                <root-action>2937f6ba-00ea-4eaa-850c-85a8fc184cf1</root-action>
+                <root-action>995b7dc3-b4a5-496e-9c2f-319361615976</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -417,7 +427,7 @@
             <mode>SCM Mode</mode>
             <input-id>4</input-id>
             <action-configuration>
-                <root-action>7ee33a54-3944-4312-a369-2f488e7797d3</root-action>
+                <root-action>d063e459-d65e-4a1b-9da5-e17204599362</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -427,7 +437,7 @@
             <mode>SCM Mode</mode>
             <input-id>5</input-id>
             <action-configuration>
-                <root-action>4b96b7a2-bcbd-4560-9040-faae34dff4b9</root-action>
+                <root-action>984dcde2-3dde-4863-8530-28f6551e3a8e</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -437,7 +447,7 @@
             <mode>SCM Mode</mode>
             <input-id>6</input-id>
             <action-configuration>
-                <root-action>287ce995-2b40-4e96-8810-f3bdcbfd14d3</root-action>
+                <root-action>0aa747fc-eb46-45c8-b6bf-bae1490f951b</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -447,7 +457,7 @@
             <mode>SCM Mode</mode>
             <input-id>7</input-id>
             <action-configuration>
-                <root-action>fc1c544b-5740-42f6-be52-c5cd8e58f7e8</root-action>
+                <root-action>1bab5e5f-8b86-47b6-8c30-99e68923d587</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -457,7 +467,7 @@
             <mode>SCM Mode</mode>
             <input-id>8</input-id>
             <action-configuration>
-                <root-action>ac8b3849-ddd1-44d2-a7c7-9a47ebbd8c9e</root-action>
+                <root-action>a8655b37-3dea-414a-8c0f-30ca795a8194</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -467,7 +477,7 @@
             <mode>SCM Mode</mode>
             <input-id>9</input-id>
             <action-configuration>
-                <root-action>1b5a3b6f-547f-4e4d-a105-6b578848ce64</root-action>
+                <root-action>c5668f29-91c2-47be-bb0b-634115be9526</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -477,7 +487,7 @@
             <mode>SCM Mode</mode>
             <input-id>10</input-id>
             <action-configuration>
-                <root-action>e5f5b08b-b5bb-466a-8fbe-7efc91ec231a</root-action>
+                <root-action>ada842c4-4633-46f9-be9a-76e2455d2737</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -487,7 +497,7 @@
             <mode>SCM Mode</mode>
             <input-id>11</input-id>
             <action-configuration>
-                <root-action>99620496-d6f0-4198-bbca-e616e26890bb</root-action>
+                <root-action>b8ed0c55-348e-466e-89fc-cb2b9238fe8f</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -497,7 +507,7 @@
             <mode>SCM Mode</mode>
             <input-id>12</input-id>
             <action-configuration>
-                <root-action>c8d1c3f3-5b3f-473b-bf90-64f93e488bfd</root-action>
+                <root-action>9ae576c0-21e4-4cea-857e-28d67350d690</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -507,7 +517,7 @@
             <mode>SCM Mode</mode>
             <input-id>13</input-id>
             <action-configuration>
-                <root-action>2ba6cee6-c7c8-4612-a512-e8e943870c7e</root-action>
+                <root-action>0502f217-9f3a-4e66-96d3-0a4093d6ecd9</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -517,7 +527,7 @@
             <mode>SCM Mode</mode>
             <input-id>14</input-id>
             <action-configuration>
-                <root-action>983b05b6-f327-470e-bfd5-1d60ceaf9301</root-action>
+                <root-action>6e1f327a-f25d-4caf-986e-0315e9228296</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -527,7 +537,7 @@
             <mode>SCM Mode</mode>
             <input-id>15</input-id>
             <action-configuration>
-                <root-action>141d9690-9539-4502-816a-397226f91597</root-action>
+                <root-action>f38c9aaf-1adb-4151-9587-2ece7e27bf26</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -537,7 +547,7 @@
             <mode>SCM Mode</mode>
             <input-id>16</input-id>
             <action-configuration>
-                <root-action>5d4c924c-0057-4a96-ac6e-ab7868fd25a5</root-action>
+                <root-action>d06d1def-4ec7-4173-a1e8-122b44bd44b2</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -547,7 +557,7 @@
             <mode>SCM Mode</mode>
             <input-id>17</input-id>
             <action-configuration>
-                <root-action>927cabc3-7bb7-4bef-8d4a-83e5d15a178e</root-action>
+                <root-action>3725924c-3006-4ccb-874b-aed5c101c7c3</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -557,7 +567,7 @@
             <mode>SCM Mode</mode>
             <input-id>18</input-id>
             <action-configuration>
-                <root-action>bcae02a3-b5dd-47af-816c-4788f1c63df6</root-action>
+                <root-action>669f272d-b814-468e-bd0b-31a2590e51a0</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -567,7 +577,7 @@
             <mode>SCM Mode</mode>
             <input-id>19</input-id>
             <action-configuration>
-                <root-action>519e1b86-64f6-4da3-baac-806a6bef801f</root-action>
+                <root-action>2992e565-e13d-41d8-b6bc-4ec63a94f429</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -577,7 +587,7 @@
             <mode>SCM Mode</mode>
             <input-id>20</input-id>
             <action-configuration>
-                <root-action>a940c903-e5f3-4b4a-b76f-ca60a46b5d6b</root-action>
+                <root-action>01e6963c-c447-4138-999f-2d397d075c36</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -587,7 +597,7 @@
             <mode>SCM Mode</mode>
             <input-id>21</input-id>
             <action-configuration>
-                <root-action>799bae3d-02a6-42de-832a-2e432eb978d6</root-action>
+                <root-action>11adc811-c1e8-42ec-a0cf-68f7fa00de79</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -597,7 +607,7 @@
             <mode>SCM Mode</mode>
             <input-id>22</input-id>
             <action-configuration>
-                <root-action>93557a14-a8dc-4393-b1ad-0dc23a27335f</root-action>
+                <root-action>ac907d44-d0e0-4c59-899b-d9492e232e1e</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -607,7 +617,7 @@
             <mode>SCM Mode</mode>
             <input-id>23</input-id>
             <action-configuration>
-                <root-action>3a379529-0968-406d-a022-173c661eaa94</root-action>
+                <root-action>9f5ae0ee-e3bb-4dba-bee4-a8f53ec963a7</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -617,7 +627,7 @@
             <mode>SCM Mode</mode>
             <input-id>24</input-id>
             <action-configuration>
-                <root-action>693b526d-65f8-4bb9-86d0-799eb6023387</root-action>
+                <root-action>3f75d887-2dad-4a2e-ab03-93071fe0ee35</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -627,7 +637,7 @@
             <mode>SCM Mode</mode>
             <input-id>25</input-id>
             <action-configuration>
-                <root-action>2528bdc6-7152-43c5-95ec-97bb1741c49c</root-action>
+                <root-action>8c974ba2-79df-40ac-a358-19d486c35189</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -637,7 +647,7 @@
             <mode>SCM Mode</mode>
             <input-id>26</input-id>
             <action-configuration>
-                <root-action>7facc5b8-2121-41eb-9208-42705fe4ee93</root-action>
+                <root-action>3315a121-f563-45a0-a15a-25b8b9917947</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -647,7 +657,7 @@
             <mode>SCM Mode</mode>
             <input-id>27</input-id>
             <action-configuration>
-                <root-action>3923feea-9c2e-4c2c-9d7d-f2c2c0230476</root-action>
+                <root-action>cba1cc47-ae42-49f4-8158-aa39c2b68379</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -657,7 +667,7 @@
             <mode>SCM Mode</mode>
             <input-id>28</input-id>
             <action-configuration>
-                <root-action>41791ba3-4c42-46e4-a6db-68c95548c8d6</root-action>
+                <root-action>e52616eb-e67a-4b6f-8577-8abbd6f95337</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -667,7 +677,7 @@
             <mode>SCM Mode</mode>
             <input-id>29</input-id>
             <action-configuration>
-                <root-action>fa9b387a-d9d2-42a2-8487-619a734f7117</root-action>
+                <root-action>70eb58da-d0f6-4f68-83ec-45d140895ef0</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -677,7 +687,7 @@
             <mode>SCM Mode</mode>
             <input-id>125</input-id>
             <action-configuration>
-                <root-action>11599143-b5c2-4a0e-83d7-fba95fe4bca7</root-action>
+                <root-action>4e856ac6-a5a0-4f5e-855e-80ed8a7239b7</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -687,7 +697,7 @@
             <mode>SCM Mode</mode>
             <input-id>126</input-id>
             <action-configuration>
-                <root-action>a1f725f4-e0a5-44c1-a7a7-cb5f44f571d0</root-action>
+                <root-action>ca961403-dd7f-49a2-9c93-dc1efc720a6d</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -697,7 +707,7 @@
             <mode>SCM Mode</mode>
             <input-id>127</input-id>
             <action-configuration>
-                <root-action>05e6e027-460d-4c78-abd7-a70e33059c4e</root-action>
+                <root-action>6081629d-bef6-456b-98ba-823863c64c10</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -707,7 +717,7 @@
             <mode>SCM Mode</mode>
             <input-id>128</input-id>
             <action-configuration>
-                <root-action>57b24311-0d45-45b9-8784-c0a8c0522932</root-action>
+                <root-action>21c62a6e-28ad-4f99-95ca-8814f95c40e7</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -717,7 +727,7 @@
             <mode>SCM Mode</mode>
             <input-id>1</input-id>
             <action-configuration>
-                <root-action>9e2aa632-91eb-452a-a6de-8dcaa8598ddf</root-action>
+                <root-action>f39b2f21-5e3a-4387-b347-57fe58b80cd2</root-action>
                 <behavior>hat</behavior>
             </action-configuration>
         </input>
@@ -727,7 +737,7 @@
             <mode>Auxiliary Mode</mode>
             <input-id>3</input-id>
             <action-configuration>
-                <root-action>ac1783dd-6ca3-42dc-b796-b58ba8628be3</root-action>
+                <root-action>d2d26ee8-23e4-48b9-87d1-ea274c94ce4a</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -737,7 +747,7 @@
             <mode>Modifier</mode>
             <input-id>1</input-id>
             <action-configuration>
-                <root-action>7c11c989-8547-44e1-89a2-12def42d122c</root-action>
+                <root-action>ff2fbdb2-a81c-4a6b-b993-bf622a6929c2</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -747,7 +757,7 @@
             <mode>Modifier</mode>
             <input-id>2</input-id>
             <action-configuration>
-                <root-action>d0bf1d89-9731-4d89-83ea-21a102ca63b3</root-action>
+                <root-action>9852503c-2fc0-4c1b-b1bc-f651eabb5ad2</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -757,7 +767,7 @@
             <mode>Modifier</mode>
             <input-id>3</input-id>
             <action-configuration>
-                <root-action>0c83a85a-38f3-4543-b071-6892c2781cf0</root-action>
+                <root-action>c8f75c7c-f4f2-4ef7-960d-c316842cba90</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -767,7 +777,7 @@
             <mode>Modifier</mode>
             <input-id>4</input-id>
             <action-configuration>
-                <root-action>6f284610-a644-4802-84f2-f10dc911705b</root-action>
+                <root-action>d3a0b065-b8cd-42c8-8046-622230d11c86</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -777,7 +787,7 @@
             <mode>Modifier</mode>
             <input-id>5</input-id>
             <action-configuration>
-                <root-action>7994b9c8-6489-4adc-a663-699664fa973f</root-action>
+                <root-action>0c8bf40b-347a-4ff7-b670-8a3e97ec1908</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -787,7 +797,7 @@
             <mode>Modifier</mode>
             <input-id>6</input-id>
             <action-configuration>
-                <root-action>0dbf70ca-a03e-41e9-bdf0-fc7f81f29bc4</root-action>
+                <root-action>a90c540b-5014-4017-b5c0-2d6f7bbc7f0e</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -797,7 +807,7 @@
             <mode>Modifier</mode>
             <input-id>7</input-id>
             <action-configuration>
-                <root-action>c36b108e-0c67-454c-9945-d25987e83453</root-action>
+                <root-action>2fe371d1-2632-49a7-8e8b-c5be382afc39</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -807,7 +817,7 @@
             <mode>Modifier</mode>
             <input-id>8</input-id>
             <action-configuration>
-                <root-action>9bc393a2-07d8-4983-a6b3-5f82a22baab1</root-action>
+                <root-action>de6b45ae-cedc-4c85-91a6-deb2135f1319</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -817,7 +827,7 @@
             <mode>Modifier</mode>
             <input-id>9</input-id>
             <action-configuration>
-                <root-action>81779f8c-8978-4e3c-866c-09bd5d5f5a48</root-action>
+                <root-action>c4c6cef5-d9ca-4905-8c39-5baafc8702a3</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -827,7 +837,7 @@
             <mode>Modifier</mode>
             <input-id>10</input-id>
             <action-configuration>
-                <root-action>7059e16f-35b9-4274-b0fb-7ef1bacd34b6</root-action>
+                <root-action>9505cf86-0f41-4bb9-a1e3-07161b3185df</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -837,7 +847,7 @@
             <mode>Modifier</mode>
             <input-id>11</input-id>
             <action-configuration>
-                <root-action>ff5694dd-3649-42c8-bcdc-7fe0d38db15b</root-action>
+                <root-action>7c93f9cf-ef85-434e-8918-a328b5ada4b1</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -847,7 +857,7 @@
             <mode>Modifier</mode>
             <input-id>12</input-id>
             <action-configuration>
-                <root-action>fddfe696-2fec-455a-9cd8-805f57e25c5b</root-action>
+                <root-action>5d450557-159a-4d7f-b339-e7fa53322e84</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -857,7 +867,7 @@
             <mode>Modifier</mode>
             <input-id>13</input-id>
             <action-configuration>
-                <root-action>64fe408c-27d1-4a53-bb11-1a166929184c</root-action>
+                <root-action>f8488c06-a4d0-4c2f-abb9-f01058d2e87f</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -867,7 +877,7 @@
             <mode>Modifier</mode>
             <input-id>14</input-id>
             <action-configuration>
-                <root-action>9b291883-8894-4247-81e7-037e3e93ab54</root-action>
+                <root-action>d1e2228d-0bba-4d22-b02c-7d518233a2b1</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -877,7 +887,7 @@
             <mode>Modifier</mode>
             <input-id>15</input-id>
             <action-configuration>
-                <root-action>0d6f48db-e5da-4e36-8387-75cc35e0ecd1</root-action>
+                <root-action>4ccbda3b-3b7d-4ed7-a85c-c310cea98750</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -887,7 +897,7 @@
             <mode>Modifier</mode>
             <input-id>16</input-id>
             <action-configuration>
-                <root-action>e1e62af7-173a-4725-8748-206cde0a0de8</root-action>
+                <root-action>778c1e21-342d-4ded-ab9f-d242d70876c8</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -897,7 +907,7 @@
             <mode>Modifier</mode>
             <input-id>17</input-id>
             <action-configuration>
-                <root-action>6007faac-e142-46e8-933d-0b83539db1c6</root-action>
+                <root-action>3db38a9b-2c44-4650-8fb2-fe405769e0be</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -907,7 +917,7 @@
             <mode>Modifier</mode>
             <input-id>18</input-id>
             <action-configuration>
-                <root-action>33a2f660-648e-45e4-867b-4fb848250a77</root-action>
+                <root-action>5d7dae4c-777b-4df2-9d59-4967712e3dac</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -917,7 +927,7 @@
             <mode>Modifier</mode>
             <input-id>19</input-id>
             <action-configuration>
-                <root-action>a05f6eea-9cf9-467b-8658-b545a38a56f9</root-action>
+                <root-action>120a7340-7bad-4955-bc67-3b994d988268</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -927,7 +937,7 @@
             <mode>Modifier</mode>
             <input-id>20</input-id>
             <action-configuration>
-                <root-action>57b7913f-48e8-4cb1-afd7-e3397b95b03c</root-action>
+                <root-action>53051c91-fc6e-4317-b079-487b2d8a62ae</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -937,7 +947,7 @@
             <mode>Modifier</mode>
             <input-id>21</input-id>
             <action-configuration>
-                <root-action>31319b07-f03d-4ff2-befc-127824daf7c4</root-action>
+                <root-action>0eb7e7e3-0c50-466b-9faa-01706d18f34b</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -947,7 +957,7 @@
             <mode>Modifier</mode>
             <input-id>22</input-id>
             <action-configuration>
-                <root-action>c1d43508-55fc-4c5f-90d2-a384928c644b</root-action>
+                <root-action>63962bc6-5450-416d-b9bd-8d46a168eee1</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -957,7 +967,7 @@
             <mode>Modifier</mode>
             <input-id>23</input-id>
             <action-configuration>
-                <root-action>149e6aa6-f7f2-4912-9f40-b2f4c8461c49</root-action>
+                <root-action>73ec8d0c-7498-49e2-b32a-a8a208d7b412</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -967,7 +977,7 @@
             <mode>Modifier</mode>
             <input-id>24</input-id>
             <action-configuration>
-                <root-action>2b8751f1-64f7-44a4-a9fd-365fa2b41b87</root-action>
+                <root-action>5494a00d-044d-4e6d-afde-040acbda20f9</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -977,7 +987,7 @@
             <mode>Modifier</mode>
             <input-id>25</input-id>
             <action-configuration>
-                <root-action>ce791c2f-ab08-4c13-be48-f1f0f1b35d34</root-action>
+                <root-action>2d90dcc7-46e4-4148-bad8-3d5d15e01390</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -987,7 +997,7 @@
             <mode>Modifier</mode>
             <input-id>26</input-id>
             <action-configuration>
-                <root-action>5a0584d4-e0bc-41ff-b757-21ed75917ab2</root-action>
+                <root-action>dc4f42a7-9819-49d2-b279-68af5d48a11d</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -997,7 +1007,7 @@
             <mode>Modifier</mode>
             <input-id>27</input-id>
             <action-configuration>
-                <root-action>6cd1352f-3db4-485a-81ec-7044f9a510c1</root-action>
+                <root-action>50e65563-89f4-4dd6-bf31-676fffa7aefe</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1007,7 +1017,7 @@
             <mode>Modifier</mode>
             <input-id>28</input-id>
             <action-configuration>
-                <root-action>72563624-1e12-47ea-896c-33bdc0a98b46</root-action>
+                <root-action>e7667e4b-7767-40be-a7a6-5f659077eef8</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1017,7 +1027,7 @@
             <mode>Modifier</mode>
             <input-id>29</input-id>
             <action-configuration>
-                <root-action>ade9b1d3-6d7c-4169-9306-749d46533f36</root-action>
+                <root-action>7b5e55f9-f664-40b2-8edf-27409f5d1509</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1027,7 +1037,7 @@
             <mode>Modifier</mode>
             <input-id>1</input-id>
             <action-configuration>
-                <root-action>076c4d3f-1670-4571-a320-0b8f5c0e86d8</root-action>
+                <root-action>f8736226-5d14-428e-8db5-5f4fd641be15</root-action>
                 <behavior>hat</behavior>
             </action-configuration>
         </input>
@@ -1037,7 +1047,7 @@
             <mode>Nav Mode</mode>
             <input-id>3</input-id>
             <action-configuration>
-                <root-action>eb62d287-e257-46a4-90f6-20c0f3b6d8bc</root-action>
+                <root-action>6eacabf2-8d60-4c41-88a0-bc1818aecdfe</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1047,7 +1057,7 @@
             <mode>SCM Mode</mode>
             <input-id>1</input-id>
             <action-configuration>
-                <root-action>897615da-b99e-4b09-ae5a-c83d1cf5ebae</root-action>
+                <root-action>0014759d-d166-4066-8d5c-dc1bc5c740c1</root-action>
                 <behavior>axis</behavior>
             </action-configuration>
         </input>
@@ -1057,7 +1067,7 @@
             <mode>SCM Mode</mode>
             <input-id>2</input-id>
             <action-configuration>
-                <root-action>f12b9cd2-53a4-499e-a56d-7a7ae67ea4fe</root-action>
+                <root-action>15a08425-895b-4cd5-bbee-aa7042fb0106</root-action>
                 <behavior>axis</behavior>
             </action-configuration>
         </input>
@@ -1067,7 +1077,7 @@
             <mode>SCM Mode</mode>
             <input-id>3</input-id>
             <action-configuration>
-                <root-action>3a51f566-6706-4949-ab06-3383c9b1389b</root-action>
+                <root-action>d02ce7e7-fe11-465a-ae69-c96b24d2d62a</root-action>
                 <behavior>axis</behavior>
             </action-configuration>
         </input>
@@ -1077,7 +1087,7 @@
             <mode>SCM Mode</mode>
             <input-id>4</input-id>
             <action-configuration>
-                <root-action>a41fb618-99dd-4f5a-9063-e1977a61782e</root-action>
+                <root-action>6ecf6f72-6ea9-45ec-8d22-f6c160463610</root-action>
                 <behavior>axis</behavior>
             </action-configuration>
         </input>
@@ -1087,7 +1097,7 @@
             <mode>SCM Mode</mode>
             <input-id>5</input-id>
             <action-configuration>
-                <root-action>45187206-e178-40fe-9748-0cb6fee472b7</root-action>
+                <root-action>2de9d420-8366-4fa4-90c9-05be07228ac9</root-action>
                 <behavior>axis</behavior>
             </action-configuration>
         </input>
@@ -1097,7 +1107,7 @@
             <mode>SCM Mode</mode>
             <input-id>6</input-id>
             <action-configuration>
-                <root-action>6241d773-b640-455b-a30b-4d690d3a93da</root-action>
+                <root-action>b1cfff10-896f-4da7-bd81-777dd3509d66</root-action>
                 <behavior>axis</behavior>
             </action-configuration>
         </input>
@@ -1107,7 +1117,7 @@
             <mode>SCM Mode</mode>
             <input-id>1</input-id>
             <action-configuration>
-                <root-action>662b7b54-b42e-4d4e-9fea-f6431a01bcc6</root-action>
+                <root-action>303e8a96-dec6-46b7-a5d1-e995ad25d48a</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1117,7 +1127,7 @@
             <mode>SCM Mode</mode>
             <input-id>2</input-id>
             <action-configuration>
-                <root-action>efd4009c-6851-4401-9d1a-1524cbc02fdb</root-action>
+                <root-action>2f0c8f70-a8fa-49f3-bab6-98ed135762f3</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1127,7 +1137,7 @@
             <mode>SCM Mode</mode>
             <input-id>3</input-id>
             <action-configuration>
-                <root-action>14ede478-2b71-4899-8e3b-2ab8e7756dba</root-action>
+                <root-action>8ae11dfa-c201-4bd9-a11c-5c962424da53</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1137,7 +1147,7 @@
             <mode>SCM Mode</mode>
             <input-id>4</input-id>
             <action-configuration>
-                <root-action>8b901261-468e-4440-ac0c-014237b480e2</root-action>
+                <root-action>6f589bab-5357-402f-92a8-330f7c80d733</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1147,7 +1157,7 @@
             <mode>SCM Mode</mode>
             <input-id>5</input-id>
             <action-configuration>
-                <root-action>212e87e6-71ab-4424-af6f-6232f29f0056</root-action>
+                <root-action>19e68db2-a1a7-4224-9e93-8c5c53c48f5a</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1157,7 +1167,7 @@
             <mode>SCM Mode</mode>
             <input-id>6</input-id>
             <action-configuration>
-                <root-action>9f40d2d5-2660-44f9-8c51-02481e9d6b8d</root-action>
+                <root-action>f1b4421b-928f-41bc-9663-11d066426318</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1167,7 +1177,7 @@
             <mode>SCM Mode</mode>
             <input-id>7</input-id>
             <action-configuration>
-                <root-action>1aeb2075-bde9-4740-856e-f0594e2e712c</root-action>
+                <root-action>09c4913e-a7c8-41a1-a4f0-439e8abbd822</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1177,7 +1187,7 @@
             <mode>SCM Mode</mode>
             <input-id>8</input-id>
             <action-configuration>
-                <root-action>96b87723-2a81-4163-a286-1da0d49ea9c8</root-action>
+                <root-action>ccbc7948-a43a-442f-bcbd-86b6fb682871</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1187,7 +1197,7 @@
             <mode>SCM Mode</mode>
             <input-id>9</input-id>
             <action-configuration>
-                <root-action>83399380-e9a2-417c-a102-11c7eb3ea5ec</root-action>
+                <root-action>9f228bc0-3ecd-41eb-bb1a-a51636af2054</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1197,7 +1207,7 @@
             <mode>SCM Mode</mode>
             <input-id>10</input-id>
             <action-configuration>
-                <root-action>d9aaba13-3795-40f0-b0b8-14dfd3e64e0d</root-action>
+                <root-action>b099d690-a142-4ca3-a288-29055e72f8a5</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1207,7 +1217,7 @@
             <mode>SCM Mode</mode>
             <input-id>11</input-id>
             <action-configuration>
-                <root-action>7e6fd664-f9f1-4570-ad29-bdfff4554949</root-action>
+                <root-action>551f5447-08e0-4c0a-8267-d2f476f85a45</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1217,7 +1227,7 @@
             <mode>SCM Mode</mode>
             <input-id>12</input-id>
             <action-configuration>
-                <root-action>a91de41e-4e0e-4b43-a253-39ab67b1db86</root-action>
+                <root-action>1bd50678-c4ee-4ae2-91cd-4511a71819b4</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1227,7 +1237,7 @@
             <mode>SCM Mode</mode>
             <input-id>13</input-id>
             <action-configuration>
-                <root-action>1d26df91-8a0b-4f39-875e-fc6e62e1ddf7</root-action>
+                <root-action>46371016-d7d8-40e1-ba32-ade382b20875</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1237,7 +1247,7 @@
             <mode>SCM Mode</mode>
             <input-id>14</input-id>
             <action-configuration>
-                <root-action>1c866b42-5541-4969-80e6-d2d97855e126</root-action>
+                <root-action>4494878c-c8a3-4614-9a77-4d4273c9a005</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1247,7 +1257,7 @@
             <mode>SCM Mode</mode>
             <input-id>15</input-id>
             <action-configuration>
-                <root-action>a8e78953-5f20-47f4-ae4d-1c876ddf7178</root-action>
+                <root-action>95215609-6e8f-4a67-a5c5-9487642c11e7</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1257,7 +1267,7 @@
             <mode>SCM Mode</mode>
             <input-id>16</input-id>
             <action-configuration>
-                <root-action>37b00729-1135-4a90-bf5d-9307c8fda1f3</root-action>
+                <root-action>16b4f082-e2f3-4569-b6d9-2abd81b0dbea</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1267,7 +1277,7 @@
             <mode>SCM Mode</mode>
             <input-id>17</input-id>
             <action-configuration>
-                <root-action>8af690c3-f1f2-4831-9a7e-ab2d66f3649a</root-action>
+                <root-action>0a764de6-7ab9-4f92-b03f-ae95dbdc845c</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1277,7 +1287,7 @@
             <mode>SCM Mode</mode>
             <input-id>18</input-id>
             <action-configuration>
-                <root-action>165883b9-ea5d-4d8b-94aa-3d8631c46c5d</root-action>
+                <root-action>b886d593-443b-4c6c-8536-b175a040c265</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1287,7 +1297,7 @@
             <mode>SCM Mode</mode>
             <input-id>19</input-id>
             <action-configuration>
-                <root-action>20a34a43-6ee2-44d4-9daa-a6299b7da5c6</root-action>
+                <root-action>e315f065-fb6a-4fb0-804b-ea27a9fda450</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1297,7 +1307,7 @@
             <mode>SCM Mode</mode>
             <input-id>20</input-id>
             <action-configuration>
-                <root-action>4160f369-4705-4ab6-9918-d9adad969fbf</root-action>
+                <root-action>b020e6b2-fb12-432f-b5df-3ba2808d9816</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1307,7 +1317,7 @@
             <mode>SCM Mode</mode>
             <input-id>21</input-id>
             <action-configuration>
-                <root-action>de3f05f7-2637-4626-bfd0-1ce44b008c88</root-action>
+                <root-action>c0c02646-8eb8-4a4d-b47f-1e65f7471acc</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1317,7 +1327,7 @@
             <mode>SCM Mode</mode>
             <input-id>22</input-id>
             <action-configuration>
-                <root-action>9d7f70ea-2d96-48e3-a53c-3d702d1582c0</root-action>
+                <root-action>af18d897-6898-470d-83a0-85b0f183d8f8</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1327,7 +1337,7 @@
             <mode>SCM Mode</mode>
             <input-id>23</input-id>
             <action-configuration>
-                <root-action>04849ec0-c04f-49be-b897-8df6aae69f49</root-action>
+                <root-action>c755dd57-f6e7-4469-a593-956e36128984</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1337,7 +1347,7 @@
             <mode>SCM Mode</mode>
             <input-id>24</input-id>
             <action-configuration>
-                <root-action>ec9d6113-c8de-4136-b729-b52956a5e0d9</root-action>
+                <root-action>2e393e8c-649f-47dd-9c14-d31706593bfa</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1347,7 +1357,7 @@
             <mode>SCM Mode</mode>
             <input-id>25</input-id>
             <action-configuration>
-                <root-action>19463fa1-5ae4-4ef0-bcbb-5c2e22e5e06f</root-action>
+                <root-action>1b7e457d-44b4-40d4-bcb2-c46bc05541e8</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1357,7 +1367,7 @@
             <mode>SCM Mode</mode>
             <input-id>26</input-id>
             <action-configuration>
-                <root-action>2da64326-22a5-434a-86f3-44e43da3a94c</root-action>
+                <root-action>528340b8-504a-4860-a749-25735ec66621</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1367,7 +1377,7 @@
             <mode>SCM Mode</mode>
             <input-id>27</input-id>
             <action-configuration>
-                <root-action>fca69d45-07ec-48c1-b59d-03e4f2d1e0c1</root-action>
+                <root-action>420557b1-fd67-4ce4-8dfb-371e4bab2583</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1377,7 +1387,7 @@
             <mode>SCM Mode</mode>
             <input-id>28</input-id>
             <action-configuration>
-                <root-action>63308623-4665-4b62-a992-cc50438468de</root-action>
+                <root-action>49a4156c-8db4-46d7-9d1a-130f3fa66351</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1387,7 +1397,7 @@
             <mode>SCM Mode</mode>
             <input-id>29</input-id>
             <action-configuration>
-                <root-action>d1ba5aac-af7f-4f0d-b0be-72209b5a1aee</root-action>
+                <root-action>5ff3b396-d8b5-43fc-afaa-e38c26f432e2</root-action>
                 <behavior>button</behavior>
             </action-configuration>
         </input>
@@ -1397,7 +1407,7 @@
             <mode>SCM Mode</mode>
             <input-id>1</input-id>
             <action-configuration>
-                <root-action>32454ddd-d936-4052-a820-daf9869f3b7d</root-action>
+                <root-action>76c00514-bb87-49e4-a46d-a570eacc2b11</root-action>
                 <behavior>hat</behavior>
             </action-configuration>
         </input>
@@ -1408,7 +1418,7 @@
     </settings>
     <logical-device/>
     <library>
-        <action id="d34ff331-6ae1-459c-90dd-1d33c4bcf175" type="map-to-vjoy">
+        <action id="3ef4dcbe-667d-4c6d-a3e5-0362c07c5ee0" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -1434,7 +1444,7 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="6ad69730-6fab-48a5-9e06-3e0ae142ee4e" type="change-mode">
+        <action id="dce5f7fb-7375-406f-b324-36efcc367293" type="change-mode">
             <property type="string">
                 <name>change-type</name>
                 <value>Cycle</value>
@@ -1454,7 +1464,7 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="3c6a2f5b-162b-4300-b7d9-5356c37ac31b" type="map-to-vjoy">
+        <action id="09b04abe-ac56-4c8c-887e-3cffdc8a578f" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -1480,7 +1490,7 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="d82ccca9-3eae-4ea6-b9a5-2941f8efa905" type="map-to-vjoy">
+        <action id="ffc1b3cf-2879-4a12-b985-c33514d7e86b" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -1506,14 +1516,14 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="74464db0-88df-42b5-9d1b-4da123c77663" type="tempo">
+        <action id="8a923c6c-4f09-45fd-a41c-761b9a265fba" type="tempo">
             <short-actions>
-                <action-id>d34ff331-6ae1-459c-90dd-1d33c4bcf175</action-id>
+                <action-id>3ef4dcbe-667d-4c6d-a3e5-0362c07c5ee0</action-id>
             </short-actions>
             <long-actions>
-                <action-id>6ad69730-6fab-48a5-9e06-3e0ae142ee4e</action-id>
-                <action-id>3c6a2f5b-162b-4300-b7d9-5356c37ac31b</action-id>
-                <action-id>d82ccca9-3eae-4ea6-b9a5-2941f8efa905</action-id>
+                <action-id>dce5f7fb-7375-406f-b324-36efcc367293</action-id>
+                <action-id>09b04abe-ac56-4c8c-887e-3cffdc8a578f</action-id>
+                <action-id>ffc1b3cf-2879-4a12-b985-c33514d7e86b</action-id>
             </long-actions>
             <property type="float">
                 <name>threshold</name>
@@ -1532,9 +1542,9 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="1678a142-9393-4be2-aefa-6d11a38b791b" type="root">
+        <action id="7fa07fa4-838f-4648-95c4-36cb69ab4d7f" type="root">
             <actions>
-                <action-id>74464db0-88df-42b5-9d1b-4da123c77663</action-id>
+                <action-id>8a923c6c-4f09-45fd-a41c-761b9a265fba</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -1545,7 +1555,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="9f4b3331-35a0-44ee-b6b8-0bc1c55a1393" type="map-to-vjoy">
+        <action id="24a1d1bf-3629-4181-a8f0-52c2734ab69d" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -1571,9 +1581,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="6e980e0b-7d9a-4974-86f1-23905d36441c" type="root">
+        <action id="099632c8-efd8-4312-bc1c-732531c20124" type="root">
             <actions>
-                <action-id>9f4b3331-35a0-44ee-b6b8-0bc1c55a1393</action-id>
+                <action-id>24a1d1bf-3629-4181-a8f0-52c2734ab69d</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -1584,7 +1594,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="58a7be91-1960-407e-bf20-27b9621bb760" type="map-to-vjoy">
+        <action id="ee59a826-a769-4a1e-96e0-96c6955744bf" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -1610,9 +1620,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="e76cc878-fbb5-497e-b9d2-5ee916e9104b" type="root">
+        <action id="169fc4a2-187a-4f4b-a08f-bc58ad7088ad" type="root">
             <actions>
-                <action-id>58a7be91-1960-407e-bf20-27b9621bb760</action-id>
+                <action-id>ee59a826-a769-4a1e-96e0-96c6955744bf</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -1623,7 +1633,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="55f2d387-2ff3-4aae-af8f-f482476810ab" type="map-to-vjoy">
+        <action id="7ef7c1a7-ebca-4fa5-9dd7-643b2d3a7b0d" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -1649,9 +1659,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="91658c4b-66f7-4d6c-aadd-6e35bf07c4d9" type="root">
+        <action id="e2f2253e-f9c6-406f-bd4f-e3d4d0d5eb7e" type="root">
             <actions>
-                <action-id>55f2d387-2ff3-4aae-af8f-f482476810ab</action-id>
+                <action-id>7ef7c1a7-ebca-4fa5-9dd7-643b2d3a7b0d</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -1662,7 +1672,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="a732ad48-2e2a-42af-953a-3c34e0c1d027" type="map-to-vjoy">
+        <action id="10ee5b7a-495e-44b7-bd10-0e4c8305c7da" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -1688,9 +1698,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="eb9491ee-f75d-459a-8ce3-80ee8e1adc93" type="root">
+        <action id="6765e00d-bff1-47bd-aadf-16944920a205" type="root">
             <actions>
-                <action-id>a732ad48-2e2a-42af-953a-3c34e0c1d027</action-id>
+                <action-id>10ee5b7a-495e-44b7-bd10-0e4c8305c7da</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -1701,7 +1711,34 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="eb4e98c6-1550-41cd-9305-a37b8989d9f3" type="map-to-vjoy">
+        <action id="e2724d2a-08c4-4038-b863-488fe1f17891" type="change-mode">
+            <property type="string">
+                <name>change-type</name>
+                <value>Previous</value>
+            </property>
+            <property type="string">
+                <name>action-label</name>
+                <value>Change Mode</value>
+            </property>
+            <property type="activation-mode">
+                <name>activation-mode</name>
+                <value>both</value>
+            </property>
+        </action>
+        <action id="2208ffe5-fd4b-4e31-82a9-bc733943b876" type="root">
+            <actions>
+                <action-id>e2724d2a-08c4-4038-b863-488fe1f17891</action-id>
+            </actions>
+            <property type="string">
+                <name>action-label</name>
+                <value>Root</value>
+            </property>
+            <property type="activation-mode">
+                <name>activation-mode</name>
+                <value>disallowed</value>
+            </property>
+        </action>
+        <action id="55ad90fb-5f86-4a22-a588-14e6f0db24f7" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -1727,9 +1764,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="d7b905b4-3f64-462f-a63c-bf70ba421837" type="root">
+        <action id="4ad68ef6-6c70-4b85-a0cb-7e0360b6db34" type="root">
             <actions>
-                <action-id>eb4e98c6-1550-41cd-9305-a37b8989d9f3</action-id>
+                <action-id>55ad90fb-5f86-4a22-a588-14e6f0db24f7</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -1740,7 +1777,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="a3b39912-7718-4c61-906a-2d49e839c493" type="map-to-vjoy">
+        <action id="9f75cb02-e997-4460-bb2c-4caa80002113" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -1766,9 +1803,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="38e9614f-2493-473d-8155-a5aaf0e022fa" type="root">
+        <action id="7962fca4-4398-4952-b5d8-b96ad2899583" type="root">
             <actions>
-                <action-id>a3b39912-7718-4c61-906a-2d49e839c493</action-id>
+                <action-id>9f75cb02-e997-4460-bb2c-4caa80002113</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -1779,7 +1816,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="c279b365-be98-469a-88c4-14977dae5a25" type="map-to-vjoy">
+        <action id="614b68ad-ff9d-4d90-be29-6f5d50ecc5f4" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -1805,9 +1842,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="425dc274-aebe-44fb-b8d2-da53ebd94402" type="root">
+        <action id="7ce2a125-c33b-491a-984f-7ff889e5fd4b" type="root">
             <actions>
-                <action-id>c279b365-be98-469a-88c4-14977dae5a25</action-id>
+                <action-id>614b68ad-ff9d-4d90-be29-6f5d50ecc5f4</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -1818,7 +1855,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="cba09a14-8cce-47ba-8082-f48d90af3a3e" type="map-to-vjoy">
+        <action id="9fceaa31-6f77-443f-9d1e-38bee7b643a0" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -1844,9 +1881,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="d4c86ad7-7be7-421a-9656-c4463437040b" type="root">
+        <action id="f32314c1-fa02-4c2e-9ae7-419d184cd693" type="root">
             <actions>
-                <action-id>cba09a14-8cce-47ba-8082-f48d90af3a3e</action-id>
+                <action-id>9fceaa31-6f77-443f-9d1e-38bee7b643a0</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -1857,7 +1894,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="dc5c9974-4f90-472d-a98d-b76bb5ae7f32" type="map-to-vjoy">
+        <action id="c3421564-d627-46b7-b99d-25b6d2aec3c4" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -1883,9 +1920,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="de03c291-5ad7-4365-bf46-9aceaa2ef703" type="root">
+        <action id="32ea2b00-4da7-4591-9095-d6eb3151fb4f" type="root">
             <actions>
-                <action-id>dc5c9974-4f90-472d-a98d-b76bb5ae7f32</action-id>
+                <action-id>c3421564-d627-46b7-b99d-25b6d2aec3c4</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -1896,7 +1933,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="5c27c332-3813-4c17-8455-1e07f1abc9a5" type="map-to-vjoy">
+        <action id="9a192401-76f6-4d0b-a2a8-33ff4dc632da" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -1922,9 +1959,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="6f6680fc-c02c-40e5-b5f5-a640f060fff7" type="root">
+        <action id="3dca59bc-ce5e-4aac-9e1c-d67f012f494b" type="root">
             <actions>
-                <action-id>5c27c332-3813-4c17-8455-1e07f1abc9a5</action-id>
+                <action-id>9a192401-76f6-4d0b-a2a8-33ff4dc632da</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -1935,7 +1972,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="79fecb26-3aa3-4b4c-8583-8a883bf674eb" type="map-to-vjoy">
+        <action id="4dba364e-0c22-4d8b-8360-1c09e360e0ec" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -1961,9 +1998,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="78855eda-5bf0-4fd6-8f96-75c0a223a316" type="root">
+        <action id="0ea284fc-5ff8-407a-94de-5aa42ecfeab5" type="root">
             <actions>
-                <action-id>79fecb26-3aa3-4b4c-8583-8a883bf674eb</action-id>
+                <action-id>4dba364e-0c22-4d8b-8360-1c09e360e0ec</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -1974,7 +2011,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="bdf21405-e80e-4b8d-8d89-8dfa01be6364" type="map-to-vjoy">
+        <action id="124c00ae-51e7-4381-901b-6f941ae90dda" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -2000,9 +2037,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="79489230-10b0-42cf-8ac5-67025fea7ccc" type="root">
+        <action id="2c3a8639-3de7-4df5-9f3a-5fcb331ab8f2" type="root">
             <actions>
-                <action-id>bdf21405-e80e-4b8d-8d89-8dfa01be6364</action-id>
+                <action-id>124c00ae-51e7-4381-901b-6f941ae90dda</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -2013,7 +2050,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="ce6c6b0e-efc3-4a02-a679-2292bc1bafb2" type="map-to-vjoy">
+        <action id="4225dd3a-0857-44cf-91d5-90e6029bc09a" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -2039,9 +2076,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="af80e200-8d6a-476f-98d3-4475eceee152" type="root">
+        <action id="95f95f30-05ef-40fc-accb-cafd5352db4a" type="root">
             <actions>
-                <action-id>ce6c6b0e-efc3-4a02-a679-2292bc1bafb2</action-id>
+                <action-id>4225dd3a-0857-44cf-91d5-90e6029bc09a</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -2052,7 +2089,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="38d30e22-1ea9-4c1c-a165-4109fd655c08" type="map-to-vjoy">
+        <action id="213e7fd2-5181-4437-832f-aebe21ac96eb" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -2078,9 +2115,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="27bad332-512a-4484-99f7-728256bc5bea" type="root">
+        <action id="c3b101e9-f9fe-4cae-aed5-b188ac4f0a7a" type="root">
             <actions>
-                <action-id>38d30e22-1ea9-4c1c-a165-4109fd655c08</action-id>
+                <action-id>213e7fd2-5181-4437-832f-aebe21ac96eb</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -2091,7 +2128,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="cd2f5e5d-4aee-47ab-9fa1-34b943a74989" type="map-to-vjoy">
+        <action id="542da02c-9f64-4606-9dcd-97382ab89af7" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -2117,9 +2154,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="d5a1644b-1c14-4f6c-951b-168d61750e25" type="root">
+        <action id="ef19b763-2417-455c-abed-37b1c2d52734" type="root">
             <actions>
-                <action-id>cd2f5e5d-4aee-47ab-9fa1-34b943a74989</action-id>
+                <action-id>542da02c-9f64-4606-9dcd-97382ab89af7</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -2130,7 +2167,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="77e0f2f9-c91e-48b3-a7c1-31542856b4ae" type="map-to-vjoy">
+        <action id="9fb83724-66a9-4816-9e48-7e741d7e190b" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -2156,9 +2193,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="5edcaa11-8455-4926-afcb-325628df990e" type="root">
+        <action id="4c101dee-b528-4557-9543-d61cf384da07" type="root">
             <actions>
-                <action-id>77e0f2f9-c91e-48b3-a7c1-31542856b4ae</action-id>
+                <action-id>9fb83724-66a9-4816-9e48-7e741d7e190b</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -2169,7 +2206,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="dab27d17-99a6-4cd1-9669-706cadbba40d" type="map-to-vjoy">
+        <action id="342b67e5-0ae9-4e6b-b9a2-39bcd812d484" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -2195,9 +2232,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="5e25b14b-ee0f-4d50-967a-c9f5b8aa8832" type="root">
+        <action id="4404b8f3-5a84-4abe-8f55-67e32d925496" type="root">
             <actions>
-                <action-id>dab27d17-99a6-4cd1-9669-706cadbba40d</action-id>
+                <action-id>342b67e5-0ae9-4e6b-b9a2-39bcd812d484</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -2208,7 +2245,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="ff354725-fd86-4ace-9b10-899efd163c63" type="map-to-vjoy">
+        <action id="22197679-a795-4607-9c97-c2d6396167cd" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -2234,9 +2271,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="43b8f83f-a6ec-4562-b3a4-03a2c4771799" type="root">
+        <action id="4ef637d3-7245-4622-a22b-3b2bd4ce2aa5" type="root">
             <actions>
-                <action-id>ff354725-fd86-4ace-9b10-899efd163c63</action-id>
+                <action-id>22197679-a795-4607-9c97-c2d6396167cd</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -2247,7 +2284,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="1c20eaa6-0303-4a1f-86df-c858eac4109b" type="map-to-vjoy">
+        <action id="f05f2a23-48cc-45d7-a19f-f0ad135dfc90" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -2273,9 +2310,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="9d356995-7f5e-426f-aed7-d6bbbbcc7150" type="root">
+        <action id="98fd1556-6a3c-44bf-ab55-b502038daadc" type="root">
             <actions>
-                <action-id>1c20eaa6-0303-4a1f-86df-c858eac4109b</action-id>
+                <action-id>f05f2a23-48cc-45d7-a19f-f0ad135dfc90</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -2286,7 +2323,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="455b7b1a-0b1c-4d52-b4bc-747550ac74f6" type="map-to-vjoy">
+        <action id="46ceeb35-0289-4f4c-af7a-991902fe8972" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -2312,9 +2349,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="63188439-27ce-4f0e-aca1-6168bcc0c62c" type="root">
+        <action id="523d542e-dd87-4ec3-a2e3-522dd72dfce4" type="root">
             <actions>
-                <action-id>455b7b1a-0b1c-4d52-b4bc-747550ac74f6</action-id>
+                <action-id>46ceeb35-0289-4f4c-af7a-991902fe8972</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -2325,7 +2362,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="920a4413-2cda-48f0-88cc-5b1011996631" type="map-to-vjoy">
+        <action id="f4c69f96-e06d-4cdc-ac01-04a4b1231cc3" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -2351,9 +2388,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="54882685-0b16-4333-841c-3bd1df628fe6" type="root">
+        <action id="404addc7-78e8-4097-beab-7be4bd5f9e96" type="root">
             <actions>
-                <action-id>920a4413-2cda-48f0-88cc-5b1011996631</action-id>
+                <action-id>f4c69f96-e06d-4cdc-ac01-04a4b1231cc3</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -2364,7 +2401,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="9f98a9e6-aaad-406a-9430-7f3f80276c8f" type="map-to-vjoy">
+        <action id="001bf024-d6e6-4f6a-aa45-a943414acbf9" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -2390,9 +2427,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="5c96e9f1-54bc-454b-9ffa-f632ea2a0fa4" type="root">
+        <action id="3160fc08-30be-4b09-9465-ce47f91c4ee6" type="root">
             <actions>
-                <action-id>9f98a9e6-aaad-406a-9430-7f3f80276c8f</action-id>
+                <action-id>001bf024-d6e6-4f6a-aa45-a943414acbf9</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -2403,7 +2440,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="1166943e-3358-451f-8ec3-4f43a077df2f" type="map-to-vjoy">
+        <action id="371530e4-3a84-4b77-a9d9-a5d6adb14009" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -2429,9 +2466,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="13188c1d-5e81-477d-9bba-93c7f8321023" type="root">
+        <action id="5f339ffe-6301-4dec-9eee-741ae474734d" type="root">
             <actions>
-                <action-id>1166943e-3358-451f-8ec3-4f43a077df2f</action-id>
+                <action-id>371530e4-3a84-4b77-a9d9-a5d6adb14009</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -2442,7 +2479,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="e84a5d80-b155-4bed-8135-ecec8e9d20f9" type="map-to-vjoy">
+        <action id="cd1ded94-a93c-42c2-9f60-67f960c9e794" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -2468,9 +2505,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="f1e1097c-d2da-4e50-85e5-61195f93f362" type="root">
+        <action id="84c7805c-171b-46dc-8f74-89cf18e220fd" type="root">
             <actions>
-                <action-id>e84a5d80-b155-4bed-8135-ecec8e9d20f9</action-id>
+                <action-id>cd1ded94-a93c-42c2-9f60-67f960c9e794</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -2481,7 +2518,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="bd2ff5c1-370f-437b-8694-fb9b8d6ff3b1" type="map-to-vjoy">
+        <action id="619b878e-c646-49b7-bf35-cd109e595e03" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -2507,9 +2544,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="208b74d3-c05f-4338-9b6f-f7eea0acd0a8" type="root">
+        <action id="81cb4c9f-65e9-46a9-a22c-69352c89b92e" type="root">
             <actions>
-                <action-id>bd2ff5c1-370f-437b-8694-fb9b8d6ff3b1</action-id>
+                <action-id>619b878e-c646-49b7-bf35-cd109e595e03</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -2520,7 +2557,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="8d89df9b-3b79-46d9-b6f1-ae0684710f96" type="map-to-vjoy">
+        <action id="65538aba-5e01-4c84-b3b2-01d3b72b8135" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -2546,9 +2583,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="5f24617a-0699-4163-9cb3-8123ee10e904" type="root">
+        <action id="9fe720ce-5d55-4141-86dd-1642b61f8a4d" type="root">
             <actions>
-                <action-id>8d89df9b-3b79-46d9-b6f1-ae0684710f96</action-id>
+                <action-id>65538aba-5e01-4c84-b3b2-01d3b72b8135</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -2559,7 +2596,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="a3fd45f9-9065-4c18-a3eb-58efd0f78a4f" type="map-to-vjoy">
+        <action id="f0a6e1ed-857d-48fc-af2d-15c669796191" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -2585,9 +2622,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="c99949b7-088f-4047-ac08-98c68d28f621" type="root">
+        <action id="9f829dfc-50cc-4973-bab9-5c4a98c7e69e" type="root">
             <actions>
-                <action-id>a3fd45f9-9065-4c18-a3eb-58efd0f78a4f</action-id>
+                <action-id>f0a6e1ed-857d-48fc-af2d-15c669796191</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -2598,7 +2635,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="a632436e-e9f5-4975-954b-168aa47599b0" type="map-to-vjoy">
+        <action id="85e56328-45f0-465a-a359-5b5d0c728658" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -2624,9 +2661,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="c46f85eb-770e-4f39-94e0-2401cc7748ed" type="root">
+        <action id="26dfeba0-e095-440a-956f-de0ed7e2256e" type="root">
             <actions>
-                <action-id>a632436e-e9f5-4975-954b-168aa47599b0</action-id>
+                <action-id>85e56328-45f0-465a-a359-5b5d0c728658</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -2637,7 +2674,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="b2080fca-6915-437a-b350-96216b124ecd" type="map-to-vjoy">
+        <action id="a102f509-3885-4781-bd1f-3a81f4845809" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -2659,9 +2696,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="5b519c7a-e240-41e8-bb7e-c69c1b049d6b" type="root">
+        <action id="df3319b4-c17f-4f7c-8737-ed8f725eea54" type="root">
             <actions>
-                <action-id>b2080fca-6915-437a-b350-96216b124ecd</action-id>
+                <action-id>a102f509-3885-4781-bd1f-3a81f4845809</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -2672,7 +2709,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="a10fa9f5-ff09-4695-80c1-b27d9dfd6d04" type="map-to-vjoy">
+        <action id="7887b2f0-3f24-468e-a24b-a469f5a3bc3a" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -2698,7 +2735,7 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="eee4b9d9-bebd-4654-8ab9-2f4bf960733d" type="change-mode">
+        <action id="6629a308-df38-4c0b-b7fa-d5248e6865db" type="change-mode">
             <property type="string">
                 <name>change-type</name>
                 <value>Cycle</value>
@@ -2718,7 +2755,7 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="702eda2a-d023-404c-b1cc-ff2ae6d6e2fc" type="map-to-vjoy">
+        <action id="096c79ee-7faf-420c-81ce-51a90e08c0d9" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -2744,13 +2781,13 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="e579196b-fcdf-4854-9d6d-3dca499129a6" type="tempo">
+        <action id="219c5f4e-4b62-467a-b7be-2b73ec64d6cc" type="tempo">
             <short-actions>
-                <action-id>a10fa9f5-ff09-4695-80c1-b27d9dfd6d04</action-id>
+                <action-id>7887b2f0-3f24-468e-a24b-a469f5a3bc3a</action-id>
             </short-actions>
             <long-actions>
-                <action-id>eee4b9d9-bebd-4654-8ab9-2f4bf960733d</action-id>
-                <action-id>702eda2a-d023-404c-b1cc-ff2ae6d6e2fc</action-id>
+                <action-id>6629a308-df38-4c0b-b7fa-d5248e6865db</action-id>
+                <action-id>096c79ee-7faf-420c-81ce-51a90e08c0d9</action-id>
             </long-actions>
             <property type="float">
                 <name>threshold</name>
@@ -2769,9 +2806,9 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="c4354e5c-d30f-4aa2-9ab0-c085c384dd7d" type="root">
+        <action id="dccffd0d-0da3-44be-9d47-67426dfcb2fd" type="root">
             <actions>
-                <action-id>e579196b-fcdf-4854-9d6d-3dca499129a6</action-id>
+                <action-id>219c5f4e-4b62-467a-b7be-2b73ec64d6cc</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -2782,7 +2819,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="580befce-7e67-4e9f-bb46-558e3d66fc25" type="change-mode">
+        <action id="a25e5e95-469e-476c-9a29-64a773ca00e4" type="change-mode">
             <property type="string">
                 <name>change-type</name>
                 <value>Temporary</value>
@@ -2802,9 +2839,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="33d647a3-a57f-4c41-966b-7da331c3b2a5" type="root">
+        <action id="c9fc588e-5341-434d-88a9-726bb4cc3858" type="root">
             <actions>
-                <action-id>580befce-7e67-4e9f-bb46-558e3d66fc25</action-id>
+                <action-id>a25e5e95-469e-476c-9a29-64a773ca00e4</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -2815,7 +2852,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="18859880-1a09-4254-97f1-62046de7fbe4" type="map-to-vjoy">
+        <action id="34de780e-7cf0-4cba-9164-e51df00adb8c" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -2845,9 +2882,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="47565345-ef4a-4309-87e1-8cd9833ff486" type="root">
+        <action id="ea71b1cc-6041-4832-ae0d-32cfc6d82e82" type="root">
             <actions>
-                <action-id>18859880-1a09-4254-97f1-62046de7fbe4</action-id>
+                <action-id>34de780e-7cf0-4cba-9164-e51df00adb8c</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -2858,7 +2895,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="6cbb425f-d77d-4bda-b0ce-9b09ed52f4cc" type="map-to-vjoy">
+        <action id="9e0c70b3-1cf7-4e17-bc0c-8482cf964477" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -2888,7 +2925,7 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="7ecc987d-0dd7-4862-b179-557ed2df106b" type="response-curve">
+        <action id="94dae362-d5fc-403d-b265-ed24047b521c" type="response-curve">
             <deadzone>
                 <property type="float">
                     <name>low</name>
@@ -2930,10 +2967,10 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="a27d1635-5929-4792-936c-e732e861e0df" type="root">
+        <action id="5330e1e7-a995-4179-9dbd-2aad3ad72ab9" type="root">
             <actions>
-                <action-id>6cbb425f-d77d-4bda-b0ce-9b09ed52f4cc</action-id>
-                <action-id>7ecc987d-0dd7-4862-b179-557ed2df106b</action-id>
+                <action-id>94dae362-d5fc-403d-b265-ed24047b521c</action-id>
+                <action-id>9e0c70b3-1cf7-4e17-bc0c-8482cf964477</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -2944,7 +2981,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="0245712f-bcc2-472d-8671-1d787a19d574" type="map-to-vjoy">
+        <action id="011eb019-3687-4c67-ab73-5b498249c766" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -2974,9 +3011,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="6c3e5341-9082-4da1-bdc8-61ad71f43857" type="root">
+        <action id="13fd1273-2ca9-4527-aefd-69c849619b9f" type="root">
             <actions>
-                <action-id>0245712f-bcc2-472d-8671-1d787a19d574</action-id>
+                <action-id>011eb019-3687-4c67-ab73-5b498249c766</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -2987,7 +3024,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="2fa18c4b-f659-46c9-b21e-f3d6a7e81619" type="map-to-vjoy">
+        <action id="c2bc4782-9e2b-4477-b040-22844c4478aa" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -3017,9 +3054,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="25613ab9-73f6-4e57-a2e3-43b4e3d007fc" type="root">
+        <action id="4dd463bc-29c3-4ea5-a2d6-b0c02859e25d" type="root">
             <actions>
-                <action-id>2fa18c4b-f659-46c9-b21e-f3d6a7e81619</action-id>
+                <action-id>c2bc4782-9e2b-4477-b040-22844c4478aa</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -3030,7 +3067,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="59f5f658-61ca-4460-8829-9e8df3d333ae" type="map-to-vjoy">
+        <action id="a94c7d96-4dd6-4c19-9d69-e302c7786559" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -3060,9 +3097,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="98556bf7-67bf-4bae-9dd1-685ff5fcbbec" type="root">
+        <action id="fa261465-9e19-47ac-88fb-55b2b500b8ea" type="root">
             <actions>
-                <action-id>59f5f658-61ca-4460-8829-9e8df3d333ae</action-id>
+                <action-id>a94c7d96-4dd6-4c19-9d69-e302c7786559</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -3073,7 +3110,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="f70a82e9-6e68-4f9c-b1d3-3dafadef2aa2" type="map-to-vjoy">
+        <action id="e797e488-908e-418d-9ebf-ed04cd203837" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -3103,9 +3140,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="a9bd5e3c-5943-4c42-82e7-26acdc696d4d" type="root">
+        <action id="93af65fa-4e55-4889-b2e8-ce68affe4b4d" type="root">
             <actions>
-                <action-id>f70a82e9-6e68-4f9c-b1d3-3dafadef2aa2</action-id>
+                <action-id>e797e488-908e-418d-9ebf-ed04cd203837</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -3116,7 +3153,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="e66cd468-04dc-4457-b2e2-bfa61912d7e9" type="map-to-vjoy">
+        <action id="1f566b31-cbe8-4d57-ba8b-94db5cf8ad5d" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -3142,9 +3179,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="00756ccd-ab25-4889-b45a-4464977653a3" type="root">
+        <action id="cda910d4-9f88-44db-b3a3-418e2d51eec7" type="root">
             <actions>
-                <action-id>e66cd468-04dc-4457-b2e2-bfa61912d7e9</action-id>
+                <action-id>1f566b31-cbe8-4d57-ba8b-94db5cf8ad5d</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -3155,7 +3192,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="8709d458-2e28-4e43-8690-c492f215a2ef" type="map-to-vjoy">
+        <action id="893bc6db-b330-4913-b410-a387cfe3fd11" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -3181,9 +3218,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="34f5bd7b-69f8-41f8-a764-55172c6e9494" type="root">
+        <action id="d791ac16-f213-4e4e-8258-24e32aaef6c6" type="root">
             <actions>
-                <action-id>8709d458-2e28-4e43-8690-c492f215a2ef</action-id>
+                <action-id>893bc6db-b330-4913-b410-a387cfe3fd11</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -3194,7 +3231,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="44e2b389-60ee-435b-9782-060d555500a1" type="map-to-vjoy">
+        <action id="b75a192a-00f9-477b-9b06-4cb5c9af932e" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -3220,7 +3257,7 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="6bc9108c-079f-4369-8e1d-6a34412896ee" type="change-mode">
+        <action id="d1ccef43-d9ae-480c-8275-a837e5c12ff2" type="change-mode">
             <property type="string">
                 <name>change-type</name>
                 <value>Cycle</value>
@@ -3240,7 +3277,7 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="9fd5ed95-9837-4230-9c30-f194690bb68a" type="map-to-vjoy">
+        <action id="23c1d079-abd5-407d-b1eb-30bd51358a54" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -3266,13 +3303,13 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="60d89aa6-c775-4332-90d0-6118be220cd5" type="tempo">
+        <action id="084a45c1-2aff-4cb3-a990-31fa6588b03e" type="tempo">
             <short-actions>
-                <action-id>44e2b389-60ee-435b-9782-060d555500a1</action-id>
+                <action-id>b75a192a-00f9-477b-9b06-4cb5c9af932e</action-id>
             </short-actions>
             <long-actions>
-                <action-id>6bc9108c-079f-4369-8e1d-6a34412896ee</action-id>
-                <action-id>9fd5ed95-9837-4230-9c30-f194690bb68a</action-id>
+                <action-id>d1ccef43-d9ae-480c-8275-a837e5c12ff2</action-id>
+                <action-id>23c1d079-abd5-407d-b1eb-30bd51358a54</action-id>
             </long-actions>
             <property type="float">
                 <name>threshold</name>
@@ -3291,9 +3328,9 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="2937f6ba-00ea-4eaa-850c-85a8fc184cf1" type="root">
+        <action id="995b7dc3-b4a5-496e-9c2f-319361615976" type="root">
             <actions>
-                <action-id>60d89aa6-c775-4332-90d0-6118be220cd5</action-id>
+                <action-id>084a45c1-2aff-4cb3-a990-31fa6588b03e</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -3304,7 +3341,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="f217054d-ff8f-4803-8272-b7095036f743" type="map-to-vjoy">
+        <action id="71972898-1ede-408e-999f-f421ad88446b" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -3330,9 +3367,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="7ee33a54-3944-4312-a369-2f488e7797d3" type="root">
+        <action id="d063e459-d65e-4a1b-9da5-e17204599362" type="root">
             <actions>
-                <action-id>f217054d-ff8f-4803-8272-b7095036f743</action-id>
+                <action-id>71972898-1ede-408e-999f-f421ad88446b</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -3343,7 +3380,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="9a378d02-552e-4f48-88d2-d50c148417ab" type="change-mode">
+        <action id="c4b369e3-5fda-44c9-b0aa-eb6b397376be" type="change-mode">
             <property type="string">
                 <name>change-type</name>
                 <value>Temporary</value>
@@ -3363,9 +3400,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="4b96b7a2-bcbd-4560-9040-faae34dff4b9" type="root">
+        <action id="984dcde2-3dde-4863-8530-28f6551e3a8e" type="root">
             <actions>
-                <action-id>9a378d02-552e-4f48-88d2-d50c148417ab</action-id>
+                <action-id>c4b369e3-5fda-44c9-b0aa-eb6b397376be</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -3376,7 +3413,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="f4d8b15f-39fb-42b9-9ca7-529010b59fa4" type="map-to-vjoy">
+        <action id="a4b42652-a951-4fd4-830d-e3e1aa701ae3" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -3402,9 +3439,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="287ce995-2b40-4e96-8810-f3bdcbfd14d3" type="root">
+        <action id="0aa747fc-eb46-45c8-b6bf-bae1490f951b" type="root">
             <actions>
-                <action-id>f4d8b15f-39fb-42b9-9ca7-529010b59fa4</action-id>
+                <action-id>a4b42652-a951-4fd4-830d-e3e1aa701ae3</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -3415,7 +3452,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="1742b22a-ae8a-48c1-80a9-7c87bb75bf5f" type="map-to-vjoy">
+        <action id="ff8bdaa7-abcb-48ef-a9cd-9cb1c51bfc15" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -3441,9 +3478,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="fc1c544b-5740-42f6-be52-c5cd8e58f7e8" type="root">
+        <action id="1bab5e5f-8b86-47b6-8c30-99e68923d587" type="root">
             <actions>
-                <action-id>1742b22a-ae8a-48c1-80a9-7c87bb75bf5f</action-id>
+                <action-id>ff8bdaa7-abcb-48ef-a9cd-9cb1c51bfc15</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -3454,7 +3491,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="3a408ca0-24ec-4948-bba3-290eb25c2f54" type="map-to-vjoy">
+        <action id="1f43a77b-9616-4235-800c-bccb1559a338" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -3480,9 +3517,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="ac8b3849-ddd1-44d2-a7c7-9a47ebbd8c9e" type="root">
+        <action id="a8655b37-3dea-414a-8c0f-30ca795a8194" type="root">
             <actions>
-                <action-id>3a408ca0-24ec-4948-bba3-290eb25c2f54</action-id>
+                <action-id>1f43a77b-9616-4235-800c-bccb1559a338</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -3493,7 +3530,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="08e0873c-0a71-42ba-a023-0d985e259c58" type="map-to-vjoy">
+        <action id="a7ff8e09-1fb5-42cf-8d36-bf6e67d01edb" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -3519,9 +3556,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="1b5a3b6f-547f-4e4d-a105-6b578848ce64" type="root">
+        <action id="c5668f29-91c2-47be-bb0b-634115be9526" type="root">
             <actions>
-                <action-id>08e0873c-0a71-42ba-a023-0d985e259c58</action-id>
+                <action-id>a7ff8e09-1fb5-42cf-8d36-bf6e67d01edb</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -3532,7 +3569,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="7fe7504b-01ce-4eb6-aa87-532ffe5b73a7" type="map-to-vjoy">
+        <action id="163e8521-397b-4ac8-8e4b-9539bceed411" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -3558,9 +3595,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="e5f5b08b-b5bb-466a-8fbe-7efc91ec231a" type="root">
+        <action id="ada842c4-4633-46f9-be9a-76e2455d2737" type="root">
             <actions>
-                <action-id>7fe7504b-01ce-4eb6-aa87-532ffe5b73a7</action-id>
+                <action-id>163e8521-397b-4ac8-8e4b-9539bceed411</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -3571,7 +3608,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="ba0d919d-3d95-4f6f-915d-445cde8edb16" type="map-to-vjoy">
+        <action id="e2569ab9-ee13-4672-940e-c9481169b683" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -3597,9 +3634,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="99620496-d6f0-4198-bbca-e616e26890bb" type="root">
+        <action id="b8ed0c55-348e-466e-89fc-cb2b9238fe8f" type="root">
             <actions>
-                <action-id>ba0d919d-3d95-4f6f-915d-445cde8edb16</action-id>
+                <action-id>e2569ab9-ee13-4672-940e-c9481169b683</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -3610,7 +3647,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="839614a9-11cd-4097-9697-84c9f0e75e8d" type="map-to-vjoy">
+        <action id="64bb4125-cea9-4917-96dd-79203cdac321" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -3636,9 +3673,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="c8d1c3f3-5b3f-473b-bf90-64f93e488bfd" type="root">
+        <action id="9ae576c0-21e4-4cea-857e-28d67350d690" type="root">
             <actions>
-                <action-id>839614a9-11cd-4097-9697-84c9f0e75e8d</action-id>
+                <action-id>64bb4125-cea9-4917-96dd-79203cdac321</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -3649,7 +3686,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="6868c70b-ecc7-4968-bd32-9f9ae7195494" type="map-to-vjoy">
+        <action id="0c93e8e9-0876-49a2-ad03-898fd3a3569d" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -3675,9 +3712,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="2ba6cee6-c7c8-4612-a512-e8e943870c7e" type="root">
+        <action id="0502f217-9f3a-4e66-96d3-0a4093d6ecd9" type="root">
             <actions>
-                <action-id>6868c70b-ecc7-4968-bd32-9f9ae7195494</action-id>
+                <action-id>0c93e8e9-0876-49a2-ad03-898fd3a3569d</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -3688,7 +3725,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="f9997d7f-63df-4bc6-b602-b03c46ee5bd1" type="map-to-vjoy">
+        <action id="dc66cfed-c2e2-4b0e-a326-a72e580ba9a0" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -3714,9 +3751,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="983b05b6-f327-470e-bfd5-1d60ceaf9301" type="root">
+        <action id="6e1f327a-f25d-4caf-986e-0315e9228296" type="root">
             <actions>
-                <action-id>f9997d7f-63df-4bc6-b602-b03c46ee5bd1</action-id>
+                <action-id>dc66cfed-c2e2-4b0e-a326-a72e580ba9a0</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -3727,7 +3764,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="33f26b1a-4e29-4022-975e-201eb3411d0d" type="map-to-vjoy">
+        <action id="695a664a-23fd-4f01-9ea3-4d1508a24c57" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -3753,7 +3790,7 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="d370adf8-2ca8-4386-8b29-898149bcea0a" type="macro">
+        <action id="6f043473-0ade-403a-98fd-fc6cd05f93c6" type="macro">
             <property type="bool">
                 <name>is-exclusive</name>
                 <value>False</value>
@@ -3784,10 +3821,46 @@
                     <value>True</value>
                 </property>
             </macro-action>
+            <macro-action type="vjoy">
+                <property type="int">
+                    <name>vjoy-id</name>
+                    <value>1</value>
+                </property>
+                <property type="input_type">
+                    <name>input-type</name>
+                    <value>button</value>
+                </property>
+                <property type="int">
+                    <name>input-id</name>
+                    <value>10</value>
+                </property>
+                <property type="bool">
+                    <name>value</name>
+                    <value>True</value>
+                </property>
+            </macro-action>
             <macro-action type="pause">
                 <property type="float">
                     <name>duration</name>
                     <value>0.5</value>
+                </property>
+            </macro-action>
+            <macro-action type="vjoy">
+                <property type="int">
+                    <name>vjoy-id</name>
+                    <value>1</value>
+                </property>
+                <property type="input_type">
+                    <name>input-type</name>
+                    <value>button</value>
+                </property>
+                <property type="int">
+                    <name>input-id</name>
+                    <value>10</value>
+                </property>
+                <property type="bool">
+                    <name>value</name>
+                    <value>False</value>
                 </property>
             </macro-action>
             <macro-action type="key">
@@ -3813,12 +3886,12 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="3d8a8669-1167-4051-a0e0-e49b41bb39f3" type="tempo">
+        <action id="d73b57d2-f865-486f-9391-3281a1a1c4e7" type="tempo">
             <short-actions>
-                <action-id>33f26b1a-4e29-4022-975e-201eb3411d0d</action-id>
+                <action-id>695a664a-23fd-4f01-9ea3-4d1508a24c57</action-id>
             </short-actions>
             <long-actions>
-                <action-id>d370adf8-2ca8-4386-8b29-898149bcea0a</action-id>
+                <action-id>6f043473-0ade-403a-98fd-fc6cd05f93c6</action-id>
             </long-actions>
             <property type="float">
                 <name>threshold</name>
@@ -3837,9 +3910,9 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="141d9690-9539-4502-816a-397226f91597" type="root">
+        <action id="f38c9aaf-1adb-4151-9587-2ece7e27bf26" type="root">
             <actions>
-                <action-id>3d8a8669-1167-4051-a0e0-e49b41bb39f3</action-id>
+                <action-id>d73b57d2-f865-486f-9391-3281a1a1c4e7</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -3850,7 +3923,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="1cf492b7-bf32-4f7e-8f75-67dda764b44f" type="map-to-vjoy">
+        <action id="0cae5194-8355-47c0-b92a-fbbc1de6efb9" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -3876,9 +3949,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="5d4c924c-0057-4a96-ac6e-ab7868fd25a5" type="root">
+        <action id="d06d1def-4ec7-4173-a1e8-122b44bd44b2" type="root">
             <actions>
-                <action-id>1cf492b7-bf32-4f7e-8f75-67dda764b44f</action-id>
+                <action-id>0cae5194-8355-47c0-b92a-fbbc1de6efb9</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -3889,7 +3962,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="55350918-7a8e-44ed-8b0d-0bd037ca4c48" type="map-to-vjoy">
+        <action id="3f7fd578-8705-47c6-bb39-dd83a93e3bca" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -3915,9 +3988,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="927cabc3-7bb7-4bef-8d4a-83e5d15a178e" type="root">
+        <action id="3725924c-3006-4ccb-874b-aed5c101c7c3" type="root">
             <actions>
-                <action-id>55350918-7a8e-44ed-8b0d-0bd037ca4c48</action-id>
+                <action-id>3f7fd578-8705-47c6-bb39-dd83a93e3bca</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -3928,7 +4001,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="6eb07809-6314-41ea-9807-ee054c66b112" type="map-to-vjoy">
+        <action id="8d0a27e9-4adc-4d4b-9a60-dab5e5ab833e" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -3954,9 +4027,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="bcae02a3-b5dd-47af-816c-4788f1c63df6" type="root">
+        <action id="669f272d-b814-468e-bd0b-31a2590e51a0" type="root">
             <actions>
-                <action-id>6eb07809-6314-41ea-9807-ee054c66b112</action-id>
+                <action-id>8d0a27e9-4adc-4d4b-9a60-dab5e5ab833e</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -3967,7 +4040,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="cb6bd3a0-1a07-4169-b921-93d037bf5d56" type="map-to-vjoy">
+        <action id="585cf3f8-9520-46ca-aaa1-b8a6664c9068" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -3993,9 +4066,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="519e1b86-64f6-4da3-baac-806a6bef801f" type="root">
+        <action id="2992e565-e13d-41d8-b6bc-4ec63a94f429" type="root">
             <actions>
-                <action-id>cb6bd3a0-1a07-4169-b921-93d037bf5d56</action-id>
+                <action-id>585cf3f8-9520-46ca-aaa1-b8a6664c9068</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -4006,7 +4079,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="96714106-4c4c-4cba-b8c1-234b90fa1dcc" type="map-to-vjoy">
+        <action id="4aa87957-6d90-44b5-929c-2b5ef12562fa" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -4032,9 +4105,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="a940c903-e5f3-4b4a-b76f-ca60a46b5d6b" type="root">
+        <action id="01e6963c-c447-4138-999f-2d397d075c36" type="root">
             <actions>
-                <action-id>96714106-4c4c-4cba-b8c1-234b90fa1dcc</action-id>
+                <action-id>4aa87957-6d90-44b5-929c-2b5ef12562fa</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -4045,7 +4118,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="83c25e50-e37c-49d5-af79-c0cc1eb3465b" type="map-to-vjoy">
+        <action id="b667bf9f-cb77-464c-9400-6c82c31410f2" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -4071,9 +4144,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="799bae3d-02a6-42de-832a-2e432eb978d6" type="root">
+        <action id="11adc811-c1e8-42ec-a0cf-68f7fa00de79" type="root">
             <actions>
-                <action-id>83c25e50-e37c-49d5-af79-c0cc1eb3465b</action-id>
+                <action-id>b667bf9f-cb77-464c-9400-6c82c31410f2</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -4084,7 +4157,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="ae281db5-0aae-4e7d-86e2-161a501e0507" type="map-to-vjoy">
+        <action id="1ee18cde-b07e-4bff-a243-a2145d7fe9f0" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -4110,9 +4183,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="93557a14-a8dc-4393-b1ad-0dc23a27335f" type="root">
+        <action id="ac907d44-d0e0-4c59-899b-d9492e232e1e" type="root">
             <actions>
-                <action-id>ae281db5-0aae-4e7d-86e2-161a501e0507</action-id>
+                <action-id>1ee18cde-b07e-4bff-a243-a2145d7fe9f0</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -4123,7 +4196,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="9ebc3707-ffef-4bbf-b9e9-c084b5fb731d" type="map-to-vjoy">
+        <action id="7a2c9a17-13d5-4ea0-9f75-235a506fad2e" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -4149,9 +4222,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="3a379529-0968-406d-a022-173c661eaa94" type="root">
+        <action id="9f5ae0ee-e3bb-4dba-bee4-a8f53ec963a7" type="root">
             <actions>
-                <action-id>9ebc3707-ffef-4bbf-b9e9-c084b5fb731d</action-id>
+                <action-id>7a2c9a17-13d5-4ea0-9f75-235a506fad2e</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -4162,7 +4235,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="c12dcef8-8053-4aa5-aa4a-4492ebaab159" type="map-to-vjoy">
+        <action id="3a2a6f6a-9e6b-4bc0-b340-2d7ab570be26" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -4188,9 +4261,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="693b526d-65f8-4bb9-86d0-799eb6023387" type="root">
+        <action id="3f75d887-2dad-4a2e-ab03-93071fe0ee35" type="root">
             <actions>
-                <action-id>c12dcef8-8053-4aa5-aa4a-4492ebaab159</action-id>
+                <action-id>3a2a6f6a-9e6b-4bc0-b340-2d7ab570be26</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -4201,7 +4274,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="9b9db9e5-aacf-42f5-8112-3d8cc58ceafe" type="map-to-vjoy">
+        <action id="c7b41419-7ee9-4e30-9151-88db2910a32c" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -4227,9 +4300,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="2528bdc6-7152-43c5-95ec-97bb1741c49c" type="root">
+        <action id="8c974ba2-79df-40ac-a358-19d486c35189" type="root">
             <actions>
-                <action-id>9b9db9e5-aacf-42f5-8112-3d8cc58ceafe</action-id>
+                <action-id>c7b41419-7ee9-4e30-9151-88db2910a32c</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -4240,7 +4313,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="5141932f-9041-4c43-9d35-74c2e0b1c12d" type="map-to-vjoy">
+        <action id="bd7f9510-e32f-4c83-b41d-13fd0b6b13c8" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -4266,9 +4339,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="7facc5b8-2121-41eb-9208-42705fe4ee93" type="root">
+        <action id="3315a121-f563-45a0-a15a-25b8b9917947" type="root">
             <actions>
-                <action-id>5141932f-9041-4c43-9d35-74c2e0b1c12d</action-id>
+                <action-id>bd7f9510-e32f-4c83-b41d-13fd0b6b13c8</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -4279,7 +4352,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="cb971851-00f7-4579-916f-87652371ab2d" type="map-to-vjoy">
+        <action id="bced849e-44fa-4841-babc-a0fbbf58ad5e" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -4305,9 +4378,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="3923feea-9c2e-4c2c-9d7d-f2c2c0230476" type="root">
+        <action id="cba1cc47-ae42-49f4-8158-aa39c2b68379" type="root">
             <actions>
-                <action-id>cb971851-00f7-4579-916f-87652371ab2d</action-id>
+                <action-id>bced849e-44fa-4841-babc-a0fbbf58ad5e</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -4318,7 +4391,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="fbc5aa7d-80ee-4a4f-a17c-dc32cda646da" type="map-to-vjoy">
+        <action id="b300ada3-35ce-41ad-80ac-84a5216cf846" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -4344,9 +4417,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="41791ba3-4c42-46e4-a6db-68c95548c8d6" type="root">
+        <action id="e52616eb-e67a-4b6f-8577-8abbd6f95337" type="root">
             <actions>
-                <action-id>fbc5aa7d-80ee-4a4f-a17c-dc32cda646da</action-id>
+                <action-id>b300ada3-35ce-41ad-80ac-84a5216cf846</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -4357,7 +4430,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="5d616138-17b9-468b-afb3-65dad5ea07f3" type="map-to-vjoy">
+        <action id="4d5efd37-1e27-4ac6-9fec-ac5c6cb06c32" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -4383,9 +4456,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="fa9b387a-d9d2-42a2-8487-619a734f7117" type="root">
+        <action id="70eb58da-d0f6-4f68-83ec-45d140895ef0" type="root">
             <actions>
-                <action-id>5d616138-17b9-468b-afb3-65dad5ea07f3</action-id>
+                <action-id>4d5efd37-1e27-4ac6-9fec-ac5c6cb06c32</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -4396,7 +4469,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="8f7f1a56-bb41-484c-882f-afb82444d196" type="map-to-vjoy">
+        <action id="e7d88eb4-b217-47eb-bfb7-7edfc260123d" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -4422,9 +4495,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="11599143-b5c2-4a0e-83d7-fba95fe4bca7" type="root">
+        <action id="4e856ac6-a5a0-4f5e-855e-80ed8a7239b7" type="root">
             <actions>
-                <action-id>8f7f1a56-bb41-484c-882f-afb82444d196</action-id>
+                <action-id>e7d88eb4-b217-47eb-bfb7-7edfc260123d</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -4435,7 +4508,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="14dde7f0-c5db-49ad-aee8-8a592b950fda" type="map-to-vjoy">
+        <action id="0225b9f0-c0bd-4fb7-9801-bf305fa7be48" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -4461,9 +4534,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="a1f725f4-e0a5-44c1-a7a7-cb5f44f571d0" type="root">
+        <action id="ca961403-dd7f-49a2-9c93-dc1efc720a6d" type="root">
             <actions>
-                <action-id>14dde7f0-c5db-49ad-aee8-8a592b950fda</action-id>
+                <action-id>0225b9f0-c0bd-4fb7-9801-bf305fa7be48</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -4474,7 +4547,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="408b7195-b450-499b-b08f-320d4199a6dc" type="map-to-vjoy">
+        <action id="bd6cb0f5-d895-4cfb-8652-cca373b2e1dd" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -4500,9 +4573,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="05e6e027-460d-4c78-abd7-a70e33059c4e" type="root">
+        <action id="6081629d-bef6-456b-98ba-823863c64c10" type="root">
             <actions>
-                <action-id>408b7195-b450-499b-b08f-320d4199a6dc</action-id>
+                <action-id>bd6cb0f5-d895-4cfb-8652-cca373b2e1dd</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -4513,7 +4586,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="2980a1c6-385f-4666-8151-a7f89ddac048" type="map-to-vjoy">
+        <action id="7dff76d0-d4ea-44a7-ad53-90b8b2f8daf3" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -4539,9 +4612,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="57b24311-0d45-45b9-8784-c0a8c0522932" type="root">
+        <action id="21c62a6e-28ad-4f99-95ca-8814f95c40e7" type="root">
             <actions>
-                <action-id>2980a1c6-385f-4666-8151-a7f89ddac048</action-id>
+                <action-id>7dff76d0-d4ea-44a7-ad53-90b8b2f8daf3</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -4552,7 +4625,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="96a1bcd1-084a-4f5d-8ef8-95c138e405a6" type="map-to-vjoy">
+        <action id="2ad9f408-8389-4ed0-a004-195435f23e4f" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -4574,9 +4647,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="9e2aa632-91eb-452a-a6de-8dcaa8598ddf" type="root">
+        <action id="f39b2f21-5e3a-4387-b347-57fe58b80cd2" type="root">
             <actions>
-                <action-id>96a1bcd1-084a-4f5d-8ef8-95c138e405a6</action-id>
+                <action-id>2ad9f408-8389-4ed0-a004-195435f23e4f</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -4587,7 +4660,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="0d5e2eda-08d7-4035-a522-7299f7f959e5" type="map-to-vjoy">
+        <action id="c102d132-2e99-4b0b-af6e-d642e7278280" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -4613,7 +4686,7 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="b73c4a34-1e4c-4867-9a12-52a1a81faa50" type="map-to-vjoy">
+        <action id="e1368169-7f05-4555-8820-5208a8209d2c" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -4639,12 +4712,12 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="65f5e0ff-0087-4ada-9c06-4fdb9f622384" type="tempo">
+        <action id="c271869d-f49e-4eb7-a871-25ba903a68c8" type="tempo">
             <short-actions>
-                <action-id>0d5e2eda-08d7-4035-a522-7299f7f959e5</action-id>
+                <action-id>c102d132-2e99-4b0b-af6e-d642e7278280</action-id>
             </short-actions>
             <long-actions>
-                <action-id>b73c4a34-1e4c-4867-9a12-52a1a81faa50</action-id>
+                <action-id>e1368169-7f05-4555-8820-5208a8209d2c</action-id>
             </long-actions>
             <property type="float">
                 <name>threshold</name>
@@ -4663,9 +4736,9 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="ac1783dd-6ca3-42dc-b796-b58ba8628be3" type="root">
+        <action id="d2d26ee8-23e4-48b9-87d1-ea274c94ce4a" type="root">
             <actions>
-                <action-id>65f5e0ff-0087-4ada-9c06-4fdb9f622384</action-id>
+                <action-id>c271869d-f49e-4eb7-a871-25ba903a68c8</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -4676,7 +4749,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="72e5eaa9-bd19-4ead-952e-3ddad59562d4" type="map-to-vjoy">
+        <action id="644dc139-940b-4cf7-b0e1-6b04732b6690" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -4702,9 +4775,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="7c11c989-8547-44e1-89a2-12def42d122c" type="root">
+        <action id="ff2fbdb2-a81c-4a6b-b993-bf622a6929c2" type="root">
             <actions>
-                <action-id>72e5eaa9-bd19-4ead-952e-3ddad59562d4</action-id>
+                <action-id>644dc139-940b-4cf7-b0e1-6b04732b6690</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -4715,7 +4788,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="14cc0c1f-517d-41ed-b533-a025bc6f70f0" type="map-to-vjoy">
+        <action id="1fbc2ac1-8534-497c-a2e2-a4ac578fa255" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -4741,9 +4814,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="d0bf1d89-9731-4d89-83ea-21a102ca63b3" type="root">
+        <action id="9852503c-2fc0-4c1b-b1bc-f651eabb5ad2" type="root">
             <actions>
-                <action-id>14cc0c1f-517d-41ed-b533-a025bc6f70f0</action-id>
+                <action-id>1fbc2ac1-8534-497c-a2e2-a4ac578fa255</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -4754,7 +4827,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="8ce7b9bc-68c5-4c0e-a192-9bd1824ba7fd" type="map-to-vjoy">
+        <action id="876fc414-96b0-47f6-b2a6-514c36f1d884" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -4780,9 +4853,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="0c83a85a-38f3-4543-b071-6892c2781cf0" type="root">
+        <action id="c8f75c7c-f4f2-4ef7-960d-c316842cba90" type="root">
             <actions>
-                <action-id>8ce7b9bc-68c5-4c0e-a192-9bd1824ba7fd</action-id>
+                <action-id>876fc414-96b0-47f6-b2a6-514c36f1d884</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -4793,7 +4866,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="58e898a2-71f4-4718-8377-c9d330fd9fbf" type="map-to-vjoy">
+        <action id="305345e5-dc75-444d-9461-579790525799" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -4819,9 +4892,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="6f284610-a644-4802-84f2-f10dc911705b" type="root">
+        <action id="d3a0b065-b8cd-42c8-8046-622230d11c86" type="root">
             <actions>
-                <action-id>58e898a2-71f4-4718-8377-c9d330fd9fbf</action-id>
+                <action-id>305345e5-dc75-444d-9461-579790525799</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -4832,7 +4905,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="8be59d35-400b-4bdf-b92b-7b6e83df98d1" type="map-to-vjoy">
+        <action id="7c399982-86bf-459e-8e11-1b73c7c9716d" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -4858,9 +4931,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="7994b9c8-6489-4adc-a663-699664fa973f" type="root">
+        <action id="0c8bf40b-347a-4ff7-b670-8a3e97ec1908" type="root">
             <actions>
-                <action-id>8be59d35-400b-4bdf-b92b-7b6e83df98d1</action-id>
+                <action-id>7c399982-86bf-459e-8e11-1b73c7c9716d</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -4871,7 +4944,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="c9edc2b3-0bb4-4ae2-932b-068733d5a3d9" type="map-to-vjoy">
+        <action id="48459e88-c94e-481d-9d0b-6c68bea5d102" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -4897,9 +4970,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="0dbf70ca-a03e-41e9-bdf0-fc7f81f29bc4" type="root">
+        <action id="a90c540b-5014-4017-b5c0-2d6f7bbc7f0e" type="root">
             <actions>
-                <action-id>c9edc2b3-0bb4-4ae2-932b-068733d5a3d9</action-id>
+                <action-id>48459e88-c94e-481d-9d0b-6c68bea5d102</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -4910,7 +4983,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="e834572c-3a5e-4b81-a3ca-5c6e4cd58589" type="map-to-vjoy">
+        <action id="080ab77a-78e5-452d-8ed3-a3205bc31c25" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -4936,9 +5009,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="c36b108e-0c67-454c-9945-d25987e83453" type="root">
+        <action id="2fe371d1-2632-49a7-8e8b-c5be382afc39" type="root">
             <actions>
-                <action-id>e834572c-3a5e-4b81-a3ca-5c6e4cd58589</action-id>
+                <action-id>080ab77a-78e5-452d-8ed3-a3205bc31c25</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -4949,7 +5022,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="355fbb58-ea6c-4b17-91a2-7b8fc5465c5e" type="map-to-vjoy">
+        <action id="b95ecdae-99d8-49d6-87a8-5e805d255719" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -4975,9 +5048,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="9bc393a2-07d8-4983-a6b3-5f82a22baab1" type="root">
+        <action id="de6b45ae-cedc-4c85-91a6-deb2135f1319" type="root">
             <actions>
-                <action-id>355fbb58-ea6c-4b17-91a2-7b8fc5465c5e</action-id>
+                <action-id>b95ecdae-99d8-49d6-87a8-5e805d255719</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -4988,7 +5061,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="e1966c9c-112e-4a8b-9e07-a5845d578df8" type="map-to-vjoy">
+        <action id="9d55d1db-977f-4560-a30d-77a0b02ec467" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -5014,9 +5087,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="81779f8c-8978-4e3c-866c-09bd5d5f5a48" type="root">
+        <action id="c4c6cef5-d9ca-4905-8c39-5baafc8702a3" type="root">
             <actions>
-                <action-id>e1966c9c-112e-4a8b-9e07-a5845d578df8</action-id>
+                <action-id>9d55d1db-977f-4560-a30d-77a0b02ec467</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -5027,7 +5100,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="cf5098bd-e45a-4a41-99b9-3cc479c2400c" type="map-to-vjoy">
+        <action id="0a3a48e5-f52a-43b0-976e-4660afd677a2" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -5053,9 +5126,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="7059e16f-35b9-4274-b0fb-7ef1bacd34b6" type="root">
+        <action id="9505cf86-0f41-4bb9-a1e3-07161b3185df" type="root">
             <actions>
-                <action-id>cf5098bd-e45a-4a41-99b9-3cc479c2400c</action-id>
+                <action-id>0a3a48e5-f52a-43b0-976e-4660afd677a2</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -5066,7 +5139,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="1f8580e0-6605-4b65-83b4-675e809678d2" type="map-to-vjoy">
+        <action id="e3e26429-9144-4d04-a3bd-2d76cf9f529c" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -5092,9 +5165,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="ff5694dd-3649-42c8-bcdc-7fe0d38db15b" type="root">
+        <action id="7c93f9cf-ef85-434e-8918-a328b5ada4b1" type="root">
             <actions>
-                <action-id>1f8580e0-6605-4b65-83b4-675e809678d2</action-id>
+                <action-id>e3e26429-9144-4d04-a3bd-2d76cf9f529c</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -5105,7 +5178,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="ac2f36f7-8ed5-4e8f-848d-502e78291ff7" type="map-to-vjoy">
+        <action id="cdd072bc-4935-4b37-8c74-aef79765781a" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -5131,9 +5204,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="fddfe696-2fec-455a-9cd8-805f57e25c5b" type="root">
+        <action id="5d450557-159a-4d7f-b339-e7fa53322e84" type="root">
             <actions>
-                <action-id>ac2f36f7-8ed5-4e8f-848d-502e78291ff7</action-id>
+                <action-id>cdd072bc-4935-4b37-8c74-aef79765781a</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -5144,7 +5217,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="2d6cc087-a4a0-4054-a128-4628b31b5a16" type="map-to-vjoy">
+        <action id="d659c77f-136e-4c5a-a07b-6c3c55f4dd27" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -5170,9 +5243,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="64fe408c-27d1-4a53-bb11-1a166929184c" type="root">
+        <action id="f8488c06-a4d0-4c2f-abb9-f01058d2e87f" type="root">
             <actions>
-                <action-id>2d6cc087-a4a0-4054-a128-4628b31b5a16</action-id>
+                <action-id>d659c77f-136e-4c5a-a07b-6c3c55f4dd27</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -5183,7 +5256,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="70d3a71b-a176-42fa-bbd0-24ba194b7302" type="map-to-vjoy">
+        <action id="478083f7-78e0-44dc-8699-f1efc9a40901" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -5209,9 +5282,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="9b291883-8894-4247-81e7-037e3e93ab54" type="root">
+        <action id="d1e2228d-0bba-4d22-b02c-7d518233a2b1" type="root">
             <actions>
-                <action-id>70d3a71b-a176-42fa-bbd0-24ba194b7302</action-id>
+                <action-id>478083f7-78e0-44dc-8699-f1efc9a40901</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -5222,7 +5295,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="1a3268ee-97df-4cdd-beb9-026456144217" type="map-to-vjoy">
+        <action id="8fcfe0c1-59e7-4113-916e-74d1070ed38b" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -5248,9 +5321,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="0d6f48db-e5da-4e36-8387-75cc35e0ecd1" type="root">
+        <action id="4ccbda3b-3b7d-4ed7-a85c-c310cea98750" type="root">
             <actions>
-                <action-id>1a3268ee-97df-4cdd-beb9-026456144217</action-id>
+                <action-id>8fcfe0c1-59e7-4113-916e-74d1070ed38b</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -5261,7 +5334,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="78515a2c-0fc4-4c6d-95f5-84e85bdf0d7f" type="map-to-vjoy">
+        <action id="b793af82-76d1-4654-9190-8d60e59896b6" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -5287,9 +5360,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="e1e62af7-173a-4725-8748-206cde0a0de8" type="root">
+        <action id="778c1e21-342d-4ded-ab9f-d242d70876c8" type="root">
             <actions>
-                <action-id>78515a2c-0fc4-4c6d-95f5-84e85bdf0d7f</action-id>
+                <action-id>b793af82-76d1-4654-9190-8d60e59896b6</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -5300,7 +5373,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="3d8da171-b157-483d-9f45-e9de0df34353" type="map-to-vjoy">
+        <action id="7302b05d-1bde-4735-a204-9f4608541342" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -5326,9 +5399,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="6007faac-e142-46e8-933d-0b83539db1c6" type="root">
+        <action id="3db38a9b-2c44-4650-8fb2-fe405769e0be" type="root">
             <actions>
-                <action-id>3d8da171-b157-483d-9f45-e9de0df34353</action-id>
+                <action-id>7302b05d-1bde-4735-a204-9f4608541342</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -5339,7 +5412,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="35aa1f5d-d09f-4183-b446-1f8d85dd5269" type="map-to-vjoy">
+        <action id="7ea17bca-be6e-4ba7-a686-f633eb70ab76" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -5365,9 +5438,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="33a2f660-648e-45e4-867b-4fb848250a77" type="root">
+        <action id="5d7dae4c-777b-4df2-9d59-4967712e3dac" type="root">
             <actions>
-                <action-id>35aa1f5d-d09f-4183-b446-1f8d85dd5269</action-id>
+                <action-id>7ea17bca-be6e-4ba7-a686-f633eb70ab76</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -5378,7 +5451,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="a2626811-1a4d-43de-bded-b8eea632c235" type="map-to-vjoy">
+        <action id="ac6f5f61-c7aa-4e4e-9aa6-f26d507e1f1b" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -5404,9 +5477,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="a05f6eea-9cf9-467b-8658-b545a38a56f9" type="root">
+        <action id="120a7340-7bad-4955-bc67-3b994d988268" type="root">
             <actions>
-                <action-id>a2626811-1a4d-43de-bded-b8eea632c235</action-id>
+                <action-id>ac6f5f61-c7aa-4e4e-9aa6-f26d507e1f1b</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -5417,7 +5490,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="f5bd6855-b4ac-484a-9473-bd269e435a7e" type="map-to-vjoy">
+        <action id="015539bd-f239-45ae-a8a7-4db70184d1fe" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -5443,9 +5516,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="57b7913f-48e8-4cb1-afd7-e3397b95b03c" type="root">
+        <action id="53051c91-fc6e-4317-b079-487b2d8a62ae" type="root">
             <actions>
-                <action-id>f5bd6855-b4ac-484a-9473-bd269e435a7e</action-id>
+                <action-id>015539bd-f239-45ae-a8a7-4db70184d1fe</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -5456,7 +5529,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="8a023554-8a09-45ab-bf23-266cdbfac3cd" type="map-to-vjoy">
+        <action id="c9029bb9-6072-4a40-a62c-315e312e8496" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -5482,9 +5555,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="31319b07-f03d-4ff2-befc-127824daf7c4" type="root">
+        <action id="0eb7e7e3-0c50-466b-9faa-01706d18f34b" type="root">
             <actions>
-                <action-id>8a023554-8a09-45ab-bf23-266cdbfac3cd</action-id>
+                <action-id>c9029bb9-6072-4a40-a62c-315e312e8496</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -5495,7 +5568,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="e3615ab3-4469-4c1d-9809-02400afdc33f" type="map-to-vjoy">
+        <action id="ad8a0132-eaf2-49d7-87a3-28efc6109085" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -5521,9 +5594,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="c1d43508-55fc-4c5f-90d2-a384928c644b" type="root">
+        <action id="63962bc6-5450-416d-b9bd-8d46a168eee1" type="root">
             <actions>
-                <action-id>e3615ab3-4469-4c1d-9809-02400afdc33f</action-id>
+                <action-id>ad8a0132-eaf2-49d7-87a3-28efc6109085</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -5534,7 +5607,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="a51713b5-f2d5-40ca-b652-0965bf1939fb" type="map-to-vjoy">
+        <action id="40756afe-9e38-4ae5-87cc-a962733e4b70" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -5560,9 +5633,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="149e6aa6-f7f2-4912-9f40-b2f4c8461c49" type="root">
+        <action id="73ec8d0c-7498-49e2-b32a-a8a208d7b412" type="root">
             <actions>
-                <action-id>a51713b5-f2d5-40ca-b652-0965bf1939fb</action-id>
+                <action-id>40756afe-9e38-4ae5-87cc-a962733e4b70</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -5573,7 +5646,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="4dfe7fc0-c2ab-4f35-afa8-db310fc0a08b" type="map-to-vjoy">
+        <action id="ce852164-f573-4a2c-bca9-6b0c2ed93647" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -5599,9 +5672,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="2b8751f1-64f7-44a4-a9fd-365fa2b41b87" type="root">
+        <action id="5494a00d-044d-4e6d-afde-040acbda20f9" type="root">
             <actions>
-                <action-id>4dfe7fc0-c2ab-4f35-afa8-db310fc0a08b</action-id>
+                <action-id>ce852164-f573-4a2c-bca9-6b0c2ed93647</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -5612,7 +5685,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="91ab0631-0b28-4971-b07a-d4d2ce5d2bf5" type="map-to-vjoy">
+        <action id="a6d97bb9-e6da-4017-b5cf-d73965ee9126" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -5638,9 +5711,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="ce791c2f-ab08-4c13-be48-f1f0f1b35d34" type="root">
+        <action id="2d90dcc7-46e4-4148-bad8-3d5d15e01390" type="root">
             <actions>
-                <action-id>91ab0631-0b28-4971-b07a-d4d2ce5d2bf5</action-id>
+                <action-id>a6d97bb9-e6da-4017-b5cf-d73965ee9126</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -5651,7 +5724,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="10bb3a3e-96ba-4d5c-82db-12aa2a7d4076" type="map-to-vjoy">
+        <action id="4aec8409-a1ec-4628-8141-6d63f55c1154" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -5677,9 +5750,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="5a0584d4-e0bc-41ff-b757-21ed75917ab2" type="root">
+        <action id="dc4f42a7-9819-49d2-b279-68af5d48a11d" type="root">
             <actions>
-                <action-id>10bb3a3e-96ba-4d5c-82db-12aa2a7d4076</action-id>
+                <action-id>4aec8409-a1ec-4628-8141-6d63f55c1154</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -5690,7 +5763,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="3d9ae4ba-a415-4b42-9c72-c4a56f728862" type="map-to-vjoy">
+        <action id="dd89c758-5ece-4001-9fdb-8d09ef453333" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -5716,9 +5789,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="6cd1352f-3db4-485a-81ec-7044f9a510c1" type="root">
+        <action id="50e65563-89f4-4dd6-bf31-676fffa7aefe" type="root">
             <actions>
-                <action-id>3d9ae4ba-a415-4b42-9c72-c4a56f728862</action-id>
+                <action-id>dd89c758-5ece-4001-9fdb-8d09ef453333</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -5729,7 +5802,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="9f1b9483-db55-46b9-b231-dd922d402823" type="map-to-vjoy">
+        <action id="95b00ea0-0869-4d7f-a19d-dcae16aa4558" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -5755,9 +5828,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="72563624-1e12-47ea-896c-33bdc0a98b46" type="root">
+        <action id="e7667e4b-7767-40be-a7a6-5f659077eef8" type="root">
             <actions>
-                <action-id>9f1b9483-db55-46b9-b231-dd922d402823</action-id>
+                <action-id>95b00ea0-0869-4d7f-a19d-dcae16aa4558</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -5768,7 +5841,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="4f540312-f9d1-42de-a58f-118b568c3f69" type="map-to-vjoy">
+        <action id="1b688bf7-053f-48bb-8abc-afdbdf7d964e" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -5794,9 +5867,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="ade9b1d3-6d7c-4169-9306-749d46533f36" type="root">
+        <action id="7b5e55f9-f664-40b2-8edf-27409f5d1509" type="root">
             <actions>
-                <action-id>4f540312-f9d1-42de-a58f-118b568c3f69</action-id>
+                <action-id>1b688bf7-053f-48bb-8abc-afdbdf7d964e</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -5807,7 +5880,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="00b5872d-964c-4cab-bb59-d9475feac086" type="map-to-vjoy">
+        <action id="c7f980b3-7e74-46da-937c-64ef130ca1ec" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -5829,9 +5902,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="076c4d3f-1670-4571-a320-0b8f5c0e86d8" type="root">
+        <action id="f8736226-5d14-428e-8db5-5f4fd641be15" type="root">
             <actions>
-                <action-id>00b5872d-964c-4cab-bb59-d9475feac086</action-id>
+                <action-id>c7f980b3-7e74-46da-937c-64ef130ca1ec</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -5842,7 +5915,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="c2e2babc-0cc9-4bb0-a37b-0f75e8ecf23d" type="map-to-vjoy">
+        <action id="6061a584-6d9c-4df9-af1c-82224b85d108" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -5868,7 +5941,7 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="2e929a93-64c8-4ddd-9110-f7bba5150d6b" type="change-mode">
+        <action id="df19794e-7e03-4b52-afd2-a90361ca8c5d" type="change-mode">
             <property type="string">
                 <name>change-type</name>
                 <value>Cycle</value>
@@ -5888,7 +5961,7 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="10851e50-a6e9-46fa-b9bd-ce9d95142c98" type="map-to-vjoy">
+        <action id="d72a23df-3ddd-411e-a983-2679e74952a6" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>1</value>
@@ -5914,13 +5987,13 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="a42be568-a3be-4ede-ab9c-a8c9586d0c7c" type="tempo">
+        <action id="f1f17a0c-103f-4dad-af39-4b0e5ce06684" type="tempo">
             <short-actions>
-                <action-id>c2e2babc-0cc9-4bb0-a37b-0f75e8ecf23d</action-id>
+                <action-id>6061a584-6d9c-4df9-af1c-82224b85d108</action-id>
             </short-actions>
             <long-actions>
-                <action-id>2e929a93-64c8-4ddd-9110-f7bba5150d6b</action-id>
-                <action-id>10851e50-a6e9-46fa-b9bd-ce9d95142c98</action-id>
+                <action-id>df19794e-7e03-4b52-afd2-a90361ca8c5d</action-id>
+                <action-id>d72a23df-3ddd-411e-a983-2679e74952a6</action-id>
             </long-actions>
             <property type="float">
                 <name>threshold</name>
@@ -5939,9 +6012,9 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="eb62d287-e257-46a4-90f6-20c0f3b6d8bc" type="root">
+        <action id="6eacabf2-8d60-4c41-88a0-bc1818aecdfe" type="root">
             <actions>
-                <action-id>a42be568-a3be-4ede-ab9c-a8c9586d0c7c</action-id>
+                <action-id>f1f17a0c-103f-4dad-af39-4b0e5ce06684</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -5952,7 +6025,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="d6e947b8-f621-41de-91d3-d57f9bca10d6" type="map-to-vjoy">
+        <action id="98b795bc-4f26-456a-b653-dc9515c640fe" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -5982,9 +6055,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="897615da-b99e-4b09-ae5a-c83d1cf5ebae" type="root">
+        <action id="0014759d-d166-4066-8d5c-dc1bc5c740c1" type="root">
             <actions>
-                <action-id>d6e947b8-f621-41de-91d3-d57f9bca10d6</action-id>
+                <action-id>98b795bc-4f26-456a-b653-dc9515c640fe</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -5995,7 +6068,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="752ce56d-32d9-4c0f-aaf8-a3e9a40bd403" type="map-to-vjoy">
+        <action id="b336f2bc-4fc2-4524-af7c-0c5f177d2bae" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -6025,9 +6098,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="f12b9cd2-53a4-499e-a56d-7a7ae67ea4fe" type="root">
+        <action id="15a08425-895b-4cd5-bbee-aa7042fb0106" type="root">
             <actions>
-                <action-id>752ce56d-32d9-4c0f-aaf8-a3e9a40bd403</action-id>
+                <action-id>b336f2bc-4fc2-4524-af7c-0c5f177d2bae</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -6038,7 +6111,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="aa1af933-741c-4b02-bc41-bf8a3768c2a5" type="map-to-vjoy">
+        <action id="789a4c12-41b5-472e-b461-cebea7ce52c5" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -6068,9 +6141,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="3a51f566-6706-4949-ab06-3383c9b1389b" type="root">
+        <action id="d02ce7e7-fe11-465a-ae69-c96b24d2d62a" type="root">
             <actions>
-                <action-id>aa1af933-741c-4b02-bc41-bf8a3768c2a5</action-id>
+                <action-id>789a4c12-41b5-472e-b461-cebea7ce52c5</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -6081,7 +6154,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="c1ef1439-285b-42e1-9ea7-a5c907b25d60" type="response-curve">
+        <action id="80527a9f-7ef3-4fbb-8f5d-67aafce3231d" type="response-curve">
             <deadzone>
                 <property type="float">
                     <name>low</name>
@@ -6143,7 +6216,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="14551f5c-ed58-4b28-b10d-7090e49afd20" type="map-to-mouse">
+        <action id="6cda8e11-3f5b-4030-91f5-28f69f6ed54f" type="map-to-mouse">
             <property type="string">
                 <name>mode</name>
                 <value>Motion</value>
@@ -6173,10 +6246,10 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="a41fb618-99dd-4f5a-9063-e1977a61782e" type="root">
+        <action id="6ecf6f72-6ea9-45ec-8d22-f6c160463610" type="root">
             <actions>
-                <action-id>c1ef1439-285b-42e1-9ea7-a5c907b25d60</action-id>
-                <action-id>14551f5c-ed58-4b28-b10d-7090e49afd20</action-id>
+                <action-id>80527a9f-7ef3-4fbb-8f5d-67aafce3231d</action-id>
+                <action-id>6cda8e11-3f5b-4030-91f5-28f69f6ed54f</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -6187,7 +6260,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="d9b33afc-e9e0-4149-9a7b-8ef4f9d897d2" type="response-curve">
+        <action id="91ddad5b-8e3a-45af-b6c7-560438bfee70" type="response-curve">
             <deadzone>
                 <property type="float">
                     <name>low</name>
@@ -6249,7 +6322,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="3fae89d4-f03f-4f16-9698-cfe920bdaccb" type="map-to-mouse">
+        <action id="f7c43c67-57e6-45ec-9666-652189a73c5d" type="map-to-mouse">
             <property type="string">
                 <name>mode</name>
                 <value>Motion</value>
@@ -6279,10 +6352,10 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="45187206-e178-40fe-9748-0cb6fee472b7" type="root">
+        <action id="2de9d420-8366-4fa4-90c9-05be07228ac9" type="root">
             <actions>
-                <action-id>d9b33afc-e9e0-4149-9a7b-8ef4f9d897d2</action-id>
-                <action-id>3fae89d4-f03f-4f16-9698-cfe920bdaccb</action-id>
+                <action-id>91ddad5b-8e3a-45af-b6c7-560438bfee70</action-id>
+                <action-id>f7c43c67-57e6-45ec-9666-652189a73c5d</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -6293,7 +6366,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="4a1b27e2-5d13-4a0f-8345-da93ef0eb2a9" type="map-to-vjoy">
+        <action id="95e2a7e8-bd6e-4a31-85ad-45df181ca518" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -6323,7 +6396,7 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="9cba86b9-0ca5-4cd9-9553-d18020325eb0" type="response-curve">
+        <action id="3dcef9c3-2093-44bb-af1d-0f7cd6a146c3" type="response-curve">
             <deadzone>
                 <property type="float">
                     <name>low</name>
@@ -6365,10 +6438,10 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="6241d773-b640-455b-a30b-4d690d3a93da" type="root">
+        <action id="b1cfff10-896f-4da7-bd81-777dd3509d66" type="root">
             <actions>
-                <action-id>4a1b27e2-5d13-4a0f-8345-da93ef0eb2a9</action-id>
-                <action-id>9cba86b9-0ca5-4cd9-9553-d18020325eb0</action-id>
+                <action-id>3dcef9c3-2093-44bb-af1d-0f7cd6a146c3</action-id>
+                <action-id>95e2a7e8-bd6e-4a31-85ad-45df181ca518</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -6379,7 +6452,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="cf14ed41-7aa6-4583-ba36-f2f38d883f60" type="map-to-vjoy">
+        <action id="21454814-a774-488e-bfb5-5d70c73b0953" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -6405,9 +6478,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="662b7b54-b42e-4d4e-9fea-f6431a01bcc6" type="root">
+        <action id="303e8a96-dec6-46b7-a5d1-e995ad25d48a" type="root">
             <actions>
-                <action-id>cf14ed41-7aa6-4583-ba36-f2f38d883f60</action-id>
+                <action-id>21454814-a774-488e-bfb5-5d70c73b0953</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -6418,7 +6491,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="2d773097-a238-4196-8f91-f02d6fd2e9ed" type="map-to-vjoy">
+        <action id="a0fa7aba-3684-45ee-9c58-f524a6787e2c" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -6444,9 +6517,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="efd4009c-6851-4401-9d1a-1524cbc02fdb" type="root">
+        <action id="2f0c8f70-a8fa-49f3-bab6-98ed135762f3" type="root">
             <actions>
-                <action-id>2d773097-a238-4196-8f91-f02d6fd2e9ed</action-id>
+                <action-id>a0fa7aba-3684-45ee-9c58-f524a6787e2c</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -6457,7 +6530,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="45f93efb-64fe-49b5-be82-b0f37f4f19cf" type="map-to-vjoy">
+        <action id="cd0d2de5-9420-4a81-9b5a-6c8854dfe5b9" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -6483,7 +6556,7 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="db417cc7-be7a-426e-b4aa-85b5e412efc9" type="change-mode">
+        <action id="0281e2c2-ad5b-433a-9947-b69f3eb375b8" type="change-mode">
             <property type="string">
                 <name>change-type</name>
                 <value>Cycle</value>
@@ -6503,7 +6576,7 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="7b7b6d7a-0208-479b-862e-95a014f49a1b" type="map-to-vjoy">
+        <action id="13a9aba4-d781-4550-837d-d686c7ece513" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -6529,13 +6602,13 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="4c4e5507-cd28-4b1a-aaae-55090552d365" type="tempo">
+        <action id="4e8a867d-7fe9-4e3c-a8d3-e034598ef05e" type="tempo">
             <short-actions>
-                <action-id>45f93efb-64fe-49b5-be82-b0f37f4f19cf</action-id>
+                <action-id>cd0d2de5-9420-4a81-9b5a-6c8854dfe5b9</action-id>
             </short-actions>
             <long-actions>
-                <action-id>db417cc7-be7a-426e-b4aa-85b5e412efc9</action-id>
-                <action-id>7b7b6d7a-0208-479b-862e-95a014f49a1b</action-id>
+                <action-id>0281e2c2-ad5b-433a-9947-b69f3eb375b8</action-id>
+                <action-id>13a9aba4-d781-4550-837d-d686c7ece513</action-id>
             </long-actions>
             <property type="float">
                 <name>threshold</name>
@@ -6554,9 +6627,9 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="14ede478-2b71-4899-8e3b-2ab8e7756dba" type="root">
+        <action id="8ae11dfa-c201-4bd9-a11c-5c962424da53" type="root">
             <actions>
-                <action-id>4c4e5507-cd28-4b1a-aaae-55090552d365</action-id>
+                <action-id>4e8a867d-7fe9-4e3c-a8d3-e034598ef05e</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -6567,7 +6640,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="c983ce1c-05d8-4b99-98c4-7e896722e08e" type="map-to-vjoy">
+        <action id="bae4acdc-e70e-4865-8979-cebcfcaa8a03" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -6593,9 +6666,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="8b901261-468e-4440-ac0c-014237b480e2" type="root">
+        <action id="6f589bab-5357-402f-92a8-330f7c80d733" type="root">
             <actions>
-                <action-id>c983ce1c-05d8-4b99-98c4-7e896722e08e</action-id>
+                <action-id>bae4acdc-e70e-4865-8979-cebcfcaa8a03</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -6606,7 +6679,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="f3e53dc8-66b0-4fe0-a744-24136c1f34ce" type="map-to-vjoy">
+        <action id="f7e2897f-f63c-4426-92b3-2bfb6c5cd4d8" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -6632,9 +6705,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="212e87e6-71ab-4424-af6f-6232f29f0056" type="root">
+        <action id="19e68db2-a1a7-4224-9e93-8c5c53c48f5a" type="root">
             <actions>
-                <action-id>f3e53dc8-66b0-4fe0-a744-24136c1f34ce</action-id>
+                <action-id>f7e2897f-f63c-4426-92b3-2bfb6c5cd4d8</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -6645,7 +6718,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="0dfb70e7-9086-484c-8c5e-dbdd689a3b00" type="map-to-vjoy">
+        <action id="f0ece37b-350a-4566-8c1d-fa37dc070ff1" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -6671,9 +6744,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="9f40d2d5-2660-44f9-8c51-02481e9d6b8d" type="root">
+        <action id="f1b4421b-928f-41bc-9663-11d066426318" type="root">
             <actions>
-                <action-id>0dfb70e7-9086-484c-8c5e-dbdd689a3b00</action-id>
+                <action-id>f0ece37b-350a-4566-8c1d-fa37dc070ff1</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -6684,7 +6757,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="3aec0a7f-08db-4747-8c9f-057f0ce5d18e" type="map-to-vjoy">
+        <action id="84c0f29b-201c-401e-9d28-86647540a60d" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -6710,9 +6783,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="1aeb2075-bde9-4740-856e-f0594e2e712c" type="root">
+        <action id="09c4913e-a7c8-41a1-a4f0-439e8abbd822" type="root">
             <actions>
-                <action-id>3aec0a7f-08db-4747-8c9f-057f0ce5d18e</action-id>
+                <action-id>84c0f29b-201c-401e-9d28-86647540a60d</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -6723,7 +6796,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="6b5a3ffe-1f43-4443-bcaf-17505c695c3c" type="map-to-vjoy">
+        <action id="a397f7a3-8099-4e94-8c3f-7c7d5d1c7711" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -6749,9 +6822,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="96b87723-2a81-4163-a286-1da0d49ea9c8" type="root">
+        <action id="ccbc7948-a43a-442f-bcbd-86b6fb682871" type="root">
             <actions>
-                <action-id>6b5a3ffe-1f43-4443-bcaf-17505c695c3c</action-id>
+                <action-id>a397f7a3-8099-4e94-8c3f-7c7d5d1c7711</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -6762,7 +6835,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="71d9faee-3eaf-42f8-bf58-e5b429247a5f" type="map-to-vjoy">
+        <action id="ea4b9ea1-383d-46fd-bb94-14799ae24bdd" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -6788,9 +6861,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="83399380-e9a2-417c-a102-11c7eb3ea5ec" type="root">
+        <action id="9f228bc0-3ecd-41eb-bb1a-a51636af2054" type="root">
             <actions>
-                <action-id>71d9faee-3eaf-42f8-bf58-e5b429247a5f</action-id>
+                <action-id>ea4b9ea1-383d-46fd-bb94-14799ae24bdd</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -6801,7 +6874,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="a0ba725b-b958-47da-9f80-0adfdbe6fe15" type="map-to-vjoy">
+        <action id="b3088e5f-6591-497c-b28b-3879444467d8" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -6827,9 +6900,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="d9aaba13-3795-40f0-b0b8-14dfd3e64e0d" type="root">
+        <action id="b099d690-a142-4ca3-a288-29055e72f8a5" type="root">
             <actions>
-                <action-id>a0ba725b-b958-47da-9f80-0adfdbe6fe15</action-id>
+                <action-id>b3088e5f-6591-497c-b28b-3879444467d8</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -6840,7 +6913,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="b97d8d72-00a8-4dc1-a1e1-45600247da32" type="map-to-vjoy">
+        <action id="713b367f-ce39-4b14-a3c0-e6498d8d5333" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -6866,9 +6939,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="7e6fd664-f9f1-4570-ad29-bdfff4554949" type="root">
+        <action id="551f5447-08e0-4c0a-8267-d2f476f85a45" type="root">
             <actions>
-                <action-id>b97d8d72-00a8-4dc1-a1e1-45600247da32</action-id>
+                <action-id>713b367f-ce39-4b14-a3c0-e6498d8d5333</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -6879,7 +6952,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="74819989-bcc8-426f-a9da-871a34c45877" type="map-to-vjoy">
+        <action id="4c15e477-f8a6-4b7a-a8e6-a0f6caa6f36b" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -6905,9 +6978,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="a91de41e-4e0e-4b43-a253-39ab67b1db86" type="root">
+        <action id="1bd50678-c4ee-4ae2-91cd-4511a71819b4" type="root">
             <actions>
-                <action-id>74819989-bcc8-426f-a9da-871a34c45877</action-id>
+                <action-id>4c15e477-f8a6-4b7a-a8e6-a0f6caa6f36b</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -6918,7 +6991,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="22abd71e-a3a8-45c4-a6f1-c6cf17c6d6e6" type="map-to-vjoy">
+        <action id="49a423a3-9905-4346-8eda-ba5923f6997b" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -6944,9 +7017,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="1d26df91-8a0b-4f39-875e-fc6e62e1ddf7" type="root">
+        <action id="46371016-d7d8-40e1-ba32-ade382b20875" type="root">
             <actions>
-                <action-id>22abd71e-a3a8-45c4-a6f1-c6cf17c6d6e6</action-id>
+                <action-id>49a423a3-9905-4346-8eda-ba5923f6997b</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -6957,7 +7030,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="9509b68e-83fe-40d5-9a9c-4627a89bd873" type="map-to-vjoy">
+        <action id="f73555f3-2ac6-400e-a068-6984ec1212cd" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -6983,9 +7056,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="1c866b42-5541-4969-80e6-d2d97855e126" type="root">
+        <action id="4494878c-c8a3-4614-9a77-4d4273c9a005" type="root">
             <actions>
-                <action-id>9509b68e-83fe-40d5-9a9c-4627a89bd873</action-id>
+                <action-id>f73555f3-2ac6-400e-a068-6984ec1212cd</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -6996,7 +7069,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="244bf299-1127-4535-a4cf-cee79f8c3bbe" type="map-to-vjoy">
+        <action id="f377d996-860e-4de7-99d5-451412c61435" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -7022,9 +7095,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="a8e78953-5f20-47f4-ae4d-1c876ddf7178" type="root">
+        <action id="95215609-6e8f-4a67-a5c5-9487642c11e7" type="root">
             <actions>
-                <action-id>244bf299-1127-4535-a4cf-cee79f8c3bbe</action-id>
+                <action-id>f377d996-860e-4de7-99d5-451412c61435</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -7035,7 +7108,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="024355f3-ceda-4913-bb3e-58de44bd1556" type="map-to-vjoy">
+        <action id="84c0ae08-36a4-444b-a27b-25ac7079dc7a" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -7061,9 +7134,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="37b00729-1135-4a90-bf5d-9307c8fda1f3" type="root">
+        <action id="16b4f082-e2f3-4569-b6d9-2abd81b0dbea" type="root">
             <actions>
-                <action-id>024355f3-ceda-4913-bb3e-58de44bd1556</action-id>
+                <action-id>84c0ae08-36a4-444b-a27b-25ac7079dc7a</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -7074,7 +7147,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="2b468ac7-bfb0-4885-b149-3dd207beb149" type="map-to-vjoy">
+        <action id="04b82594-43cb-49c1-88fd-b595ee4eed03" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -7100,9 +7173,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="8af690c3-f1f2-4831-9a7e-ab2d66f3649a" type="root">
+        <action id="0a764de6-7ab9-4f92-b03f-ae95dbdc845c" type="root">
             <actions>
-                <action-id>2b468ac7-bfb0-4885-b149-3dd207beb149</action-id>
+                <action-id>04b82594-43cb-49c1-88fd-b595ee4eed03</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -7113,7 +7186,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="9f0cae3d-5e80-4cee-8544-3b31bc5d6686" type="map-to-vjoy">
+        <action id="1147cf52-51bb-4f60-956e-f6e6b6fa28c1" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -7139,9 +7212,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="165883b9-ea5d-4d8b-94aa-3d8631c46c5d" type="root">
+        <action id="b886d593-443b-4c6c-8536-b175a040c265" type="root">
             <actions>
-                <action-id>9f0cae3d-5e80-4cee-8544-3b31bc5d6686</action-id>
+                <action-id>1147cf52-51bb-4f60-956e-f6e6b6fa28c1</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -7152,7 +7225,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="62fea47b-ca9c-490a-8908-2b3807da2a30" type="map-to-vjoy">
+        <action id="6dd9c0c1-0b31-4640-9025-925e5103dd4c" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -7178,9 +7251,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="20a34a43-6ee2-44d4-9daa-a6299b7da5c6" type="root">
+        <action id="e315f065-fb6a-4fb0-804b-ea27a9fda450" type="root">
             <actions>
-                <action-id>62fea47b-ca9c-490a-8908-2b3807da2a30</action-id>
+                <action-id>6dd9c0c1-0b31-4640-9025-925e5103dd4c</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -7191,7 +7264,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="b340b3fc-7021-4c11-9ce4-fc1bf3ea8e3c" type="map-to-vjoy">
+        <action id="67e8a91a-9be0-4a1a-b4de-8306bf5f348b" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -7217,9 +7290,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="4160f369-4705-4ab6-9918-d9adad969fbf" type="root">
+        <action id="b020e6b2-fb12-432f-b5df-3ba2808d9816" type="root">
             <actions>
-                <action-id>b340b3fc-7021-4c11-9ce4-fc1bf3ea8e3c</action-id>
+                <action-id>67e8a91a-9be0-4a1a-b4de-8306bf5f348b</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -7230,7 +7303,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="18fc1f96-39a6-4857-8d35-1c47d6b24984" type="map-to-vjoy">
+        <action id="b59be9de-b0a4-47e2-b0b0-57aedea083cd" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -7256,9 +7329,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="de3f05f7-2637-4626-bfd0-1ce44b008c88" type="root">
+        <action id="c0c02646-8eb8-4a4d-b47f-1e65f7471acc" type="root">
             <actions>
-                <action-id>18fc1f96-39a6-4857-8d35-1c47d6b24984</action-id>
+                <action-id>b59be9de-b0a4-47e2-b0b0-57aedea083cd</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -7269,7 +7342,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="43b44cac-590a-4248-aef3-a42640b4deb9" type="map-to-vjoy">
+        <action id="9104aa47-3808-4a9d-a1ba-2a6e6bdf6e6e" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -7295,9 +7368,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="9d7f70ea-2d96-48e3-a53c-3d702d1582c0" type="root">
+        <action id="af18d897-6898-470d-83a0-85b0f183d8f8" type="root">
             <actions>
-                <action-id>43b44cac-590a-4248-aef3-a42640b4deb9</action-id>
+                <action-id>9104aa47-3808-4a9d-a1ba-2a6e6bdf6e6e</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -7308,7 +7381,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="8de9c388-fb56-4bc5-8949-c6676baac139" type="map-to-vjoy">
+        <action id="dd8c28bb-f7a9-4c15-ae09-da9483c65720" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -7334,9 +7407,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="04849ec0-c04f-49be-b897-8df6aae69f49" type="root">
+        <action id="c755dd57-f6e7-4469-a593-956e36128984" type="root">
             <actions>
-                <action-id>8de9c388-fb56-4bc5-8949-c6676baac139</action-id>
+                <action-id>dd8c28bb-f7a9-4c15-ae09-da9483c65720</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -7347,7 +7420,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="88146c45-f5ed-4940-91a1-56c3d72175af" type="map-to-vjoy">
+        <action id="4b22c76e-3ad7-42eb-a4d3-fb88f0b073c6" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -7373,9 +7446,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="ec9d6113-c8de-4136-b729-b52956a5e0d9" type="root">
+        <action id="2e393e8c-649f-47dd-9c14-d31706593bfa" type="root">
             <actions>
-                <action-id>88146c45-f5ed-4940-91a1-56c3d72175af</action-id>
+                <action-id>4b22c76e-3ad7-42eb-a4d3-fb88f0b073c6</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -7386,7 +7459,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="7537e9ab-4e44-48c1-bd0e-b38dc3b907f9" type="map-to-vjoy">
+        <action id="1d046f7d-fb99-4b7d-8f04-ab8433c3f21d" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -7412,9 +7485,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="19463fa1-5ae4-4ef0-bcbb-5c2e22e5e06f" type="root">
+        <action id="1b7e457d-44b4-40d4-bcb2-c46bc05541e8" type="root">
             <actions>
-                <action-id>7537e9ab-4e44-48c1-bd0e-b38dc3b907f9</action-id>
+                <action-id>1d046f7d-fb99-4b7d-8f04-ab8433c3f21d</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -7425,7 +7498,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="9fca79a1-4662-4e1e-a997-376f55dafcb8" type="map-to-vjoy">
+        <action id="37e3e1ce-6b8e-4405-9f3e-f5240bee0218" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -7451,9 +7524,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="2da64326-22a5-434a-86f3-44e43da3a94c" type="root">
+        <action id="528340b8-504a-4860-a749-25735ec66621" type="root">
             <actions>
-                <action-id>9fca79a1-4662-4e1e-a997-376f55dafcb8</action-id>
+                <action-id>37e3e1ce-6b8e-4405-9f3e-f5240bee0218</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -7464,7 +7537,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="982235df-21d3-405a-8a4f-852a3d32f6a7" type="map-to-vjoy">
+        <action id="e7bfce6f-aa6d-4d56-9e2c-15a17a681a46" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -7490,9 +7563,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="fca69d45-07ec-48c1-b59d-03e4f2d1e0c1" type="root">
+        <action id="420557b1-fd67-4ce4-8dfb-371e4bab2583" type="root">
             <actions>
-                <action-id>982235df-21d3-405a-8a4f-852a3d32f6a7</action-id>
+                <action-id>e7bfce6f-aa6d-4d56-9e2c-15a17a681a46</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -7503,7 +7576,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="b168fbb0-c36e-4b47-9917-3895a16f8665" type="map-to-vjoy">
+        <action id="e879a05c-92ce-43d8-9bea-6d587faea690" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -7529,9 +7602,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="63308623-4665-4b62-a992-cc50438468de" type="root">
+        <action id="49a4156c-8db4-46d7-9d1a-130f3fa66351" type="root">
             <actions>
-                <action-id>b168fbb0-c36e-4b47-9917-3895a16f8665</action-id>
+                <action-id>e879a05c-92ce-43d8-9bea-6d587faea690</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -7542,7 +7615,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="8afad3f0-611e-44a1-8369-1d5a6f1b342e" type="map-to-vjoy">
+        <action id="3df3c6f5-75d0-440f-b64c-2ba6dc5c2329" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -7568,9 +7641,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="d1ba5aac-af7f-4f0d-b0be-72209b5a1aee" type="root">
+        <action id="5ff3b396-d8b5-43fc-afaa-e38c26f432e2" type="root">
             <actions>
-                <action-id>8afad3f0-611e-44a1-8369-1d5a6f1b342e</action-id>
+                <action-id>3df3c6f5-75d0-440f-b64c-2ba6dc5c2329</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -7581,7 +7654,7 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="12b4de9a-4742-4350-8556-3d4ed44afb4d" type="map-to-vjoy">
+        <action id="27db2d40-46e8-4517-a17d-ff902e39202e" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
                 <value>2</value>
@@ -7603,9 +7676,9 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="32454ddd-d936-4052-a820-daf9869f3b7d" type="root">
+        <action id="76c00514-bb87-49e4-a46d-a570eacc2b11" type="root">
             <actions>
-                <action-id>12b4de9a-4742-4350-8556-3d4ed44afb4d</action-id>
+                <action-id>27db2d40-46e8-4517-a17d-ff902e39202e</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
