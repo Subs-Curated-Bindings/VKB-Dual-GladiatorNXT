@@ -1413,7 +1413,7 @@
         </input>
     </inputs>
     <settings>
-        <startup-mode>Use Heuristic</startup-mode>
+        <startup-mode>SCM Mode</startup-mode>
         <macro-default-delay>0.05</macro-default-delay>
     </settings>
     <logical-device/>
@@ -2912,48 +2912,6 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="94dae362-d5fc-403d-b265-ed24047b521c" type="response-curve">
-            <deadzone>
-                <property type="float">
-                    <name>low</name>
-                    <value>-1.0</value>
-                </property>
-                <property type="float">
-                    <name>center-low</name>
-                    <value>0.0</value>
-                </property>
-                <property type="float">
-                    <name>center-high</name>
-                    <value>0.0</value>
-                </property>
-                <property type="float">
-                    <name>high</name>
-                    <value>1.0</value>
-                </property>
-            </deadzone>
-            <control-points>
-                <property type="point2d">
-                    <name>point</name>
-                    <value>-1.0,1.0</value>
-                </property>
-                <property type="point2d">
-                    <name>point</name>
-                    <value>1.0,-1.0</value>
-                </property>
-            </control-points>
-            <property type="string">
-                <name>curve-type</name>
-                <value>CubicSpline</value>
-            </property>
-            <property type="string">
-                <name>action-label</name>
-                <value>Standard flight curve -- shapes this axis before driving its vJoy flight axis.</value>
-            </property>
-            <property type="activation-mode">
-                <name>activation-mode</name>
-                <value>disallowed</value>
-            </property>
-        </action>
         <action id="5330e1e7-a995-4179-9dbd-2aad3ad72ab9" type="root">
             <actions>
                 <action-id>9e0c70b3-1cf7-4e17-bc0c-8482cf964477</action-id>
@@ -4102,32 +4060,6 @@
             <property type="activation-mode">
                 <name>activation-mode</name>
                 <value>disallowed</value>
-            </property>
-        </action>
-        <action id="b667bf9f-cb77-464c-9400-6c82c31410f2" type="map-to-vjoy">
-            <property type="int">
-                <name>vjoy-device-id</name>
-                <value>1</value>
-            </property>
-            <property type="int">
-                <name>vjoy-input-id</name>
-                <value>26</value>
-            </property>
-            <property type="input_type">
-                <name>vjoy-input-type</name>
-                <value>button</value>
-            </property>
-            <property type="bool">
-                <name>button-inverted</name>
-                <value>False</value>
-            </property>
-            <property type="string">
-                <name>action-label</name>
-                <value>Map to vJoy</value>
-            </property>
-            <property type="activation-mode">
-                <name>activation-mode</name>
-                <value>both</value>
             </property>
         </action>
         <action id="1ee18cde-b07e-4bff-a243-a2145d7fe9f0" type="map-to-vjoy">
@@ -6174,7 +6106,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>Map to Mouse</value>
+                <value>Routed to mouse Y so you can free-look up/down while flying in 3rd person.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -6268,7 +6200,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>Map to Mouse</value>
+                <value>Routed to mouse X so you can free-look left/right while flying in 3rd person.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -6317,48 +6249,6 @@
             <property type="activation-mode">
                 <name>activation-mode</name>
                 <value>both</value>
-            </property>
-        </action>
-        <action id="3dcef9c3-2093-44bb-af1d-0f7cd6a146c3" type="response-curve">
-            <deadzone>
-                <property type="float">
-                    <name>low</name>
-                    <value>-1.0</value>
-                </property>
-                <property type="float">
-                    <name>center-low</name>
-                    <value>0.0</value>
-                </property>
-                <property type="float">
-                    <name>center-high</name>
-                    <value>0.0</value>
-                </property>
-                <property type="float">
-                    <name>high</name>
-                    <value>1.0</value>
-                </property>
-            </deadzone>
-            <control-points>
-                <property type="point2d">
-                    <name>point</name>
-                    <value>-1.0,-1.0</value>
-                </property>
-                <property type="point2d">
-                    <name>point</name>
-                    <value>1.0,1.0</value>
-                </property>
-            </control-points>
-            <property type="string">
-                <name>curve-type</name>
-                <value>CubicSpline</value>
-            </property>
-            <property type="string">
-                <name>action-label</name>
-                <value>Standard flight curve -- shapes this axis before driving its vJoy flight axis.</value>
-            </property>
-            <property type="activation-mode">
-                <name>activation-mode</name>
-                <value>disallowed</value>
             </property>
         </action>
         <action id="b1cfff10-896f-4da7-bd81-777dd3509d66" type="root">
@@ -7611,58 +7501,6 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="3d2489fd-932a-45db-a286-e173c69cca5f" type="map-to-vjoy">
-            <property type="int">
-                <name>vjoy-device-id</name>
-                <value>1</value>
-            </property>
-            <property type="int">
-                <name>vjoy-input-id</name>
-                <value>1</value>
-            </property>
-            <property type="input_type">
-                <name>vjoy-input-type</name>
-                <value>button</value>
-            </property>
-            <property type="bool">
-                <name>button-inverted</name>
-                <value>False</value>
-            </property>
-            <property type="string">
-                <name>action-label</name>
-                <value>Map to vJoy</value>
-            </property>
-            <property type="activation-mode">
-                <name>activation-mode</name>
-                <value>both</value>
-            </property>
-        </action>
-        <action id="7b8ce96d-a480-467e-a1de-87a95421d6f8" type="map-to-vjoy">
-            <property type="int">
-                <name>vjoy-device-id</name>
-                <value>2</value>
-            </property>
-            <property type="int">
-                <name>vjoy-input-id</name>
-                <value>46</value>
-            </property>
-            <property type="input_type">
-                <name>vjoy-input-type</name>
-                <value>button</value>
-            </property>
-            <property type="bool">
-                <name>button-inverted</name>
-                <value>False</value>
-            </property>
-            <property type="string">
-                <name>action-label</name>
-                <value>Map to vJoy</value>
-            </property>
-            <property type="activation-mode">
-                <name>activation-mode</name>
-                <value>both</value>
-            </property>
-        </action>
         <action id="022b7dc7-9057-4412-8918-c1b3de75402b" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
@@ -7794,162 +7632,6 @@
                 <value>disallowed</value>
             </property>
         </action>
-        <action id="1690ead7-37b2-43a2-840b-47a50bf2b379" type="response-curve">
-            <deadzone>
-                <property type="float">
-                    <name>low</name>
-                    <value>-1.0</value>
-                </property>
-                <property type="float">
-                    <name>center-low</name>
-                    <value>0.0</value>
-                </property>
-                <property type="float">
-                    <name>center-high</name>
-                    <value>0.0</value>
-                </property>
-                <property type="float">
-                    <name>high</name>
-                    <value>1.0</value>
-                </property>
-            </deadzone>
-            <control-points>
-                <property type="point2d">
-                    <name>point</name>
-                    <value>-1.0,1.0</value>
-                </property>
-                <property type="point2d">
-                    <name>point</name>
-                    <value>1.0,-1.0</value>
-                </property>
-            </control-points>
-            <property type="string">
-                <name>curve-type</name>
-                <value>PiecewiseLinear</value>
-            </property>
-            <property type="string">
-                <name>action-label</name>
-                <value>Response Curve</value>
-            </property>
-            <property type="activation-mode">
-                <name>activation-mode</name>
-                <value>disallowed</value>
-            </property>
-        </action>
-        <action id="a1af76a2-96d2-4370-be49-78fe2c101fc0" type="map-to-vjoy">
-            <property type="int">
-                <name>vjoy-device-id</name>
-                <value>1</value>
-            </property>
-            <property type="int">
-                <name>vjoy-input-id</name>
-                <value>1</value>
-            </property>
-            <property type="input_type">
-                <name>vjoy-input-type</name>
-                <value>axis</value>
-            </property>
-            <property type="axis_mode">
-                <name>axis-mode</name>
-                <value>absolute</value>
-            </property>
-            <property type="float">
-                <name>axis-scaling</name>
-                <value>1.0</value>
-            </property>
-            <property type="string">
-                <name>action-label</name>
-                <value>Map to vJoy</value>
-            </property>
-            <property type="activation-mode">
-                <name>activation-mode</name>
-                <value>both</value>
-            </property>
-        </action>
-        <action id="15ea3c7b-83af-4003-9b0b-0d436507fcbb" type="response-curve">
-            <deadzone>
-                <property type="float">
-                    <name>low</name>
-                    <value>-1.0</value>
-                </property>
-                <property type="float">
-                    <name>center-low</name>
-                    <value>0.0</value>
-                </property>
-                <property type="float">
-                    <name>center-high</name>
-                    <value>0.0</value>
-                </property>
-                <property type="float">
-                    <name>high</name>
-                    <value>1.0</value>
-                </property>
-            </deadzone>
-            <control-points>
-                <property type="point2d">
-                    <name>point</name>
-                    <value>-1.0,1.0</value>
-                </property>
-                <property type="point2d">
-                    <name>point</name>
-                    <value>1.0,-1.0</value>
-                </property>
-            </control-points>
-            <property type="string">
-                <name>curve-type</name>
-                <value>PiecewiseLinear</value>
-            </property>
-            <property type="string">
-                <name>action-label</name>
-                <value>Response Curve</value>
-            </property>
-            <property type="activation-mode">
-                <name>activation-mode</name>
-                <value>disallowed</value>
-            </property>
-        </action>
-        <action id="5a1ece2d-8ee6-4901-97f4-893d8b56bc6f" type="response-curve">
-            <deadzone>
-                <property type="float">
-                    <name>low</name>
-                    <value>-1.0</value>
-                </property>
-                <property type="float">
-                    <name>center-low</name>
-                    <value>0.0</value>
-                </property>
-                <property type="float">
-                    <name>center-high</name>
-                    <value>0.0</value>
-                </property>
-                <property type="float">
-                    <name>high</name>
-                    <value>1.0</value>
-                </property>
-            </deadzone>
-            <control-points>
-                <property type="point2d">
-                    <name>point</name>
-                    <value>-1.0,1.0</value>
-                </property>
-                <property type="point2d">
-                    <name>point</name>
-                    <value>1.0,-1.0</value>
-                </property>
-            </control-points>
-            <property type="string">
-                <name>curve-type</name>
-                <value>PiecewiseLinear</value>
-            </property>
-            <property type="string">
-                <name>action-label</name>
-                <value>Response Curve</value>
-            </property>
-            <property type="activation-mode">
-                <name>activation-mode</name>
-                <value>disallowed</value>
-            </property>
-        </action>
         <action id="d89e03d2-125b-4bdf-80d3-bc61fce8d5f4" type="response-curve">
             <deadzone>
                 <property type="float">
@@ -7985,41 +7667,11 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>Response Curve</value>
+                <value>R-stick X axis inverted at the JG layer here -- skips SC's in-game invert toggle.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
                 <value>disallowed</value>
-            </property>
-        </action>
-        <action id="11dc5f7a-82e0-4f69-a622-cb2eb474928b" type="map-to-vjoy">
-            <property type="int">
-                <name>vjoy-device-id</name>
-                <value>1</value>
-            </property>
-            <property type="int">
-                <name>vjoy-input-id</name>
-                <value>1</value>
-            </property>
-            <property type="input_type">
-                <name>vjoy-input-type</name>
-                <value>axis</value>
-            </property>
-            <property type="axis_mode">
-                <name>axis-mode</name>
-                <value>absolute</value>
-            </property>
-            <property type="float">
-                <name>axis-scaling</name>
-                <value>1.0</value>
-            </property>
-            <property type="string">
-                <name>action-label</name>
-                <value>Map to vJoy</value>
-            </property>
-            <property type="activation-mode">
-                <name>activation-mode</name>
-                <value>both</value>
             </property>
         </action>
         <action id="695bb3fa-b185-43a9-a40e-838c6421402f" type="response-curve">
@@ -8057,7 +7709,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>Response Curve</value>
+                <value>R-stick Y axis inverted at the JG layer here -- skips SC's in-game invert toggle.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -8099,7 +7751,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>Response Curve</value>
+                <value>L-stick X axis inverted at the JG layer here -- skips SC's in-game invert toggle.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
