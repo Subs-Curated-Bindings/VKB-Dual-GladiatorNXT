@@ -2882,19 +2882,6 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="ea71b1cc-6041-4832-ae0d-32cfc6d82e82" type="root">
-            <actions>
-                <action-id>34de780e-7cf0-4cba-9164-e51df00adb8c</action-id>
-            </actions>
-            <property type="string">
-                <name>action-label</name>
-                <value>Root</value>
-            </property>
-            <property type="activation-mode">
-                <name>activation-mode</name>
-                <value>disallowed</value>
-            </property>
-        </action>
         <action id="9e0c70b3-1cf7-4e17-bc0c-8482cf964477" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
@@ -2969,7 +2956,6 @@
         </action>
         <action id="5330e1e7-a995-4179-9dbd-2aad3ad72ab9" type="root">
             <actions>
-                <action-id>94dae362-d5fc-403d-b265-ed24047b521c</action-id>
                 <action-id>9e0c70b3-1cf7-4e17-bc0c-8482cf964477</action-id>
             </actions>
             <property type="string">
@@ -6042,19 +6028,6 @@
                 <value>both</value>
             </property>
         </action>
-        <action id="0014759d-d166-4066-8d5c-dc1bc5c740c1" type="root">
-            <actions>
-                <action-id>98b795bc-4f26-456a-b653-dc9515c640fe</action-id>
-            </actions>
-            <property type="string">
-                <name>action-label</name>
-                <value>Root</value>
-            </property>
-            <property type="activation-mode">
-                <name>activation-mode</name>
-                <value>disallowed</value>
-            </property>
-        </action>
         <action id="b336f2bc-4fc2-4524-af7c-0c5f177d2bae" type="map-to-vjoy">
             <property type="int">
                 <name>vjoy-device-id</name>
@@ -6083,19 +6056,6 @@
             <property type="activation-mode">
                 <name>activation-mode</name>
                 <value>both</value>
-            </property>
-        </action>
-        <action id="15a08425-895b-4cd5-bbee-aa7042fb0106" type="root">
-            <actions>
-                <action-id>b336f2bc-4fc2-4524-af7c-0c5f177d2bae</action-id>
-            </actions>
-            <property type="string">
-                <name>action-label</name>
-                <value>Root</value>
-            </property>
-            <property type="activation-mode">
-                <name>activation-mode</name>
-                <value>disallowed</value>
             </property>
         </action>
         <action id="789a4c12-41b5-472e-b461-cebea7ce52c5" type="map-to-vjoy">
@@ -6381,11 +6341,11 @@
             <control-points>
                 <property type="point2d">
                     <name>point</name>
-                    <value>-1.0,1.0</value>
+                    <value>-1.0,-1.0</value>
                 </property>
                 <property type="point2d">
                     <name>point</name>
-                    <value>1.0,-1.0</value>
+                    <value>1.0,1.0</value>
                 </property>
             </control-points>
             <property type="string">
@@ -6403,7 +6363,6 @@
         </action>
         <action id="b1cfff10-896f-4da7-bd81-777dd3509d66" type="root">
             <actions>
-                <action-id>3dcef9c3-2093-44bb-af1d-0f7cd6a146c3</action-id>
                 <action-id>95e2a7e8-bd6e-4a31-85ad-45df181ca518</action-id>
             </actions>
             <property type="string">
@@ -7811,7 +7770,7 @@
             </property>
             <property type="string">
                 <name>activate-on</name>
-                <value>press</value>
+                <value>release</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -7825,6 +7784,360 @@
         <action id="11adc811-c1e8-42ec-a0cf-68f7fa00de79" type="root">
             <actions>
                 <action-id>99150e5f-b806-440c-b231-c99a5c960365</action-id>
+            </actions>
+            <property type="string">
+                <name>action-label</name>
+                <value>Root</value>
+            </property>
+            <property type="activation-mode">
+                <name>activation-mode</name>
+                <value>disallowed</value>
+            </property>
+        </action>
+        <action id="1690ead7-37b2-43a2-840b-47a50bf2b379" type="response-curve">
+            <deadzone>
+                <property type="float">
+                    <name>low</name>
+                    <value>-1.0</value>
+                </property>
+                <property type="float">
+                    <name>center-low</name>
+                    <value>0.0</value>
+                </property>
+                <property type="float">
+                    <name>center-high</name>
+                    <value>0.0</value>
+                </property>
+                <property type="float">
+                    <name>high</name>
+                    <value>1.0</value>
+                </property>
+            </deadzone>
+            <control-points>
+                <property type="point2d">
+                    <name>point</name>
+                    <value>-1.0,1.0</value>
+                </property>
+                <property type="point2d">
+                    <name>point</name>
+                    <value>1.0,-1.0</value>
+                </property>
+            </control-points>
+            <property type="string">
+                <name>curve-type</name>
+                <value>PiecewiseLinear</value>
+            </property>
+            <property type="string">
+                <name>action-label</name>
+                <value>Response Curve</value>
+            </property>
+            <property type="activation-mode">
+                <name>activation-mode</name>
+                <value>disallowed</value>
+            </property>
+        </action>
+        <action id="a1af76a2-96d2-4370-be49-78fe2c101fc0" type="map-to-vjoy">
+            <property type="int">
+                <name>vjoy-device-id</name>
+                <value>1</value>
+            </property>
+            <property type="int">
+                <name>vjoy-input-id</name>
+                <value>1</value>
+            </property>
+            <property type="input_type">
+                <name>vjoy-input-type</name>
+                <value>axis</value>
+            </property>
+            <property type="axis_mode">
+                <name>axis-mode</name>
+                <value>absolute</value>
+            </property>
+            <property type="float">
+                <name>axis-scaling</name>
+                <value>1.0</value>
+            </property>
+            <property type="string">
+                <name>action-label</name>
+                <value>Map to vJoy</value>
+            </property>
+            <property type="activation-mode">
+                <name>activation-mode</name>
+                <value>both</value>
+            </property>
+        </action>
+        <action id="15ea3c7b-83af-4003-9b0b-0d436507fcbb" type="response-curve">
+            <deadzone>
+                <property type="float">
+                    <name>low</name>
+                    <value>-1.0</value>
+                </property>
+                <property type="float">
+                    <name>center-low</name>
+                    <value>0.0</value>
+                </property>
+                <property type="float">
+                    <name>center-high</name>
+                    <value>0.0</value>
+                </property>
+                <property type="float">
+                    <name>high</name>
+                    <value>1.0</value>
+                </property>
+            </deadzone>
+            <control-points>
+                <property type="point2d">
+                    <name>point</name>
+                    <value>-1.0,1.0</value>
+                </property>
+                <property type="point2d">
+                    <name>point</name>
+                    <value>1.0,-1.0</value>
+                </property>
+            </control-points>
+            <property type="string">
+                <name>curve-type</name>
+                <value>PiecewiseLinear</value>
+            </property>
+            <property type="string">
+                <name>action-label</name>
+                <value>Response Curve</value>
+            </property>
+            <property type="activation-mode">
+                <name>activation-mode</name>
+                <value>disallowed</value>
+            </property>
+        </action>
+        <action id="5a1ece2d-8ee6-4901-97f4-893d8b56bc6f" type="response-curve">
+            <deadzone>
+                <property type="float">
+                    <name>low</name>
+                    <value>-1.0</value>
+                </property>
+                <property type="float">
+                    <name>center-low</name>
+                    <value>0.0</value>
+                </property>
+                <property type="float">
+                    <name>center-high</name>
+                    <value>0.0</value>
+                </property>
+                <property type="float">
+                    <name>high</name>
+                    <value>1.0</value>
+                </property>
+            </deadzone>
+            <control-points>
+                <property type="point2d">
+                    <name>point</name>
+                    <value>-1.0,1.0</value>
+                </property>
+                <property type="point2d">
+                    <name>point</name>
+                    <value>1.0,-1.0</value>
+                </property>
+            </control-points>
+            <property type="string">
+                <name>curve-type</name>
+                <value>PiecewiseLinear</value>
+            </property>
+            <property type="string">
+                <name>action-label</name>
+                <value>Response Curve</value>
+            </property>
+            <property type="activation-mode">
+                <name>activation-mode</name>
+                <value>disallowed</value>
+            </property>
+        </action>
+        <action id="d89e03d2-125b-4bdf-80d3-bc61fce8d5f4" type="response-curve">
+            <deadzone>
+                <property type="float">
+                    <name>low</name>
+                    <value>-1.0</value>
+                </property>
+                <property type="float">
+                    <name>center-low</name>
+                    <value>0.0</value>
+                </property>
+                <property type="float">
+                    <name>center-high</name>
+                    <value>0.0</value>
+                </property>
+                <property type="float">
+                    <name>high</name>
+                    <value>1.0</value>
+                </property>
+            </deadzone>
+            <control-points>
+                <property type="point2d">
+                    <name>point</name>
+                    <value>-1.0,1.0</value>
+                </property>
+                <property type="point2d">
+                    <name>point</name>
+                    <value>1.0,-1.0</value>
+                </property>
+            </control-points>
+            <property type="string">
+                <name>curve-type</name>
+                <value>PiecewiseLinear</value>
+            </property>
+            <property type="string">
+                <name>action-label</name>
+                <value>Response Curve</value>
+            </property>
+            <property type="activation-mode">
+                <name>activation-mode</name>
+                <value>disallowed</value>
+            </property>
+        </action>
+        <action id="11dc5f7a-82e0-4f69-a622-cb2eb474928b" type="map-to-vjoy">
+            <property type="int">
+                <name>vjoy-device-id</name>
+                <value>1</value>
+            </property>
+            <property type="int">
+                <name>vjoy-input-id</name>
+                <value>1</value>
+            </property>
+            <property type="input_type">
+                <name>vjoy-input-type</name>
+                <value>axis</value>
+            </property>
+            <property type="axis_mode">
+                <name>axis-mode</name>
+                <value>absolute</value>
+            </property>
+            <property type="float">
+                <name>axis-scaling</name>
+                <value>1.0</value>
+            </property>
+            <property type="string">
+                <name>action-label</name>
+                <value>Map to vJoy</value>
+            </property>
+            <property type="activation-mode">
+                <name>activation-mode</name>
+                <value>both</value>
+            </property>
+        </action>
+        <action id="695bb3fa-b185-43a9-a40e-838c6421402f" type="response-curve">
+            <deadzone>
+                <property type="float">
+                    <name>low</name>
+                    <value>-1.0</value>
+                </property>
+                <property type="float">
+                    <name>center-low</name>
+                    <value>0.0</value>
+                </property>
+                <property type="float">
+                    <name>center-high</name>
+                    <value>0.0</value>
+                </property>
+                <property type="float">
+                    <name>high</name>
+                    <value>1.0</value>
+                </property>
+            </deadzone>
+            <control-points>
+                <property type="point2d">
+                    <name>point</name>
+                    <value>-1.0,1.0</value>
+                </property>
+                <property type="point2d">
+                    <name>point</name>
+                    <value>1.0,-1.0</value>
+                </property>
+            </control-points>
+            <property type="string">
+                <name>curve-type</name>
+                <value>PiecewiseLinear</value>
+            </property>
+            <property type="string">
+                <name>action-label</name>
+                <value>Response Curve</value>
+            </property>
+            <property type="activation-mode">
+                <name>activation-mode</name>
+                <value>disallowed</value>
+            </property>
+        </action>
+        <action id="0078a1e3-fc91-4b33-95ec-90c58dae0964" type="response-curve">
+            <deadzone>
+                <property type="float">
+                    <name>low</name>
+                    <value>-1.0</value>
+                </property>
+                <property type="float">
+                    <name>center-low</name>
+                    <value>0.0</value>
+                </property>
+                <property type="float">
+                    <name>center-high</name>
+                    <value>0.0</value>
+                </property>
+                <property type="float">
+                    <name>high</name>
+                    <value>1.0</value>
+                </property>
+            </deadzone>
+            <control-points>
+                <property type="point2d">
+                    <name>point</name>
+                    <value>-1.0,1.0</value>
+                </property>
+                <property type="point2d">
+                    <name>point</name>
+                    <value>1.0,-1.0</value>
+                </property>
+            </control-points>
+            <property type="string">
+                <name>curve-type</name>
+                <value>PiecewiseLinear</value>
+            </property>
+            <property type="string">
+                <name>action-label</name>
+                <value>Response Curve</value>
+            </property>
+            <property type="activation-mode">
+                <name>activation-mode</name>
+                <value>disallowed</value>
+            </property>
+        </action>
+        <action id="ea71b1cc-6041-4832-ae0d-32cfc6d82e82" type="root">
+            <actions>
+                <action-id>0078a1e3-fc91-4b33-95ec-90c58dae0964</action-id>
+                <action-id>34de780e-7cf0-4cba-9164-e51df00adb8c</action-id>
+            </actions>
+            <property type="string">
+                <name>action-label</name>
+                <value>Root</value>
+            </property>
+            <property type="activation-mode">
+                <name>activation-mode</name>
+                <value>disallowed</value>
+            </property>
+        </action>
+        <action id="0014759d-d166-4066-8d5c-dc1bc5c740c1" type="root">
+            <actions>
+                <action-id>d89e03d2-125b-4bdf-80d3-bc61fce8d5f4</action-id>
+                <action-id>98b795bc-4f26-456a-b653-dc9515c640fe</action-id>
+            </actions>
+            <property type="string">
+                <name>action-label</name>
+                <value>Root</value>
+            </property>
+            <property type="activation-mode">
+                <name>activation-mode</name>
+                <value>disallowed</value>
+            </property>
+        </action>
+        <action id="15a08425-895b-4cd5-bbee-aa7042fb0106" type="root">
+            <actions>
+                <action-id>695bb3fa-b185-43a9-a40e-838c6421402f</action-id>
+                <action-id>b336f2bc-4fc2-4524-af7c-0c5f177d2bae</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
