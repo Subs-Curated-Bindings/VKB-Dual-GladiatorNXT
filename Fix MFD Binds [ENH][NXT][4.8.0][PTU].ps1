@@ -155,67 +155,105 @@ foreach ($ch in $targets) {
     $mfdRegex = [regex]'(?s)<actionmap\s+name="vehicle_mfd"\s*>(.*?)</actionmap>'
     $mfdMatch = $mfdRegex.Match($content)
 
-    if (-not $mfdMatch.Success) {
-        Write-Host "  No vehicle_mfd actionmap in this file." -ForegroundColor Yellow
-        Write-Host "  Load the [ENH][NXT] layout in-game first (Customization > Control Profiles)," -ForegroundColor Yellow
-        Write-Host "  fully close SC, then re-run this script." -ForegroundColor Yellow
-        $totalSkipped++
-        continue
-    }
-
-    $blockBody = $mfdMatch.Groups[1].Value
-    $blockBodyStart = $mfdMatch.Groups[1].Index
-    $blockBodyLen = $mfdMatch.Groups[1].Length
-
-    # Detect indentation from existing actions; fall back to 3-space if empty.
-    $actionIndentMatch = [regex]::Match($blockBody, '(?m)^([ \t]+)<action\s')
-    $actionIndent = if ($actionIndentMatch.Success) { $actionIndentMatch.Groups[1].Value } else { '   ' }
-
-    $rebindIndentMatch = [regex]::Match($blockBody, '(?m)^([ \t]+)<rebind\s')
-    $rebindIndent = if ($rebindIndentMatch.Success) { $rebindIndentMatch.Groups[1].Value } else { $actionIndent + ' ' }
-
-    # === Apply each bind ===
-    $newBlockBody = $blockBody
     $updated = 0
     $added = 0
 
-    foreach ($b in $Binds) {
-        $nameEsc = [regex]::Escape($b.name)
-        $multiTapAttr = if ($b.ContainsKey('multiTap')) { ' multiTap="{0}"' -f $b.multiTap } else { '' }
-        $newRebindTag = '<rebind input="{0}"{1}/>' -f $b.input, $multiTapAttr
+    if (-not $mfdMatch.Success) {
+        # Phase 0: vehicle_mfd actionmap is missing entirely. SC drops the whole
+        # block on import when none of the layout's MFD binds are accepted (the
+        # GF layout's hat-based binds trigger this; button-based layouts hit a
+        # softer wipe that keeps the actionmap with empty rebinds). Build it.
+        Write-Host "  vehicle_mfd actionmap missing -- inserting full block with all binds." -ForegroundColor Yellow
 
-        # Phase 1: try to update existing <action><rebind ... /></action> block
-        $actionPattern = '(?s)(<action\s+name="{0}"\s*>\s*)<rebind[^/]*/>' -f $nameEsc
-        $actionRegex = [regex]::new($actionPattern)
-        $m = $actionRegex.Match($newBlockBody)
-        if ($m.Success) {
-            $prefix = $newBlockBody.Substring(0, $m.Index) + $m.Groups[1].Value
-            $suffix = $newBlockBody.Substring($m.Index + $m.Length)
-            $newBlockBody = $prefix + $newRebindTag + $suffix
-            $updated++
-        }
-        else {
-            # Phase 2: insert a new <action> after the last existing one,
-            # before the trailing whitespace that precedes </actionmap>.
-            $nl = "`r`n"
-            $newAction = '{0}<action name="{1}">{2}{3}{4}{2}{0}</action>' -f $actionIndent, $b.name, $nl, $rebindIndent, $newRebindTag
-            $lastClose = $newBlockBody.LastIndexOf('</action>')
-            if ($lastClose -ge 0) {
-                $insertAt = $lastClose + '</action>'.Length
-                $newBlockBody = $newBlockBody.Substring(0, $insertAt) + "`r`n$newAction" + $newBlockBody.Substring($insertAt)
-            }
-            else {
-                # actionmap is empty -- wrap the new action in newlines
-                $newBlockBody = "`r`n$newAction" + $newBlockBody
-            }
+        # Indents in actionmaps.xml are typically 2 spaces per level (one extra
+        # nesting compared to the layout XML, due to the ActionProfiles wrapper).
+        # Detect from a sibling actionmap; fall back to 2-3-4.
+        $sibIndentMatch = [regex]::Match($content, '(?m)^([ \t]*)<actionmap\s+name="\w')
+        $apIndent = if ($sibIndentMatch.Success) { $sibIndentMatch.Groups[1].Value } else { '  ' }
+        $sibActionMatch = [regex]::Match($content, '(?ms)<actionmap\s+name="\w[^"]*"\s*>\s*\r?\n([ \t]+)<action\s')
+        $actionIndent = if ($sibActionMatch.Success) { $sibActionMatch.Groups[1].Value } else { $apIndent + ' ' }
+        $sibRebindMatch = [regex]::Match($content, '(?ms)<action[^>]*>\s*\r?\n([ \t]+)<rebind\s')
+        $rebindIndent = if ($sibRebindMatch.Success) { $sibRebindMatch.Groups[1].Value } else { $actionIndent + ' ' }
+
+        $nl = "`r`n"
+        $sb = New-Object System.Text.StringBuilder
+        [void]$sb.Append("$apIndent<actionmap name=`"vehicle_mfd`">$nl")
+        foreach ($b in $Binds) {
+            $multiTapAttr = if ($b.ContainsKey('multiTap')) { ' multiTap="{0}"' -f $b.multiTap } else { '' }
+            $rebindTag = '<rebind input="{0}"{1}/>' -f $b.input, $multiTapAttr
+            [void]$sb.Append("$actionIndent<action name=`"$($b.name)`">$nl")
+            [void]$sb.Append("$rebindIndent$rebindTag$nl")
+            [void]$sb.Append("$actionIndent</action>$nl")
             $added++
         }
-    }
+        [void]$sb.Append("$apIndent</actionmap>$nl")
+        $newActionmap = $sb.ToString()
 
-    if ($updated -eq 0 -and $added -eq 0) {
-        Write-Host "  Nothing to do (no matching actions found)." -ForegroundColor Yellow
-        $totalSkipped++
-        continue
+        # Insert before </ActionProfiles> so the block sits inside the profile.
+        $closeIdx = $content.LastIndexOf('</ActionProfiles>')
+        if ($closeIdx -lt 0) {
+            Write-Host "  Could not locate </ActionProfiles> closing tag; aborting." -ForegroundColor Red
+            $totalSkipped++
+            continue
+        }
+        # Walk back to the start of the line containing </ActionProfiles>.
+        $lineStart = $content.LastIndexOf("`n", $closeIdx) + 1
+        $newContent = $content.Substring(0, $lineStart) + $newActionmap + $content.Substring($lineStart)
+    }
+    else {
+        # Existing actionmap path: update existing rebinds (Phase 1) or insert
+        # missing <action> elements before </actionmap> (Phase 2).
+        $blockBody = $mfdMatch.Groups[1].Value
+        $blockBodyStart = $mfdMatch.Groups[1].Index
+        $blockBodyLen = $mfdMatch.Groups[1].Length
+
+        $actionIndentMatch = [regex]::Match($blockBody, '(?m)^([ \t]+)<action\s')
+        $actionIndent = if ($actionIndentMatch.Success) { $actionIndentMatch.Groups[1].Value } else { '   ' }
+
+        $rebindIndentMatch = [regex]::Match($blockBody, '(?m)^([ \t]+)<rebind\s')
+        $rebindIndent = if ($rebindIndentMatch.Success) { $rebindIndentMatch.Groups[1].Value } else { $actionIndent + ' ' }
+
+        $newBlockBody = $blockBody
+
+        foreach ($b in $Binds) {
+            $nameEsc = [regex]::Escape($b.name)
+            $multiTapAttr = if ($b.ContainsKey('multiTap')) { ' multiTap="{0}"' -f $b.multiTap } else { '' }
+            $newRebindTag = '<rebind input="{0}"{1}/>' -f $b.input, $multiTapAttr
+
+            # Phase 1: try to update existing <action><rebind ... /></action> block
+            $actionPattern = '(?s)(<action\s+name="{0}"\s*>\s*)<rebind[^/]*/>' -f $nameEsc
+            $actionRegex = [regex]::new($actionPattern)
+            $m = $actionRegex.Match($newBlockBody)
+            if ($m.Success) {
+                $prefix = $newBlockBody.Substring(0, $m.Index) + $m.Groups[1].Value
+                $suffix = $newBlockBody.Substring($m.Index + $m.Length)
+                $newBlockBody = $prefix + $newRebindTag + $suffix
+                $updated++
+            }
+            else {
+                # Phase 2: insert a new <action> after the last existing one,
+                # before the trailing whitespace that precedes </actionmap>.
+                $nl = "`r`n"
+                $newAction = '{0}<action name="{1}">{2}{3}{4}{2}{0}</action>' -f $actionIndent, $b.name, $nl, $rebindIndent, $newRebindTag
+                $lastClose = $newBlockBody.LastIndexOf('</action>')
+                if ($lastClose -ge 0) {
+                    $insertAt = $lastClose + '</action>'.Length
+                    $newBlockBody = $newBlockBody.Substring(0, $insertAt) + "`r`n$newAction" + $newBlockBody.Substring($insertAt)
+                }
+                else {
+                    $newBlockBody = "`r`n$newAction" + $newBlockBody
+                }
+                $added++
+            }
+        }
+
+        if ($updated -eq 0 -and $added -eq 0) {
+            Write-Host "  Nothing to do (no matching actions found)." -ForegroundColor Yellow
+            $totalSkipped++
+            continue
+        }
+
+        $newContent = $content.Substring(0, $blockBodyStart) + $newBlockBody + $content.Substring($blockBodyStart + $blockBodyLen)
     }
 
     # === Backup ===
@@ -224,8 +262,7 @@ foreach ($ch in $targets) {
     Copy-Item -LiteralPath $path -Destination $backup -Force
     Write-Host "  Backup: $(Split-Path $backup -Leaf)"
 
-    # === Reconstruct full content and write ===
-    $newContent = $content.Substring(0, $blockBodyStart) + $newBlockBody + $content.Substring($blockBodyStart + $blockBodyLen)
+    # === Write ===
     $enc = New-Object System.Text.UTF8Encoding $hasBom
     [System.IO.File]::WriteAllText($path, $newContent, $enc)
 
