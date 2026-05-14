@@ -724,10 +724,28 @@ if ($running) {
 # Validate install root.
 if (-not (Test-Path -LiteralPath $InstallRoot)) {
     Write-Host ""
-    Write-Host "SC install root not found: $InstallRoot" -ForegroundColor Red
-    Write-Host "If your install is elsewhere, re-run with:" -ForegroundColor Yellow
-    Write-Host "  .\Bindings Toolkit [ENH][NXT][4.8.0][PTU].ps1 -InstallRoot 'X:\path\to\StarCitizen'" -ForegroundColor Yellow
-    exit 1
+    Write-Host "Star Citizen install not found at the default location:" -ForegroundColor Yellow
+    Write-Host "  $InstallRoot" -ForegroundColor Yellow
+    Write-Host ""
+    Write-Host "If your install is on a different drive, enter its path now."
+    Write-Host "(The folder that contains LIVE / PTU / EPTU subfolders.)"
+    Write-Host "Example: D:\Games\Roberts Space Industries\StarCitizen"
+    Write-Host ""
+    $entered = (Read-Host "  Install path (or blank to cancel)").Trim().Trim('"').Trim("'")
+    if (-not $entered) {
+        Write-Host "Cancelled." -ForegroundColor Red
+        exit 1
+    }
+    if (-not (Test-Path -LiteralPath $entered)) {
+        Write-Host ""
+        Write-Host "Path not found: $entered" -ForegroundColor Red
+        Write-Host "Re-run the script and try again, or pass it explicitly with:" -ForegroundColor Yellow
+        Write-Host "  .\Bindings Toolkit [ENH][NXT][4.8.0][PTU].ps1 -InstallRoot 'X:\path\to\StarCitizen'" -ForegroundColor Yellow
+        exit 1
+    }
+    $InstallRoot = $entered
+    Write-Host ""
+    Write-Host "Using install root: $InstallRoot" -ForegroundColor Green
 }
 
 # Detect installed channels.
