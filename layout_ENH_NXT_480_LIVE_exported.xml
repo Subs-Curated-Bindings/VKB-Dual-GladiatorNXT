@@ -1,5 +1,5 @@
-<ActionMaps version="1" optionsVersion="2" rebindVersion="2" profileName="ENH_NXT_480_PTU">
- <CustomisationUIHeader label="ENH_NXT_480_PTU" description="" image="">
+<ActionMaps version="1" optionsVersion="2" rebindVersion="2" profileName="ENH_NXT_480_LIVE">
+ <CustomisationUIHeader label="ENH_NXT_480_LIVE" description="" image="">
   <devices>
    <keyboard instance="1"/>
    <mouse instance="1"/>

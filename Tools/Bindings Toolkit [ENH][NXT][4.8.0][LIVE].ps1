@@ -26,7 +26,7 @@
 
     WORKFLOW (typical case -- right after loading the NXT layout):
       1. Fully close Star Citizen and the RSI Launcher.
-      2. Double-click "Bindings Toolkit [ENH][NXT][4.8.0][PTU].bat".
+      2. Double-click "Bindings Toolkit [ENH][NXT][4.8.0][LIVE].bat".
       3. Pick the channel (or All) and the operation.
       4. Launch SC, verify in Customization > Keybindings.
 
@@ -44,14 +44,14 @@
     Clear, Restore, and Prune still prompt for the confirm step.
 
 .EXAMPLE
-    .\Bindings Toolkit [ENH][NXT][4.8.0][PTU].ps1
+    .\Bindings Toolkit [ENH][NXT][4.8.0][LIVE].ps1
     Show the menu, prompt for channel as needed.
 
 .EXAMPLE
-    .\Bindings Toolkit [ENH][NXT][4.8.0][PTU].ps1 -Action MFD -Channel LIVE
+    .\Bindings Toolkit [ENH][NXT][4.8.0][LIVE].ps1 -Action MFD -Channel LIVE
 
 .EXAMPLE
-    .\Bindings Toolkit [ENH][NXT][4.8.0][PTU].ps1 -Action Invert -Channel PTU
+    .\Bindings Toolkit [ENH][NXT][4.8.0][LIVE].ps1 -Action Invert -Channel PTU
 #>
 [CmdletBinding()]
 param(
@@ -740,7 +740,7 @@ if (-not (Test-Path -LiteralPath $InstallRoot)) {
         Write-Host ""
         Write-Host "Path not found: $entered" -ForegroundColor Red
         Write-Host "Re-run the script and try again, or pass it explicitly with:" -ForegroundColor Yellow
-        Write-Host "  .\Bindings Toolkit [ENH][NXT][4.8.0][PTU].ps1 -InstallRoot 'X:\path\to\StarCitizen'" -ForegroundColor Yellow
+        Write-Host "  .\Bindings Toolkit [ENH][NXT][4.8.0][LIVE].ps1 -InstallRoot 'X:\path\to\StarCitizen'" -ForegroundColor Yellow
         exit 1
     }
     $InstallRoot = $entered
