@@ -255,6 +255,9 @@
   <action name="v_ifcs_toggle_gforce_safety">
    <rebind input="js1_button51"/>
   </action>
+  <action name="v_ifcs_vector_decoupling_toggle">
+   <rebind input="js2_button4"/>
+  </action>
   <action name="v_master_mode_cycle">
    <rebind input="js1_button124"/>
   </action>
