@@ -6,7 +6,7 @@
 .DESCRIPTION
     Replaces the single-purpose "Fix MFD Binds" script. Same safety pattern
     (refuse to run while SC is alive, timestamped backups before every change,
-    idempotent, preserves CRLF/BOM encoding) but exposes four operations
+    idempotent, preserves CRLF/BOM encoding) but exposes seven operations
     behind a menu:
 
       1. Fix MFD binds            -- reinjects the MFD binds SC's import wipes
@@ -20,6 +20,10 @@
                                      MFD wipe status, and existing backups
       6. Prune old backups        -- delete older actionmaps.xml.bak-* files,
                                      keeping a configurable count of recent ones
+      7. Non-EVO axis flip        -- flips the three response curves the non-EVO
+                                     NXT base reports inverted (left stick X+Y
+                                     and right stick Y). Edits the JG profile
+                                     XML, not actionmaps.xml. EVO users skip.
 
     The menu loops after each operation so you can chain (e.g. clear then fix
     MFD) in one session. Quit returns to the wrapper.
@@ -40,8 +44,15 @@
 
 .PARAMETER Action
     Skip the menu and run a single operation. One of: MFD, Invert, Clear,
-    Restore, Diagnostic, Prune. Useful for scripted / non-interactive runs.
-    Clear, Restore, and Prune still prompt for the confirm step.
+    Restore, Diagnostic, Prune, NonEvoFlip. Useful for scripted /
+    non-interactive runs. Clear, Restore, Prune, and NonEvoFlip still
+    prompt for the confirm step.
+
+.PARAMETER ProfilePath
+    Path to the JG R14 profile XML to operate on (used only by NonEvoFlip).
+    Defaults to the profile sibling-of-this-script:
+        ..\Joystick Gremlin Profile [ENH][NXT][4.8.0][LIVE][R14].xml
+    Override if you've moved the profile into JG's own profiles folder.
 
 .EXAMPLE
     .\Bindings Toolkit [ENH][NXT][4.8.0][LIVE].ps1
@@ -58,8 +69,9 @@ param(
     [string]$InstallRoot = 'C:\Program Files\Roberts Space Industries\StarCitizen',
     [ValidateSet('LIVE', 'PTU', 'EPTU', 'HOTFIX', 'TECH-PREVIEW')]
     [string]$Channel,
-    [ValidateSet('MFD', 'Invert', 'Clear', 'Restore', 'Diagnostic', 'Prune')]
-    [string]$Action
+    [ValidateSet('MFD', 'Invert', 'Clear', 'Restore', 'Diagnostic', 'Prune', 'NonEvoFlip')]
+    [string]$Action,
+    [string]$ProfilePath
 )
 
 $ErrorActionPreference = 'Stop'
@@ -705,6 +717,249 @@ function Invoke-PruneBackups-Selection {
 }
 
 # =====================================================================
+#  OPERATION: NON-EVO AXIS FLIP
+#  Edits the JG profile XML (not actionmaps.xml). Flips the response
+#  curves on left stick X+Y and right stick Y, which the non-EVO NXT
+#  base reports inverted relative to the EVO base.
+#
+#  Acts as a toggle -- running twice returns each curve to its prior
+#  state. Curve detection is by Y-negate of every control point, so
+#  it works on flat curves AND shaped curves equally.
+# =====================================================================
+
+function Test-JgRunning {
+    return Get-Process -Name 'joystick_gremlin' -ErrorAction SilentlyContinue
+}
+
+function Invoke-NonEvoAxisFlip-Profile {
+    param([string]$ProfilePath)
+
+    # Resolve default profile path if caller didn't supply one.
+    if (-not $ProfilePath) {
+        $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
+        $default = Join-Path (Split-Path -Parent $scriptDir) 'Joystick Gremlin Profile [ENH][NXT][4.8.0][LIVE][R14].xml'
+        $ProfilePath = $default
+    }
+
+    if (-not (Test-Path -LiteralPath $ProfilePath)) {
+        Write-Host ""
+        Write-Host "  JG profile not found at:" -ForegroundColor Red
+        Write-Host "    $ProfilePath" -ForegroundColor Red
+        Write-Host ""
+        Write-Host "  If you moved the profile, re-run with:" -ForegroundColor Yellow
+        Write-Host "    .\Bindings Toolkit [ENH][NXT][4.8.0][LIVE].ps1 -Action NonEvoFlip -ProfilePath '<path>'" -ForegroundColor Yellow
+        return
+    }
+
+    Write-Host ""
+    Write-Host "  Non-EVO axis flip" -ForegroundColor Cyan
+    Write-Host "  -----------------" -ForegroundColor Cyan
+    Write-Host "  This flips the response curves on three axes that the non-EVO NXT"
+    Write-Host "  base reports inverted: left stick X, left stick Y, right stick Y."
+    Write-Host "  Running this on EVO hardware will INVERT axes that were working"
+    Write-Host "  correctly, so only proceed if you're on a non-EVO base."
+    Write-Host ""
+    Write-Host "  Profile: $ProfilePath" -ForegroundColor Gray
+    Write-Host ""
+
+    # Refuse if JG is open (the file save would race with JG's in-memory copy).
+    if (Test-JgRunning) {
+        Write-Host "  Joystick Gremlin is running. Close it first so this edit doesn't" -ForegroundColor Red
+        Write-Host "  race with JG's in-memory copy of the profile." -ForegroundColor Red
+        return
+    }
+
+    # Confirm hardware.
+    $confirm = (Read-Host "  Are you on a non-EVO NXT base? (y/N)").Trim().ToLower()
+    if ($confirm -ne 'y' -and $confirm -ne 'yes') {
+        Write-Host "  Cancelled." -ForegroundColor Yellow
+        return
+    }
+
+    # Parse XML to find devices and the target action UUIDs.
+    try {
+        [xml]$doc = Get-Content -LiteralPath $ProfilePath -Raw -Encoding UTF8
+    } catch {
+        Write-Host "  Could not parse profile XML: $_" -ForegroundColor Red
+        return
+    }
+
+    $devices = @($doc.profile.devices.device)
+    # Strip Logitech / vJoy entries -- only NXT-shaped devices are candidates.
+    $deviceCandidates = @($devices | Where-Object {
+        $_.'device-name' -and ($_.'device-name'.Trim() -notmatch '^(vJoy|Logitech|Keyboard|Mouse)')
+    })
+
+    if ($deviceCandidates.Count -lt 2) {
+        Write-Host "  Profile lists fewer than 2 stick devices. Run Tools -> Swap Devices in JG first." -ForegroundColor Red
+        return
+    }
+
+    Write-Host ""
+    Write-Host "  Stick devices in the profile:" -ForegroundColor Cyan
+    for ($i = 0; $i -lt $deviceCandidates.Count; $i++) {
+        $name = $deviceCandidates[$i].'device-name'.Trim()
+        $id = $deviceCandidates[$i].'device-id'
+        Write-Host ("    [{0}] {1}    ({2})" -f ($i + 1), $name, $id)
+    }
+    Write-Host ""
+
+    $leftPick = (Read-Host "  Which device is your LEFT NXT? (number)").Trim()
+    if (-not ($leftPick -match '^\d+$') -or [int]$leftPick -lt 1 -or [int]$leftPick -gt $deviceCandidates.Count) {
+        Write-Host "  Unrecognized choice." -ForegroundColor Yellow; return
+    }
+    $leftId = $deviceCandidates[[int]$leftPick - 1].'device-id'
+
+    $rightPick = (Read-Host "  Which device is your RIGHT NXT? (number)").Trim()
+    if (-not ($rightPick -match '^\d+$') -or [int]$rightPick -lt 1 -or [int]$rightPick -gt $deviceCandidates.Count) {
+        Write-Host "  Unrecognized choice." -ForegroundColor Yellow; return
+    }
+    $rightId = $deviceCandidates[[int]$rightPick - 1].'device-id'
+
+    if ($leftId -eq $rightId) {
+        Write-Host "  Left and right cannot be the same device. Cancelled." -ForegroundColor Red; return
+    }
+
+    # Build action lookup maps.
+    $libActions = @{}
+    foreach ($a in $doc.profile.library.action) { $libActions[$a.id] = $a }
+
+    # The three target physical axes. Input IDs follow the VKB convention:
+    # X = 1, Y = 2, Z = 3. (Z is the slider/throttle and is NOT inverted.)
+    $targets = @(
+        @{ DeviceId = $leftId;  InputId = '1'; Label = 'Left stick X axis'  }
+        @{ DeviceId = $leftId;  InputId = '2'; Label = 'Left stick Y axis'  }
+        @{ DeviceId = $rightId; InputId = '2'; Label = 'Right stick Y axis' }
+    )
+
+    # Collect the response-curve action UUIDs to flip.
+    $rcUuids = @{}   # uuid -> array of labels that pointed to it (for the summary)
+    foreach ($t in $targets) {
+        $matches = @($doc.profile.inputs.input | Where-Object {
+            $_.'device-id' -eq $t.DeviceId -and
+            $_.'input-id'  -eq $t.InputId  -and
+            $_.'input-type' -eq 'axis'
+        })
+        if ($matches.Count -eq 0) {
+            Write-Host "  WARNING: no axis input found for $($t.Label)." -ForegroundColor Yellow
+            continue
+        }
+        foreach ($inp in $matches) {
+            foreach ($ac in @($inp.'action-configuration')) {
+                if ($ac.behavior -ne 'axis') { continue }
+                $rootAid = $ac.'root-action'
+                $root = $libActions[$rootAid]
+                if (-not $root) { continue }
+                foreach ($aidNode in @($root.actions.'action-id')) {
+                    $childId = if ($aidNode.'#text') { $aidNode.'#text' } else { [string]$aidNode }
+                    $childId = $childId.Trim()
+                    $child = $libActions[$childId]
+                    if ($child -and $child.type -eq 'response-curve') {
+                        if (-not $rcUuids.ContainsKey($childId)) { $rcUuids[$childId] = @() }
+                        $rcUuids[$childId] += "$($t.Label) ($($inp.mode))"
+                    }
+                }
+            }
+        }
+    }
+
+    if ($rcUuids.Count -eq 0) {
+        Write-Host ""
+        Write-Host "  No response curves found on the target axes. Nothing to do." -ForegroundColor Yellow
+        Write-Host "  (Did you load the wrong profile, or pick the wrong left/right device?)" -ForegroundColor Yellow
+        return
+    }
+
+    Write-Host ""
+    Write-Host "  Found $($rcUuids.Count) response curve(s) to toggle:" -ForegroundColor Cyan
+    foreach ($uuid in $rcUuids.Keys) {
+        Write-Host "    $($uuid.Substring(0,8))..  ->  $($rcUuids[$uuid] -join '; ')"
+    }
+    Write-Host ""
+    Write-Host "  Note: each run toggles. Run twice to undo." -ForegroundColor Gray
+    Write-Host ""
+    $go = (Read-Host "  Proceed with the flip? (y/N)").Trim().ToLower()
+    if ($go -ne 'y' -and $go -ne 'yes') {
+        Write-Host "  Cancelled." -ForegroundColor Yellow; return
+    }
+
+    # Backup.
+    $backup = New-TimestampedBackup -Path $ProfilePath
+    Write-Host "  Backed up profile to:" -ForegroundColor DarkGray
+    Write-Host "    $backup" -ForegroundColor DarkGray
+
+    # Read raw text (preserving BOM) so the regex edits keep JG's formatting intact.
+    $file = Read-ActionmapsFile -Path $ProfilePath   # same UTF-8 + BOM handling
+    $text = $file.Content
+
+    $flippedActions = 0
+    $flippedPoints = 0
+    foreach ($uuid in $rcUuids.Keys) {
+        # Locate the action block.
+        $blockStart = $text.IndexOf("<action id=`"$uuid`" type=`"response-curve`">")
+        if ($blockStart -lt 0) {
+            Write-Host "    skip: $($uuid.Substring(0,8)) not found in raw text" -ForegroundColor Yellow
+            continue
+        }
+        # Find matching </action> after blockStart.
+        $blockEnd = $text.IndexOf("</action>", $blockStart)
+        if ($blockEnd -lt 0) { continue }
+        $blockEnd += "</action>".Length
+
+        $block = $text.Substring($blockStart, $blockEnd - $blockStart)
+
+        # Locate the <control-points>...</control-points> region within the block.
+        $cpStart = $block.IndexOf("<control-points>")
+        $cpEnd = $block.IndexOf("</control-points>")
+        if ($cpStart -lt 0 -or $cpEnd -lt 0) { continue }
+        $cpRegion = $block.Substring($cpStart, $cpEnd - $cpStart)
+
+        # Within control-points, negate the Y of every <value>X,Y</value>.
+        $newCpRegion = [regex]::Replace(
+            $cpRegion,
+            '<value>([-0-9.]+),([-0-9.]+)</value>',
+            {
+                param($m)
+                $x = $m.Groups[1].Value
+                $y = [double]$m.Groups[2].Value
+                $negY = -$y
+                $script:flippedPoints++
+                # Format like '-1.0' / '1.0' (JG's style) -- one decimal place,
+                # no scientific notation, '-0' collapsed to '0'.
+                if ($negY -eq 0) { $negStr = '0.0' }
+                else { $negStr = $negY.ToString('0.0##############', [System.Globalization.CultureInfo]::InvariantCulture) }
+                "<value>$x,$negStr</value>"
+            }
+        )
+
+        $newBlock = $block.Substring(0, $cpStart) + $newCpRegion + $block.Substring($cpEnd)
+        $text = $text.Substring(0, $blockStart) + $newBlock + $text.Substring($blockEnd)
+        $flippedActions++
+    }
+
+    Write-ActionmapsFile -Path $ProfilePath -Content $text -HasBom $file.HasBom
+
+    # Sanity-parse the result.
+    try {
+        $null = [xml](Get-Content -LiteralPath $ProfilePath -Raw -Encoding UTF8)
+    } catch {
+        Write-Host "  ERROR: result file failed XML parse. Restoring from backup." -ForegroundColor Red
+        Copy-Item -LiteralPath $backup -Destination $ProfilePath -Force
+        return
+    }
+
+    Write-Host ""
+    Write-Host "  Flipped $flippedActions response curve(s), $flippedPoints control-point Y value(s) total." -ForegroundColor Green
+    Write-Host "  Re-open the profile in JG R14 to see the change." -ForegroundColor Gray
+    return [PSCustomObject]@{ Status = 'flipped'; Actions = $flippedActions; Points = $flippedPoints }
+}
+
+function Invoke-NonEvoAxisFlip-Selection {
+    param([string]$ProfilePathArg)
+    [void](Invoke-NonEvoAxisFlip-Profile -ProfilePath $ProfilePathArg)
+}
+
+# =====================================================================
 #  MAIN
 # =====================================================================
 
@@ -766,6 +1021,7 @@ if ($Action) {
         'Restore'    { Invoke-RestoreBackup-Selection    -Installed $installed -Root $InstallRoot -ChannelArg $Channel }
         'Diagnostic' { Invoke-ShowDiagnostic-Selection   -Installed $installed -Root $InstallRoot -ChannelArg $Channel }
         'Prune'      { Invoke-PruneBackups-Selection     -Installed $installed -Root $InstallRoot -ChannelArg $Channel }
+        'NonEvoFlip' { Invoke-NonEvoAxisFlip-Selection   -ProfilePathArg $ProfilePath }
     }
     Write-Host ""
     exit 0
@@ -783,6 +1039,7 @@ while ($keepRunning) {
     Write-Host "  [4] Restore from backup      -- pick a previous backup to restore (single channel)"
     Write-Host "  [5] Show diagnostic report   -- read-only summary of current binds + backups"
     Write-Host "  [6] Prune old backups        -- delete old actionmaps.xml.bak-* files"
+    Write-Host "  [7] Non-EVO axis flip        -- flip the 3 axes the non-EVO NXT reports inverted"
     Write-Host "  [Q] Quit"
     Write-Host ""
 
@@ -794,6 +1051,7 @@ while ($keepRunning) {
         '4' { Invoke-RestoreBackup-Selection   -Installed $installed -Root $InstallRoot -ChannelArg $Channel }
         '5' { Invoke-ShowDiagnostic-Selection  -Installed $installed -Root $InstallRoot -ChannelArg $Channel }
         '6' { Invoke-PruneBackups-Selection    -Installed $installed -Root $InstallRoot -ChannelArg $Channel }
+        '7' { Invoke-NonEvoAxisFlip-Selection  -ProfilePathArg $ProfilePath }
         'Q' { $keepRunning = $false }
         default { Write-Host "Unrecognized choice." -ForegroundColor Yellow }
     }
