@@ -1046,7 +1046,7 @@
    <rebind input="js2_ "/>
   </action>
   <action name="eva_view_pitch_mouse">
-   <rebind input="mo1_ "/>
+   <rebind input="mo1_maxis_y"/>
   </action>
   <action name="eva_view_pitch_up">
    <rebind input="js2_ "/>
@@ -1058,7 +1058,7 @@
    <rebind input="js2_ "/>
   </action>
   <action name="eva_view_yaw_mouse">
-   <rebind input="mo1_ "/>
+   <rebind input="mo1_maxis_x"/>
   </action>
   <action name="eva_view_yaw_right">
    <rebind input="js2_ "/>
