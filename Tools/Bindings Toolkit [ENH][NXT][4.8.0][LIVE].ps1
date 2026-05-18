@@ -556,6 +556,610 @@ function Invoke-RestoreBackup-Selection {
 }
 
 # =====================================================================
+#  STACK HEALTH HELPERS
+#  Read-only probes for the wider stick stack: Joystick Gremlin install
+#  location and runtime state, vJoy device presence, HidHide cloak
+#  state. Surfaced in the diagnostic report so a single screenshot
+#  carries enough signal for support without 3-app screenshots.
+# =====================================================================
+
+function Get-HidHideCliPath {
+    $candidates = @(
+        'C:\Program Files\Nefarius Software Solutions\HidHide\x64\HidHideCLI.exe',
+        'C:\Program Files\Nefarius Software Solutions\HidHide\HidHideCLI.exe',
+        "${env:ProgramFiles(x86)}\Nefarius Software Solutions\HidHide\x64\HidHideCLI.exe"
+    )
+    foreach ($p in $candidates) { if (Test-Path -LiteralPath $p) { return $p } }
+    return $null
+}
+
+function Get-JoystickGremlinPaths {
+    # Returns a de-duplicated list of joystick_gremlin.exe paths found via
+    # any signal: running process, HidHide app-list, common install dirs.
+    # Process / WMI lookups often return blank ExecutablePath when JG runs
+    # at a different elevation than this script -- so we fall back to
+    # HidHide's registered-app list (it remembers every JG ever launched
+    # with HidHide cloaking) and a directory walk.
+    $found = New-Object 'System.Collections.Generic.HashSet[string]' ([System.StringComparer]::OrdinalIgnoreCase)
+
+    foreach ($p in (Get-Process -Name joystick_gremlin -ErrorAction SilentlyContinue)) {
+        try { if ($p.MainModule -and $p.MainModule.FileName) { [void]$found.Add($p.MainModule.FileName) } } catch {}
+    }
+    foreach ($wp in (Get-CimInstance Win32_Process -Filter "Name = 'joystick_gremlin.exe'" -ErrorAction SilentlyContinue)) {
+        if ($wp.ExecutablePath) { [void]$found.Add($wp.ExecutablePath) }
+    }
+
+    $hh = Get-HidHideCliPath
+    if ($hh) {
+        try {
+            $apps = & $hh --app-list 2>$null
+            foreach ($line in $apps) {
+                if ($line -match '"([^"]+joystick_gremlin\.exe)"') {
+                    [void]$found.Add($Matches[1])
+                }
+            }
+        } catch {}
+    }
+
+    $walkDirs = @(
+        "$env:ProgramFiles\JoystickGremlin",
+        "${env:ProgramFiles(x86)}\JoystickGremlin",
+        "${env:ProgramFiles(x86)}\H2ik\Joystick Gremlin",
+        "$env:LOCALAPPDATA\Programs\JoystickGremlin",
+        "$env:USERPROFILE\Downloads",
+        "$env:USERPROFILE\Desktop"
+    )
+    foreach ($dir in $walkDirs) {
+        if (Test-Path -LiteralPath $dir) {
+            Get-ChildItem -LiteralPath $dir -Filter 'joystick_gremlin.exe' -Recurse -Depth 4 -ErrorAction SilentlyContinue |
+                ForEach-Object { [void]$found.Add($_.FullName) }
+        }
+    }
+
+    # Filter out paths that no longer exist (HidHide remembers deleted apps)
+    return @($found) | Where-Object { Test-Path -LiteralPath $_ }
+}
+
+function Test-JoystickGremlinLocation {
+    param([string]$Path)
+    # Risk levels: 'ok' (green), 'warn' (yellow), 'err' (red)
+    if ($Path -like "$env:USERPROFILE\Downloads\*") {
+        return @{ Risk = 'warn'; Reason = "in Downloads -- Windows Storage Sense can auto-delete this after 30/60/90 days" }
+    }
+    if ($Path -like "$env:TEMP\*" -or $Path -like "$env:LOCALAPPDATA\Temp\*") {
+        return @{ Risk = 'err'; Reason = "in %TEMP% -- WILL be wiped on cleanup" }
+    }
+    if ($Path -like '*\OneDrive\*' -or $Path -like '*\OneDrive - *' -or $Path -like '*\OneDrive_*') {
+        return @{ Risk = 'warn'; Reason = "in OneDrive -- sync can corrupt a running exe or .xml profile mid-write" }
+    }
+    if ($Path -like "$env:USERPROFILE\Desktop\*") {
+        return @{ Risk = 'warn'; Reason = "on Desktop -- easy to delete by accident; consider a permanent location" }
+    }
+    if ($Path -like "$env:ProgramFiles\*" -or $Path -like "${env:ProgramFiles(x86)}\*") {
+        return @{ Risk = 'ok'; Reason = "Program Files install" }
+    }
+    if ($Path -like "$env:LOCALAPPDATA\Programs\*") {
+        return @{ Risk = 'ok'; Reason = "per-user install (LocalAppData\Programs)" }
+    }
+    return @{ Risk = 'ok'; Reason = "custom location (no known risk)" }
+}
+
+function Test-JoystickGremlinRunning {
+    return [bool](Get-Process -Name joystick_gremlin -ErrorAction SilentlyContinue)
+}
+
+function Get-VJoyStatus {
+    # Returns @{ DriverLoaded; DeviceCount; DriverVersion }
+    $driverLoaded = $false
+    try {
+        $driverLoaded = [bool](Get-PnpDevice -ErrorAction SilentlyContinue | Where-Object { $_.FriendlyName -match 'vJoy' -and $_.Status -eq 'OK' })
+    } catch {}
+    $count = 0
+    $paramsPath = 'HKLM:\SYSTEM\CurrentControlSet\Services\vjoy\Parameters'
+    if (Test-Path $paramsPath) {
+        $count = @(Get-ChildItem $paramsPath -ErrorAction SilentlyContinue | Where-Object { $_.PSChildName -match '^Device\d+$' }).Count
+    }
+    # vJoy driver version lives on vjoy.sys (the user-mode DLL exports FileVersion
+    # 0.0.0 -- it's the .sys driver that carries the real version string).
+    $driverVersion = $null
+    $sys = "$env:SystemRoot\System32\drivers\vjoy.sys"
+    if (Test-Path -LiteralPath $sys) {
+        $driverVersion = (Get-Item -LiteralPath $sys).VersionInfo.FileVersion
+    }
+    return @{ DriverLoaded = $driverLoaded; DeviceCount = $count; DriverVersion = $driverVersion }
+}
+
+function Get-HidHideAppList {
+    # Returns the raw list of paths registered with HidHide's "allowed apps" list.
+    param([string]$Cli)
+    if (-not $Cli -or -not (Test-Path -LiteralPath $Cli)) { return @() }
+    $out = @()
+    try {
+        & $Cli --app-list 2>&1 | ForEach-Object {
+            if ($_ -match '--app-reg\s+"([^"]+)"') { $out += $Matches[1] }
+        }
+    } catch {}
+    return ,$out
+}
+
+function Get-HidHideHiddenDevices {
+    # Returns the list of device instance paths that HidHide is cloaking.
+    param([string]$Cli)
+    if (-not $Cli -or -not (Test-Path -LiteralPath $Cli)) { return @() }
+    $out = @()
+    try {
+        & $Cli --dev-list 2>&1 | ForEach-Object {
+            if ($_ -match '--dev-hide\s+"([^"]+)"') { $out += $Matches[1] }
+        }
+    } catch {}
+    return ,$out
+}
+
+function Get-HidHideStatus {
+    $cli = Get-HidHideCliPath
+    if (-not $cli) { return @{ Installed = $false } }
+    $svc = Get-Service -Name HidHide -ErrorAction SilentlyContinue
+    $svcState = if ($svc) { $svc.Status.ToString() } else { 'unknown' }
+    $cloak = 'unknown'
+    $version = $null
+    try {
+        $raw = (& $cli --cloak-state 2>&1) -join "`n"
+        if     ($raw -match '--cloak-on')  { $cloak = 'on' }
+        elseif ($raw -match '--cloak-off') { $cloak = 'off' }
+        $version = ((& $cli --version 2>&1) -join "`n").Trim()
+    } catch {}
+    $apps = Get-HidHideAppList -Cli $cli
+    $hidden = Get-HidHideHiddenDevices -Cli $cli
+
+    # Flag SC binaries in the app-list. SC should NEVER be in this list --
+    # the whole point of HidHide is that SC ONLY sees vJoy, not the physical
+    # sticks. Any SC binary here means physicals leak through and binds will
+    # double-fire.
+    $scBins = @('StarCitizen.exe', 'StarCitizen_Launcher.exe', 'RSI Launcher.exe', 'RSILauncher.exe')
+    $scBypass = @($apps | Where-Object {
+        $leaf = Split-Path -Leaf $_
+        $scBins -contains $leaf
+    })
+
+    return @{
+        Installed       = $true
+        CliPath         = $cli
+        ServiceState    = $svcState
+        CloakState      = $cloak
+        Version         = $version
+        HiddenDevices   = $hidden.Count
+        HiddenList      = $hidden
+        RegisteredApps  = $apps.Count
+        AppList         = $apps
+        ScBypassApps    = $scBypass
+    }
+}
+
+function Get-JoystickGremlinLoadedProfile {
+    param([string]$ShippedProfile)
+    # JG R14 puts the loaded profile path in its window title, format:
+    #   "<full path>.xml - Joystick Gremlin"
+    # That's the authoritative signal for what file JG has open right now --
+    # works whether the user loaded the shipped profile or did Save As to a
+    # different name/location. Also hash-compare the LOADED file's contents
+    # against the shipped XML so we can distinguish "same content, different
+    # path" (clean Save As copy) from "different content" (actual edits).
+    $proc = Get-Process joystick_gremlin -ErrorAction SilentlyContinue | Select-Object -First 1
+    if (-not $proc) {
+        return @{ JgRunning = $false }
+    }
+    $title = $proc.MainWindowTitle
+    $loadedPath = $null
+    if ($title -match '^(.+\.xml)\s+-\s+Joystick Gremlin\s*$') {
+        $loadedPath = $Matches[1].Trim()
+    }
+    $shippedExists = (Test-Path -LiteralPath $ShippedProfile)
+    $loadedExists  = ($loadedPath -and (Test-Path -LiteralPath $loadedPath))
+    $pathMatchesShipped = $false
+    $contentMatchesShipped = $false
+    if ($loadedPath -and $shippedExists) {
+        try {
+            $shippedFull = [System.IO.Path]::GetFullPath($ShippedProfile)
+            $loadedFull  = [System.IO.Path]::GetFullPath($loadedPath)
+            $pathMatchesShipped = ($shippedFull -ieq $loadedFull)
+        } catch {}
+    }
+    if ($loadedExists -and $shippedExists) {
+        try {
+            $h1 = (Get-FileHash -LiteralPath $loadedPath -Algorithm SHA256).Hash
+            $h2 = (Get-FileHash -LiteralPath $ShippedProfile -Algorithm SHA256).Hash
+            $contentMatchesShipped = ($h1 -eq $h2)
+        } catch {}
+    }
+    return @{
+        JgRunning             = $true
+        TitleRaw              = $title
+        LoadedPath            = $loadedPath
+        LoadedExists          = $loadedExists
+        PathMatchesShipped    = $pathMatchesShipped
+        ContentMatchesShipped = $contentMatchesShipped
+    }
+}
+
+# --- Tier 2 additions appended to STACK HEALTH HELPERS ----------------
+
+function Get-ProfileDevices {
+    param([string]$ProfilePath)
+    # Parses the shipped JG profile's top-level <devices> block. Returns
+    # objects with Name + Id for each physical-stick device entry. vJoy
+    # and keyboard/mouse virtual devices are filtered out -- only the
+    # entries that map to real sticks are surfaced.
+    if (-not (Test-Path -LiteralPath $ProfilePath)) { return @() }
+    try {
+        [xml]$doc = Get-Content -LiteralPath $ProfilePath -Raw -Encoding UTF8
+    } catch { return @() }
+    $out = @()
+    foreach ($d in @($doc.profile.devices.device)) {
+        $name = if ($d.'device-name') { $d.'device-name'.Trim() } else { '(unnamed)' }
+        $id   = if ($d.'device-id')   { $d.'device-id'.Trim() }   else { '' }
+        if ($name -match '^(vJoy|Keyboard|Mouse|VirtualKeyboard)') { continue }
+        $out += [PSCustomObject]@{ Name = $name; Id = $id }
+    }
+    return ,$out
+}
+
+function Get-ConnectedVkbDevices {
+    # VKB Sim vendor id is 231D. PnP enumerates each device twice (USB
+    # surface + HID surface) so we dedupe by PID, which uniquely
+    # identifies the stick model. Returns a hashtable: PID -> FriendlyName.
+    $devs = @(Get-PnpDevice -ErrorAction SilentlyContinue | Where-Object {
+        $_.InstanceId -match 'VID_231D' -and $_.Status -eq 'OK'
+    })
+    $byPid = @{}
+    foreach ($d in $devs) {
+        if ($d.InstanceId -match 'PID_([0-9A-Fa-f]{4})') {
+            $vkbPid = $Matches[1].ToUpper()
+            if (-not $byPid.ContainsKey($vkbPid)) {
+                $byPid[$vkbPid] = $d.FriendlyName
+            }
+        }
+    }
+    return $byPid
+}
+
+function Get-JoystickGremlinVersion {
+    param([string]$ExePath)
+    # JG R14 PyInstaller builds ship with empty VersionInfo metadata so
+    # we fall back to a file-size + year heuristic. R13 ~ 2.4 MB / 2019,
+    # R14 ~ 4 MB / 2026.
+    if (-not $ExePath -or -not (Test-Path -LiteralPath $ExePath)) {
+        return @{ Major = $null; Display = '(exe not found)' }
+    }
+    $info = Get-Item -LiteralPath $ExePath
+    $v = $info.VersionInfo.ProductVersion
+    if (-not $v) { $v = $info.VersionInfo.FileVersion }
+    if ($v -and ($v -match '^\s*(\d+)\.')) {
+        return @{ Major = [int]$Matches[1]; Display = $v.Trim() }
+    }
+    $sizeMb = [math]::Round($info.Length / 1MB, 1)
+    $year   = $info.LastWriteTime.Year
+    if ($info.Length -gt 3500000) {
+        return @{ Major = 14; Display = "R14.x heuristic ($sizeMb MB, $year)" }
+    } elseif ($info.Length -gt 1500000) {
+        return @{ Major = 13; Display = "R13.x heuristic ($sizeMb MB, $year)" }
+    }
+    return @{ Major = $null; Display = "unknown ($sizeMb MB, $year)" }
+}
+
+function Get-VkbConfiguratorPath {
+    # Returns path to VKBDevCfg-C.exe if installed, $null otherwise.
+    $candidates = @(
+        'C:\Program Files\VKB Sim\VKBDevCfg\VKBDevCfg-C.exe',
+        "${env:ProgramFiles(x86)}\VKB Sim\VKBDevCfg\VKBDevCfg-C.exe",
+        'C:\Program Files\VKBsim\VKBDevCfg\VKBDevCfg-C.exe',
+        "${env:ProgramFiles(x86)}\VKBsim\VKBDevCfg\VKBDevCfg-C.exe"
+    )
+    foreach ($p in $candidates) {
+        if (Test-Path -LiteralPath $p) { return $p }
+    }
+    return $null
+}
+
+function Get-GameControllersVisibleToSC {
+    # Approximates the joy.cpl device list -- i.e. what SC sees through
+    # DirectInput. Computed as (raw HID-class game controllers currently
+    # present) MINUS (devices HidHide is cloaking). vJoy collections show
+    # up with instance ids like 'HID\HIDCLASS&COLnn\...' so we relabel
+    # them as 'vJoy device N'; physical sticks get their friendly name
+    # from the joy.cpl OEM friendly-name registry table.
+    param([string[]]$HiddenInstanceIds)
+    $raw = @(Get-PnpDevice -PresentOnly -Class HIDClass -ErrorAction SilentlyContinue | Where-Object {
+        $_.Status -eq 'OK' -and $_.FriendlyName -match 'game controller|joystick'
+    })
+    $hidden = if ($HiddenInstanceIds) { @($HiddenInstanceIds) } else { @() }
+
+    $oemKey = 'HKCU:\System\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM'
+    $out = @()
+    foreach ($d in $raw) {
+        $isHidden = $false
+        foreach ($h in $hidden) {
+            if ($d.InstanceId -ieq $h) { $isHidden = $true; break }
+        }
+        if ($isHidden) { continue }
+
+        $label = $d.FriendlyName
+        # vJoy collections
+        if ($d.InstanceId -match 'HIDCLASS&COL(\d+)') {
+            $label = "vJoy device (HIDCLASS COL$($Matches[1]))"
+        }
+        # OEM friendly name lookup for VID/PID devices
+        elseif ($d.InstanceId -match 'VID_([0-9A-Fa-f]{4})&PID_([0-9A-Fa-f]{4})') {
+            $vp = "VID_$($Matches[1].ToUpper())&PID_$($Matches[2].ToUpper())"
+            $oem = Get-ItemProperty -LiteralPath (Join-Path $oemKey $vp) -ErrorAction SilentlyContinue
+            if ($oem -and $oem.OEMName) { $label = $oem.OEMName.Trim() + " ($vp)" }
+            else { $label = "$($d.FriendlyName) ($vp)" }
+        }
+        $out += [PSCustomObject]@{ Label = $label; InstanceId = $d.InstanceId }
+    }
+    return ,$out
+}
+
+function Test-LayoutXmlForChannel {
+    # Returns @{ Present; Path; SizeKB; MTime } -- the NXT layout file
+    # that SC reads on import from <channel>\user\client\0\controls\mappings\
+    param([string]$Root, [string]$Channel)
+    $mappings = Join-Path $Root "$Channel\user\client\0\controls\mappings"
+    if (-not (Test-Path -LiteralPath $mappings)) {
+        return @{ Present = $false; Reason = 'controls\mappings dir missing' }
+    }
+    $found = @(Get-ChildItem -LiteralPath $mappings -Filter 'layout_ENH_NXT_*_exported.xml' -ErrorAction SilentlyContinue)
+    if ($found.Count -eq 0) {
+        return @{ Present = $false; Reason = 'no layout_ENH_NXT_*_exported.xml in mappings dir' }
+    }
+    $newest = $found | Sort-Object LastWriteTime -Descending | Select-Object -First 1
+    return @{ Present = $true; Path = $newest.FullName; SizeKB = [int]($newest.Length / 1KB); MTime = $newest.LastWriteTime }
+}
+
+function Get-LegacyLayoutsForChannel {
+    # Returns a list of .xml files in <channel>\user\client\0\controls\mappings\
+    # that look like LEGACY clear-bindings or stale layouts the user should
+    # remove. Pattern-matches the docs FAQ examples:
+    #   - Hyphenated 'Clear-Bindings' (older spelling; current is underscored
+    #     'Clear_Bindings')
+    #   - Layouts lacking the _NNN_ patch token (pre-4.x naming)
+    #   - layouts without an _exported suffix
+    # We INTENTIONALLY don't flag the current-shipped layouts (ENH_<stick>_*
+    # and SUB_Clear_Bindings_*) -- only ones that look like legacy leftovers.
+    param([string]$Root, [string]$Channel)
+    $mappings = Join-Path $Root "$Channel\user\client\0\controls\mappings"
+    if (-not (Test-Path -LiteralPath $mappings)) { return @() }
+    $all = @(Get-ChildItem -LiteralPath $mappings -Filter 'layout_*.xml' -ErrorAction SilentlyContinue)
+    $legacy = @()
+    foreach ($f in $all) {
+        $n = $f.Name
+        # Hyphenated old "Clear-Bindings" -- replaced 2026 by underscored form
+        if ($n -match 'Clear-Bindings') { $legacy += $f; continue }
+        # Anything missing _exported suffix isn't an SC-importable layout export
+        if ($n -notmatch '_exported\.xml$') { $legacy += $f; continue }
+        # No patch token (_NNN_) in older releases -- catch anything older than _400_
+        if ($n -match 'layout_SUB_Clear_Bindings(_exported)?\.xml$') { $legacy += $f; continue }
+    }
+    return ,$legacy
+}
+
+function Get-StarCitizenInstalls {
+    # Scans common drives for "<root>\Roberts Space Industries\StarCitizen"
+    # directories that contain at least one channel subfolder (LIVE/PTU/...).
+    # Multiple hits = multiple SC installs, which is a known support-case
+    # since users edit the wrong one. Returns array of absolute paths.
+    # We don't walk full drives (slow); we check the standard install roots
+    # per drive letter that has any SC-looking folder.
+    $channels = @('LIVE','PTU','EPTU','HOTFIX','TECH-PREVIEW')
+    $roots = @()
+    foreach ($drive in (Get-PSDrive -PSProvider FileSystem -ErrorAction SilentlyContinue | Where-Object { $_.Used -ne $null })) {
+        $letter = $drive.Root  # e.g. 'C:\'
+        $candidates = @(
+            (Join-Path $letter 'Program Files\Roberts Space Industries\StarCitizen'),
+            (Join-Path $letter 'Program Files (x86)\Roberts Space Industries\StarCitizen'),
+            (Join-Path $letter 'Games\Roberts Space Industries\StarCitizen'),
+            (Join-Path $letter 'Roberts Space Industries\StarCitizen'),
+            (Join-Path $letter 'StarCitizen')
+        )
+        foreach ($c in $candidates) {
+            if (Test-Path -LiteralPath $c) {
+                # Check it has at least one channel subfolder; ignores empty shells
+                $hasChannel = $false
+                foreach ($ch in $channels) {
+                    if (Test-Path -LiteralPath (Join-Path $c $ch)) { $hasChannel = $true; break }
+                }
+                if ($hasChannel) { $roots += $c }
+            }
+        }
+    }
+    return ,@($roots | Select-Object -Unique)
+}
+
+
+function Show-StackHealth {
+    param([string]$ScriptRoot)
+
+    Write-Host ""
+    Write-Host "=== Stack health ===" -ForegroundColor Cyan
+
+    # --- Joystick Gremlin: process state ---
+    $jgRunning = Test-JoystickGremlinRunning
+    if ($jgRunning) {
+        Write-Host "  JG process: running" -ForegroundColor Green
+        Write-Host "              (activation state can't be read from outside JG -- blue Activate icon must be ON for binds to fire)" -ForegroundColor Gray
+    }
+    else {
+        Write-Host "  JG process: NOT running -- profile is not active until JG is launched + Activate" -ForegroundColor Yellow
+    }
+
+    # --- Joystick Gremlin: install location(s) + version ---
+    $jgPaths = Get-JoystickGremlinPaths
+    if (-not $jgPaths -or $jgPaths.Count -eq 0) {
+        Write-Host "  JG install: not found on disk (check process / HidHide app-list / common install dirs)" -ForegroundColor Yellow
+    }
+    else {
+        if ($jgPaths.Count -gt 1) {
+            Write-Host ("  JG installs found: {0} -- multiple installs can cause version confusion (R13 vs R14)" -f $jgPaths.Count) -ForegroundColor Yellow
+        }
+        foreach ($path in $jgPaths) {
+            $risk = Test-JoystickGremlinLocation -Path $path
+            $ver  = Get-JoystickGremlinVersion -ExePath $path
+            $colour = switch ($risk.Risk) { 'err' { 'Red' } 'warn' { 'Yellow' } default { 'Green' } }
+            $label  = switch ($risk.Risk) { 'err' { 'BAD ' } 'warn' { 'WARN' } default { 'OK  ' } }
+            Write-Host ("    [{0}] {1}" -f $label, $path) -ForegroundColor $colour
+            Write-Host ("           version: {0} -- {1}" -f $ver.Display, $risk.Reason) -ForegroundColor Gray
+            if ($ver.Major -eq 13) {
+                Write-Host "           !! R13 cannot load R14 profiles -- update to R14.x or this profile won't open" -ForegroundColor Red
+            }
+        }
+    }
+
+    # --- JG's currently-loaded profile (parsed from window title) ---
+    $shipped = Join-Path $ScriptRoot '..\Joystick Gremlin Profile [ENH][NXT][4.8.0][LIVE][R14].xml'
+    $shipped = [System.IO.Path]::GetFullPath($shipped)
+    $loaded = Get-JoystickGremlinLoadedProfile -ShippedProfile $shipped
+    if (-not $loaded.JgRunning) {
+        Write-Host "  JG loaded profile: (JG not running -- launch it + open the shipped profile to verify)" -ForegroundColor Gray
+    }
+    elseif (-not $loaded.LoadedPath) {
+        Write-Host ("  JG loaded profile: JG running but title doesn't show a profile path") -ForegroundColor Yellow
+        Write-Host ("                     title: '{0}'" -f $loaded.TitleRaw) -ForegroundColor Gray
+        Write-Host  "                     open the shipped profile via File -> Open in JG" -ForegroundColor Gray
+    }
+    elseif ($loaded.PathMatchesShipped -and $loaded.ContentMatchesShipped) {
+        Write-Host ("  JG loaded profile: {0}" -f $loaded.LoadedPath) -ForegroundColor Green
+        Write-Host  "                     matches shipped profile (path + content)" -ForegroundColor Gray
+    }
+    elseif ($loaded.ContentMatchesShipped) {
+        Write-Host ("  JG loaded profile: {0}" -f $loaded.LoadedPath) -ForegroundColor Green
+        Write-Host  "                     content matches shipped profile (clean Save-As copy at a different path)" -ForegroundColor Gray
+    }
+    else {
+        Write-Host ("  JG loaded profile: {0}" -f $loaded.LoadedPath) -ForegroundColor Yellow
+        Write-Host  "                     content differs from shipped profile (customized / edited / different stick)" -ForegroundColor Gray
+    }
+
+    # --- Sticks: profile expectations vs connected VKB hardware (raw, pre-cloak) ---
+    $profDevs = Get-ProfileDevices -ProfilePath $shipped
+    $vkb      = Get-ConnectedVkbDevices
+    $vkbPids  = @($vkb.Keys | Sort-Object)
+    if ($profDevs.Count -eq 0) {
+        Write-Host "  VKB hardware: profile declares no physical devices (check <devices> block in profile XML)" -ForegroundColor Yellow
+    }
+    elseif ($vkbPids.Count -eq 0) {
+        Write-Host ("  VKB hardware: profile expects {0} VKB device(s), 0 connected -- plug them in, re-check" -f $profDevs.Count) -ForegroundColor Red
+        foreach ($d in $profDevs) { Write-Host ("                expects: {0}" -f $d.Name) -ForegroundColor Gray }
+    }
+    else {
+        $stickColour = if ($vkbPids.Count -ge $profDevs.Count) { 'Green' } else { 'Yellow' }
+        Write-Host ("  VKB hardware: {0} stick(s) plugged in (PIDs: {1}); profile expects {2}" -f $vkbPids.Count, ($vkbPids -join ', '), $profDevs.Count) -ForegroundColor $stickColour
+        foreach ($d in $profDevs) { Write-Host ("                expects: {0}" -f $d.Name) -ForegroundColor Gray }
+        if ($vkbPids -notcontains '0200') {
+            Write-Host "                note: no PID 0200 (EVO Premium base) detected -- if you're on a non-EVO" -ForegroundColor Yellow
+            Write-Host "                      base, run [7] Non-EVO axis flip to invert L-X / L-Y / R-Y" -ForegroundColor Yellow
+        }
+    }
+
+    # --- Game controllers visible to SC (HidHide-aware joy.cpl approximation) ---
+    # NB: this runs AFTER we already have $hh; defer until HidHide block below
+    # so we can pass its hidden-list in. Captured locally then printed below.
+
+    # --- vJoy ---
+    $vj = Get-VJoyStatus
+    $vVer = if ($vj.DriverVersion) { "driver v$($vj.DriverVersion)" } else { 'driver version unknown' }
+    if (-not $vj.DriverLoaded -and $vj.DeviceCount -eq 0) {
+        Write-Host "  vJoy: not installed -- binds cannot reach SC without vJoy" -ForegroundColor Red
+    }
+    elseif (-not $vj.DriverLoaded) {
+        Write-Host ("  vJoy: {0} but driver not loaded ({1} device(s) configured -- reinstall / restart needed)" -f $vVer, $vj.DeviceCount) -ForegroundColor Red
+    }
+    elseif ($vj.DeviceCount -lt 2) {
+        Write-Host ("  vJoy: {0} loaded, {1} device(s) configured -- NXT profile expects 2 (use vJoyConf to add a second)" -f $vVer, $vj.DeviceCount) -ForegroundColor Yellow
+    }
+    else {
+        Write-Host ("  vJoy: {0} loaded, {1} device(s) configured" -f $vVer, $vj.DeviceCount) -ForegroundColor Green
+    }
+
+    # --- HidHide ---
+    $hh = Get-HidHideStatus
+    if (-not $hh.Installed) {
+        Write-Host "  HidHide: not installed -- SC may see physical sticks + vJoy together (binds double-fire)" -ForegroundColor Yellow
+    }
+    else {
+        $svcColour = if ($hh.ServiceState -eq 'Running') { 'Green' } else { 'Yellow' }
+        $hhVer = if ($hh.Version) { "v$($hh.Version)" } else { 'version unknown' }
+        Write-Host ("  HidHide: $hhVer, service {0}, cloak {1}, {2} hidden device(s), {3} app(s) registered" -f $hh.ServiceState, $hh.CloakState, $hh.HiddenDevices, $hh.RegisteredApps) -ForegroundColor $svcColour
+        if ($hh.CloakState -ne 'on') {
+            Write-Host "    cloak is OFF -- physical sticks are visible to SC right now" -ForegroundColor Yellow
+        }
+        if ($hh.ScBypassApps -and $hh.ScBypassApps.Count -gt 0) {
+            Write-Host "    !! SC binary is registered with HidHide -- REMOVE IT (SC seeing physicals double-fires binds):" -ForegroundColor Red
+            foreach ($app in $hh.ScBypassApps) { Write-Host ("       $app") -ForegroundColor Red }
+        }
+    }
+
+    # --- Game controllers visible to SC (joy.cpl approximation) ---
+    $visible = Get-GameControllersVisibleToSC -HiddenInstanceIds $hh.HiddenList
+    $vCount = $visible.Count
+    if ($vCount -eq 0) {
+        Write-Host "  Visible to SC: 0 game controllers (something is wrong -- vJoy should be visible at minimum)" -ForegroundColor Red
+    }
+    else {
+        $vjoyVisible = @($visible | Where-Object { $_.Label -like 'vJoy device*' })
+        $extras      = @($visible | Where-Object { $_.Label -notlike 'vJoy device*' })
+        $vColour = if ($extras.Count -eq 0) { 'Green' } else { 'Yellow' }
+        Write-Host ("  Visible to SC: {0} game controller(s) -- {1} vJoy + {2} other" -f $vCount, $vjoyVisible.Count, $extras.Count) -ForegroundColor $vColour
+        foreach ($d in $visible) { Write-Host ("                 $($d.Label)") -ForegroundColor Gray }
+        if ($extras.Count -gt 0) {
+            Write-Host "                 ! the 'other' devices above will fight your binds -- unplug or add to HidHide cloak list" -ForegroundColor Yellow
+        }
+    }
+
+    # --- VKB Configurator ---
+    $vkbCfg = Get-VkbConfiguratorPath
+    if ($vkbCfg) {
+        Write-Host ("  VKB Configurator: installed -- {0}" -f $vkbCfg) -ForegroundColor Green
+    }
+    else {
+        Write-Host "  VKB Configurator: not installed -- needed for firmware updates and stick-level config (download from vkbcontrollers.com)" -ForegroundColor Yellow
+    }
+
+    # --- SC installs: multiple = wrong-folder editing risk ---
+    $scInstalls = Get-StarCitizenInstalls
+    if ($scInstalls.Count -le 1) {
+        if ($scInstalls.Count -eq 1) {
+            Write-Host ("  SC installs: 1 (at {0})" -f $scInstalls[0]) -ForegroundColor Green
+        }
+        else {
+            Write-Host "  SC installs: none found at known locations (RSI Launcher may have a custom path)" -ForegroundColor Gray
+        }
+    }
+    else {
+        Write-Host ("  SC installs: {0} found -- you may be editing the WRONG one" -f $scInstalls.Count) -ForegroundColor Yellow
+        foreach ($p in $scInstalls) { Write-Host ("                $p") -ForegroundColor Gray }
+        Write-Host "                (RSI Launcher only points at one; use -InstallRoot to target the right path)" -ForegroundColor Gray
+    }
+
+    # --- Star Citizen runtime ---
+    $sc = Test-ScRunning
+    if ($sc) {
+        Write-Host ("  Star Citizen: RUNNING ({0}) -- profile / layout / actionmaps changes won't apply until SC restarts" -f ($sc.ProcessName -join ', ')) -ForegroundColor Yellow
+    }
+    else {
+        Write-Host "  Star Citizen: not running" -ForegroundColor Green
+    }
+
+    # --- This script's elevation (informational hint for the silent-mouse-aim trap) ---
+    # SC and JG must run at the SAME elevation level or mouse-axis binds (mo1_*)
+    # silently no-op. We can detect our own elevation but not SC's / JG's from a
+    # non-elevated probe -- so this line is a hint, not an assertion.
+    $id = [Security.Principal.WindowsIdentity]::GetCurrent()
+    $amAdmin = (New-Object Security.Principal.WindowsPrincipal($id)).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
+    $elevTag = if ($amAdmin) { 'elevated (Administrator)' } else { 'not elevated' }
+    Write-Host ("  This script: $elevTag -- if mouse-aim binds aren't firing, check that JG and SC run at the SAME elevation") -ForegroundColor Gray
+}
+
+
+# =====================================================================
 #  OPERATION: SHOW DIAGNOSTIC REPORT
 #  Read-only summary of the actionmaps.xml state for one or more
 #  channels. Useful for support: paste this output into Discord so
@@ -582,8 +1186,26 @@ function Invoke-ShowDiagnostic-Channel {
         $invertCount = ([regex]::Matches($content, 'invert="[01]"')).Count
         Write-Host "  Invert overrides in joystick options: $invertCount"
 
-        $vjoyCount = ([regex]::Matches($content, '<deviceoptions\s+name="vJoy Device')).Count
-        Write-Host "  vJoy device entries: $vjoyCount"
+        # Which vJoy slots does SC actually bind in this channel? Count distinct
+        # jsN_ prefixes used in <rebind input="..."> across all action maps. The
+        # old "<deviceoptions> count" metric was misleading -- SC only writes a
+        # <deviceoptions> block when the user CUSTOMIZED something on that
+        # device, so an all-defaults vJoy device left no trace and the count
+        # under-reported. js1/js2 prefix presence in rebinds is the real signal.
+        $js1Used = [regex]::IsMatch($content, '<rebind\s+input="js1_')
+        $js2Used = [regex]::IsMatch($content, '<rebind\s+input="js2_')
+        $slots = @()
+        if ($js1Used) { $slots += 'js1' }
+        if ($js2Used) { $slots += 'js2' }
+        if ($slots.Count -eq 2) {
+            Write-Host "  vJoy slots in use: js1 + js2 (both)" -ForegroundColor Green
+        }
+        elseif ($slots.Count -eq 1) {
+            Write-Host ("  vJoy slots in use: {0} only -- NXT profile expects both js1 and js2" -f $slots[0]) -ForegroundColor Yellow
+        }
+        else {
+            Write-Host "  vJoy slots in use: none -- no js1/js2 rebinds present (layout not imported?)" -ForegroundColor Yellow
+        }
 
         $mfdMatch = [regex]::Match($content, '<actionmap\s+name="vehicle_mfd"\s*>([\s\S]*?)</actionmap>')
         if ($mfdMatch.Success) {
@@ -622,6 +1244,8 @@ function Invoke-ShowDiagnostic-Channel {
 function Invoke-ShowDiagnostic-Selection {
     param([string[]]$Installed, [string]$Root, [string]$ChannelArg)
 
+    Show-StackHealth -ScriptRoot $PSScriptRoot
+
     $targets = Select-Channels -Installed $Installed -DefaultChannel $ChannelArg -AllowAll $true -Verb 'Show diagnostic report'
     if (-not $targets) { return }
 
@@ -630,6 +1254,38 @@ function Invoke-ShowDiagnostic-Selection {
         Write-Host ""
         Write-Host "=== $ch ===" -ForegroundColor Cyan
         Write-Host "  File: $path" -ForegroundColor Gray
+
+        # Layout XML presence (the file SC imports via Control Profiles)
+        $layout = Test-LayoutXmlForChannel -Root $Root -Channel $ch
+        if ($layout.Present) {
+            Write-Host ("  Layout XML: present ({0} KB, modified {1})" -f $layout.SizeKB, $layout.MTime) -ForegroundColor Green
+
+            # Mtime drift: if layout XML is NEWER than actionmaps.xml, SC
+            # hasn't re-imported since the layout was last edited. Catches the
+            # "I updated the layout but SC still shows old binds" case.
+            if (Test-Path -LiteralPath $path) {
+                $amInfo = Get-Item -LiteralPath $path
+                if ($layout.MTime -gt $amInfo.LastWriteTime) {
+                    $skew = New-TimeSpan -Start $amInfo.LastWriteTime -End $layout.MTime
+                    $when = if ($skew.TotalDays -ge 1) { "{0:N0}d" -f $skew.TotalDays } elseif ($skew.TotalHours -ge 1) { "{0:N0}h" -f $skew.TotalHours } else { "{0:N0}m" -f $skew.TotalMinutes }
+                    Write-Host ("              !! layout is $when newer than actionmaps -- SC hasn't re-imported since the layout was last edited") -ForegroundColor Yellow
+                    Write-Host  "                 (re-import in SC -> Control Profiles, OR run with -Action MFD/etc to push via this toolkit)" -ForegroundColor Gray
+                }
+            }
+        }
+        else {
+            Write-Host ("  Layout XML: MISSING -- {0}" -f $layout.Reason) -ForegroundColor Yellow
+            Write-Host  "              (SC -> Options -> Keybindings -> Control Profiles -> Import to load it)" -ForegroundColor Gray
+        }
+
+        # Legacy / stale layout files in the same mappings dir -- catches
+        # users who imported an old Clear-Bindings or pre-4xx file.
+        $legacy = Get-LegacyLayoutsForChannel -Root $Root -Channel $ch
+        if ($legacy.Count -gt 0) {
+            Write-Host ("  Legacy layouts: {0} stale file(s) in controls\mappings\ -- consider removing:" -f $legacy.Count) -ForegroundColor Yellow
+            foreach ($f in $legacy) { Write-Host ("                  {0}" -f $f.Name) -ForegroundColor Gray }
+        }
+
         [void](Invoke-ShowDiagnostic-Channel -Path $path)
     }
 }
@@ -967,19 +1623,38 @@ Write-Host ""
 Write-Host "Bindings Toolkit -- $StickName" -ForegroundColor Cyan
 Write-Host ("=" * 60)
 
-# Refuse if SC / RSI Launcher running.
+# Refuse if SC / RSI Launcher running -- except for the read-only Diagnostic
+# action, which doesn't touch any file SC has open and just reports state.
 $running = Test-ScRunning
-if ($running) {
+if ($running -and $Action -ne 'Diagnostic') {
     Write-Host ""
     Write-Host "Star Citizen / RSI Launcher is still running. Close it and re-run." -ForegroundColor Red
     Write-Host "Detected: $($running.ProcessName -join ', ')" -ForegroundColor Red
+    Write-Host "(The Diagnostic action is read-only and can be run with SC open: -Action Diagnostic)" -ForegroundColor Gray
     exit 1
 }
 
-# Validate install root.
-if (-not (Test-Path -LiteralPath $InstallRoot)) {
+# Validate install root + detect channels in one loop. Either failure
+# mode (path missing OR path exists but no LIVE/PTU/EPTU subfolders)
+# drops back into the prompt rather than exiting. Earlier versions
+# bailed in the second case without re-prompting -- users with a
+# launcher-created shell folder on C: but the actual install on
+# another drive got stuck.
+$installed = $null
+while (-not $installed) {
+    $pathOk = Test-Path -LiteralPath $InstallRoot
+    if ($pathOk) {
+        $installed = Resolve-InstalledChannels -Root $InstallRoot
+        if ($installed) { break }
+    }
+
     Write-Host ""
-    Write-Host "Star Citizen install not found at the default location:" -ForegroundColor Yellow
+    if (-not $pathOk) {
+        Write-Host "Star Citizen install folder not found:" -ForegroundColor Yellow
+    }
+    else {
+        Write-Host "No SC channel folders (LIVE/PTU/EPTU/...) found under:" -ForegroundColor Yellow
+    }
     Write-Host "  $InstallRoot" -ForegroundColor Yellow
     Write-Host ""
     Write-Host "If your install is on a different drive, enter its path now."
@@ -991,26 +1666,11 @@ if (-not (Test-Path -LiteralPath $InstallRoot)) {
         Write-Host "Cancelled." -ForegroundColor Red
         exit 1
     }
-    if (-not (Test-Path -LiteralPath $entered)) {
-        Write-Host ""
-        Write-Host "Path not found: $entered" -ForegroundColor Red
-        Write-Host "Re-run the script and try again, or pass it explicitly with:" -ForegroundColor Yellow
-        Write-Host "  .\Bindings Toolkit [ENH][NXT][4.8.0][LIVE].ps1 -InstallRoot 'X:\path\to\StarCitizen'" -ForegroundColor Yellow
-        exit 1
-    }
     $InstallRoot = $entered
-    Write-Host ""
-    Write-Host "Using install root: $InstallRoot" -ForegroundColor Green
 }
 
-# Detect installed channels.
-$installed = Resolve-InstalledChannels -Root $InstallRoot
-if (-not $installed) {
-    Write-Host ""
-    Write-Host "No SC channel folders (LIVE/PTU/EPTU/...) found under:" -ForegroundColor Red
-    Write-Host "  $InstallRoot" -ForegroundColor Red
-    exit 1
-}
+Write-Host ""
+Write-Host "Using install root: $InstallRoot" -ForegroundColor Green
 
 # Non-interactive single-action mode.
 if ($Action) {

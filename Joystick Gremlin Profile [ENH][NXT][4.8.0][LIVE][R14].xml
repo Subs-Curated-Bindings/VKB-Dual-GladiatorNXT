@@ -1453,7 +1453,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>Response Curve</value>
+                <value>Click 'Invert Curve' below to flip this axis if you prefer the other direction.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -5715,7 +5715,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>R-stick X axis inverted at the JG layer here -- skips SC's in-game invert toggle.</value>
+                <value>Click 'Invert Curve' below to flip this axis if you prefer the other direction.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -5757,7 +5757,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>R-stick Y axis inverted at the JG layer here -- skips SC's in-game invert toggle.</value>
+                <value>Click 'Invert Curve' below to flip this axis if you prefer the other direction.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -5799,7 +5799,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>L-stick X axis inverted at the JG layer here -- skips SC's in-game invert toggle.</value>
+                <value>Click 'Invert Curve' below to flip this axis if you prefer the other direction.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -5841,7 +5841,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>Response Curve</value>
+                <value>Click 'Invert Curve' below to flip this axis if you prefer the other direction.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -5883,7 +5883,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>Response Curve</value>
+                <value>Click 'Invert Curve' below to flip this axis if you prefer the other direction.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -5925,7 +5925,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>Response Curve</value>
+                <value>Click 'Invert Curve' below to flip this axis if you prefer the other direction.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -5967,7 +5967,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>Response Curve</value>
+                <value>Click 'Invert Curve' below to flip this axis if you prefer the other direction.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -6009,7 +6009,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>Response Curve</value>
+                <value>Click 'Invert Curve' below to flip this axis if you prefer the other direction.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -6051,7 +6051,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>Response Curve</value>
+                <value>Click 'Invert Curve' below to flip this axis if you prefer the other direction.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
