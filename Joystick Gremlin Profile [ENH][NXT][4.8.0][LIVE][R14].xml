@@ -5786,11 +5786,11 @@
             <control-points>
                 <property type="point2d">
                     <name>point</name>
-                    <value>-1.0,-1.0</value>
+                    <value>-1.0,1.0</value>
                 </property>
                 <property type="point2d">
                     <name>point</name>
-                    <value>1.0,1.0</value>
+                    <value>1.0,-1.0</value>
                 </property>
             </control-points>
             <property type="string">
