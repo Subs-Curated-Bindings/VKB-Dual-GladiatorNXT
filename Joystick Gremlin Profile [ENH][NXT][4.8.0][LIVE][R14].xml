@@ -470,6 +470,10 @@
                 <root-action>a8655b37-3dea-414a-8c0f-30ca795a8194</root-action>
                 <behavior>button</behavior>
             </action-configuration>
+            <action-configuration>
+                <root-action>100a3229-620b-4ee4-a515-c6d4f9aafe8a</root-action>
+                <behavior>button</behavior>
+            </action-configuration>
         </input>
         <input>
             <device-id>7d12d5c0-43ea-11f0-800a-444553540000</device-id>
@@ -2798,32 +2802,6 @@
             <property type="int">
                 <name>vjoy-input-id</name>
                 <value>12</value>
-            </property>
-            <property type="input_type">
-                <name>vjoy-input-type</name>
-                <value>button</value>
-            </property>
-            <property type="bool">
-                <name>button-inverted</name>
-                <value>False</value>
-            </property>
-            <property type="string">
-                <name>action-label</name>
-                <value>Map to vJoy</value>
-            </property>
-            <property type="activation-mode">
-                <name>activation-mode</name>
-                <value>both</value>
-            </property>
-        </action>
-        <action id="1f43a77b-9616-4235-800c-bccb1559a338" type="map-to-vjoy">
-            <property type="int">
-                <name>vjoy-device-id</name>
-                <value>1</value>
-            </property>
-            <property type="int">
-                <name>vjoy-input-id</name>
-                <value>13</value>
             </property>
             <property type="input_type">
                 <name>vjoy-input-type</name>
@@ -8093,7 +8071,6 @@
         <action id="a8655b37-3dea-414a-8c0f-30ca795a8194" type="root">
             <actions>
                 <action-id>00c671c2-4082-48d6-af2e-b296a8b02e9f</action-id>
-                <action-id>1f43a77b-9616-4235-800c-bccb1559a338</action-id>
             </actions>
             <property type="string">
                 <name>action-label</name>
@@ -9584,6 +9561,157 @@
             <property type="activation-mode">
                 <name>activation-mode</name>
                 <value>disallowed</value>
+            </property>
+        </action>
+        <action id="56748439-749e-46fc-9e7a-438766689995" type="macro">
+            <property type="bool">
+                <name>is-exclusive</name>
+                <value>False</value>
+            </property>
+            <property type="string">
+                <name>repeat-mode</name>
+                <value>Single</value>
+            </property>
+            <property type="int">
+                <name>repeat-count</name>
+                <value>1</value>
+            </property>
+            <property type="float">
+                <name>repeat-delay</name>
+                <value>0.1</value>
+            </property>
+            <macro-action type="key">
+                <property type="int">
+                    <name>scan-code</name>
+                    <value>56</value>
+                </property>
+                <property type="bool">
+                    <name>is-extended</name>
+                    <value>True</value>
+                </property>
+                <property type="bool">
+                    <name>is-pressed</name>
+                    <value>True</value>
+                </property>
+            </macro-action>
+            <macro-action type="key">
+                <property type="int">
+                    <name>scan-code</name>
+                    <value>49</value>
+                </property>
+                <property type="bool">
+                    <name>is-extended</name>
+                    <value>False</value>
+                </property>
+                <property type="bool">
+                    <name>is-pressed</name>
+                    <value>True</value>
+                </property>
+            </macro-action>
+            <macro-action type="pause">
+                <property type="float">
+                    <name>duration</name>
+                    <value>0.05</value>
+                </property>
+            </macro-action>
+            <macro-action type="key">
+                <property type="int">
+                    <name>scan-code</name>
+                    <value>49</value>
+                </property>
+                <property type="bool">
+                    <name>is-extended</name>
+                    <value>False</value>
+                </property>
+                <property type="bool">
+                    <name>is-pressed</name>
+                    <value>False</value>
+                </property>
+            </macro-action>
+            <macro-action type="key">
+                <property type="int">
+                    <name>scan-code</name>
+                    <value>56</value>
+                </property>
+                <property type="bool">
+                    <name>is-extended</name>
+                    <value>True</value>
+                </property>
+                <property type="bool">
+                    <name>is-pressed</name>
+                    <value>False</value>
+                </property>
+            </macro-action>
+            <property type="string">
+                <name>action-label</name>
+                <value>Brief Right Alt+N tap (50ms chord) -- SC docking toggle</value>
+            </property>
+            <property type="activation-mode">
+                <name>activation-mode</name>
+                <value>press</value>
+            </property>
+        </action>
+        <action id="100a3229-620b-4ee4-a515-c6d4f9aafe8a" type="root">
+            <actions>
+                <action-id>40ac94e7-04cd-4a84-9c8a-3d6da2d91644</action-id>
+            </actions>
+            <property type="string">
+                <name>action-label</name>
+                <value>Root</value>
+            </property>
+            <property type="activation-mode">
+                <name>activation-mode</name>
+                <value>disallowed</value>
+            </property>
+        </action>
+        <action id="40ac94e7-04cd-4a84-9c8a-3d6da2d91644" type="tempo">
+            <short-actions>
+                <action-id>c8e38286-9289-41e9-a1a3-f49e64c5ac15</action-id>
+            </short-actions>
+            <long-actions>
+                <action-id>56748439-749e-46fc-9e7a-438766689995</action-id>
+            </long-actions>
+            <property type="float">
+                <name>threshold</name>
+                <value>0.5</value>
+            </property>
+            <property type="string">
+                <name>activate-on</name>
+                <value>release</value>
+            </property>
+            <property type="string">
+                <name>action-label</name>
+                <value>Tempo</value>
+            </property>
+            <property type="activation-mode">
+                <name>activation-mode</name>
+                <value>disallowed</value>
+            </property>
+        </action>
+        <action id="c8e38286-9289-41e9-a1a3-f49e64c5ac15" type="map-to-vjoy">
+            <property type="int">
+                <name>vjoy-device-id</name>
+                <value>1</value>
+            </property>
+            <property type="int">
+                <name>vjoy-input-id</name>
+                <value>13</value>
+            </property>
+            <property type="input_type">
+                <name>vjoy-input-type</name>
+                <value>button</value>
+            </property>
+            <property type="bool">
+                <name>button-inverted</name>
+                <value>False</value>
+            </property>
+            <property type="string">
+                <name>action-label</name>
+                <value>Map to vJoy</value>
+            </property>
+            <property type="activation-mode">
+                <name>activation-mode</name>
+                <value>both</value>
             </property>
         </action>
     </library>
