@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 98 104" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-1958.925322,-0)">
+        <g id="Artboard1" transform="matrix(0.784575,0,0,0.863634,435.481208,208.162347)">
+            <rect x="1941.744" y="-241.031" width="124.737" height="120.369" style="fill:none;"/>
+            <g transform="matrix(1.443224,0,0,1.311109,-356.248465,-2258.230281)">
+                <g id="Press-In" serif:id="Press In" transform="matrix(1,0,0,1,-555.881546,1019.51828)">
+                    <g transform="matrix(3.942055,0,0,3.942055,-6582.186179,-5617.879924)">
+                        <rect x="2224.627" y="1567.923" width="2" height="8" style="fill:rgb(255,178,49);"/>
+                    </g>
+                    <g transform="matrix(3.942055,0,0,3.942055,2207.127458,606.32124)">
+                        <path d="M0,-4L-4,0L-8,-4L0,-4Z" style="fill:rgb(255,178,49);fill-rule:nonzero;"/>
+                    </g>
+                    <g transform="matrix(3.942055,0,0,3.942055,-6582.186179,-1739.504969)">
+                        <g opacity="0.3">
+                            <g transform="matrix(1,0,0,1,2220.6274,578.077)">
+                                <path d="M0,11L2,11L2,5C2,4.4 2.4,4 3,4L7,4C7.6,4 8,4.4 8,5L8,11L10,11C10.6,11 11,11.4 11,12L11,13C12.2,11.6 13,8 13,6C13,1.6 9.4,-2 5,-2C0.6,-2 -3,1.6 -3,6C-3,8 -2.2,11.6 -1,13L-1,12C-1,11.4 -0.6,11 0,11" style="fill:rgb(255,178,49);fill-rule:nonzero;"/>
+                            </g>
+                        </g>
+                    </g>
+                    <g transform="matrix(3.942055,0,0,3.942055,2167.706909,531.422196)">
+                        <path d="M0,14C0,13.8 0.1,13.6 0.2,13.5C-1.2,12 -2,10.1 -2,8C-2,3.6 1.6,0 6,0C10.4,0 14,3.6 14,8C14,10.1 13.2,12 11.8,13.5C11.9,13.7 12,13.8 12,14L12,16C14.4,14.2 16,11.3 16,8C16,2.5 11.5,-2 6,-2C0.5,-2 -4,2.5 -4,8C-4,11.3 -2.4,14.2 0,16L0,14Z" style="fill:rgb(255,178,49);fill-rule:nonzero;"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
