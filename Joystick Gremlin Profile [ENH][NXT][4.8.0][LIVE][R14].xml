@@ -1503,7 +1503,7 @@
             </target-mode>
             <property type="string">
                 <name>action-label</name>
-                <value>Cycle into SCM mode.</value>
+                <value>"Master Mode Cycle" Cycle into SCM mode.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -1673,7 +1673,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>Pop mode stack -- return to the prior active mode.</value>
+                <value>"Modifier" Pop mode stack -- return to the prior active mode.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -2365,7 +2365,7 @@
             </target-mode>
             <property type="string">
                 <name>action-label</name>
-                <value>Cycle into SCM mode.</value>
+                <value>"Master Mode Cycle" Cycle into SCM mode.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -2411,7 +2411,7 @@
             </target-mode>
             <property type="string">
                 <name>action-label</name>
-                <value>Hold-only Modifier mode (chord layer). Reverts on release.</value>
+                <value>"Modifier" Hold-only Modifier mode (chord layer). Reverts on release.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -2441,7 +2441,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>Map to vJoy</value>
+                <value>"Lateral Strafe (Left/Right)"</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -2471,7 +2471,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>Map to vJoy</value>
+                <value>"Longitudinal Strafe (Fwd/Back)"</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -2501,7 +2501,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>Map to vJoy</value>
+                <value>"Mining Throttle / Salvage Spacing"</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -2531,7 +2531,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>Map to vJoy</value>
+                <value>"Spare Axis (Unbound)"</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -2561,7 +2561,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>Map to vJoy</value>
+                <value>"Turret Gimbal Limiter"</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -2591,7 +2591,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>Map to vJoy</value>
+                <value>"Vertical Strafe (Up/Down)"</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -2689,7 +2689,7 @@
             </target-mode>
             <property type="string">
                 <name>action-label</name>
-                <value>Cycle into Nav mode.</value>
+                <value>"Master Mode Cycle" Cycle into Nav mode.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -2761,7 +2761,7 @@
             </target-mode>
             <property type="string">
                 <name>action-label</name>
-                <value>Hold-only Modifier mode (chord layer). Reverts on release.</value>
+                <value>"Modifier" Hold-only Modifier mode (chord layer). Reverts on release.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -3091,7 +3091,7 @@
             </macro-action>
             <property type="string">
                 <name>action-label</name>
-                <value>Recenters freelook: holds F4 + the freelook vJoy button for 0.5s, then releases.</value>
+                <value>"Reset Freelook" Recenters freelook: holds F4 + the freelook vJoy button for 0.5s, then releases.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -4429,7 +4429,7 @@
             </target-mode>
             <property type="string">
                 <name>action-label</name>
-                <value>Cycle into Aux mode.</value>
+                <value>"Cycle to Auxiliary Mode" Cycle into Aux mode.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -4485,7 +4485,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>Map to vJoy</value>
+                <value>"Yaw"</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -4515,7 +4515,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>Map to vJoy</value>
+                <value>"Pitch"</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -4545,7 +4545,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>Map to vJoy</value>
+                <value>"Spare Axis (Unbound)"</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -4625,7 +4625,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>Routed to mouse Y so you can free-look up/down while flying in 3rd person.</value>
+                <value>"Camera Tilt (Mouse Y)" Routed to mouse Y so you can free-look up/down while flying in 3rd person.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -4705,7 +4705,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>Routed to mouse X so you can free-look left/right while flying in 3rd person.</value>
+                <value>"Camera Pan (Mouse X)" Routed to mouse X so you can free-look left/right while flying in 3rd person.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -4735,7 +4735,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>Map to vJoy</value>
+                <value>"Roll"</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -4833,7 +4833,7 @@
             </target-mode>
             <property type="string">
                 <name>action-label</name>
-                <value>Cycle into Aux mode.</value>
+                <value>"Cycle to Auxiliary Mode" Cycle into Aux mode.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -5651,7 +5651,7 @@
             </macro-action>
             <property type="string">
                 <name>action-label</name>
-                <value>Clean 100ms tap on light-amp vJoy button. Activation-mode must stay "release" (not "both").</value>
+                <value>"Light Amp Toggle" Clean 100ms tap on light-amp vJoy button. Activation-mode must stay "release" (not "both").</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -9644,48 +9644,11 @@
             </macro-action>
             <property type="string">
                 <name>action-label</name>
-                <value>Brief Right Alt+N tap (50ms chord) -- SC docking toggle</value>
+                <value>"Dock/Undock" Brief Right Alt+N tap (50ms chord) -- SC docking toggle</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
                 <value>press</value>
-            </property>
-        </action>
-        <action id="100a3229-620b-4ee4-a515-c6d4f9aafe8a" type="root">
-            <actions>
-                <action-id>40ac94e7-04cd-4a84-9c8a-3d6da2d91644</action-id>
-            </actions>
-            <property type="string">
-                <name>action-label</name>
-                <value>Root</value>
-            </property>
-            <property type="activation-mode">
-                <name>activation-mode</name>
-                <value>disallowed</value>
-            </property>
-        </action>
-        <action id="40ac94e7-04cd-4a84-9c8a-3d6da2d91644" type="tempo">
-            <short-actions>
-                <action-id>c8e38286-9289-41e9-a1a3-f49e64c5ac15</action-id>
-            </short-actions>
-            <long-actions>
-                <action-id>56748439-749e-46fc-9e7a-438766689995</action-id>
-            </long-actions>
-            <property type="float">
-                <name>threshold</name>
-                <value>0.5</value>
-            </property>
-            <property type="string">
-                <name>activate-on</name>
-                <value>release</value>
-            </property>
-            <property type="string">
-                <name>action-label</name>
-                <value>Tempo</value>
-            </property>
-            <property type="activation-mode">
-                <name>activation-mode</name>
-                <value>disallowed</value>
             </property>
         </action>
         <action id="c8e38286-9289-41e9-a1a3-f49e64c5ac15" type="map-to-vjoy">
@@ -9712,6 +9675,43 @@
             <property type="activation-mode">
                 <name>activation-mode</name>
                 <value>both</value>
+            </property>
+        </action>
+        <action id="40ac94e7-04cd-4a84-9c8a-3d6da2d91644" type="tempo">
+            <short-actions>
+                <action-id>c8e38286-9289-41e9-a1a3-f49e64c5ac15</action-id>
+            </short-actions>
+            <long-actions>
+                <action-id>56748439-749e-46fc-9e7a-438766689995</action-id>
+            </long-actions>
+            <property type="float">
+                <name>threshold</name>
+                <value>0.5</value>
+            </property>
+            <property type="string">
+                <name>activate-on</name>
+                <value>release</value>
+            </property>
+            <property type="string">
+                <name>action-label</name>
+                <value>Tempo</value>
+            </property>
+            <property type="activation-mode">
+                <name>activation-mode</name>
+                <value>disallowed</value>
+            </property>
+        </action>
+        <action id="100a3229-620b-4ee4-a515-c6d4f9aafe8a" type="root">
+            <actions>
+                <action-id>40ac94e7-04cd-4a84-9c8a-3d6da2d91644</action-id>
+            </actions>
+            <property type="string">
+                <name>action-label</name>
+                <value>Root</value>
+            </property>
+            <property type="activation-mode">
+                <name>activation-mode</name>
+                <value>disallowed</value>
             </property>
         </action>
     </library>
