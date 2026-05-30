@@ -1503,7 +1503,7 @@
             </target-mode>
             <property type="string">
                 <name>action-label</name>
-                <value>"Master Mode Cycle" Cycle into SCM mode.</value>
+                <value>"Master Mode Cycle | Flight Control" Cycle into SCM mode.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -1673,7 +1673,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>"Modifier" Pop mode stack -- return to the prior active mode.</value>
+                <value>"Modifier | Modifier" Pop mode stack -- return to the prior active mode.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -2365,7 +2365,7 @@
             </target-mode>
             <property type="string">
                 <name>action-label</name>
-                <value>"Master Mode Cycle" Cycle into SCM mode.</value>
+                <value>"Master Mode Cycle | Flight Control" Cycle into SCM mode.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -2411,7 +2411,7 @@
             </target-mode>
             <property type="string">
                 <name>action-label</name>
-                <value>"Modifier" Hold-only Modifier mode (chord layer). Reverts on release.</value>
+                <value>"Modifier | Modifier" Hold-only Modifier mode (chord layer). Reverts on release.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -2441,7 +2441,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>"Lateral Strafe (Left/Right)"</value>
+                <value>"Lateral Strafe (Left/Right) | Flight Control"</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -2471,7 +2471,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>"Longitudinal Strafe (Fwd/Back)"</value>
+                <value>"Longitudinal Strafe (Fwd/Back) | Flight Control"</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -2501,7 +2501,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>"Mining Throttle / Salvage Spacing"</value>
+                <value>"Mining Throttle / Salvage Spacing | Mining"</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -2531,7 +2531,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>"Spare Axis (Unbound)"</value>
+                <value>"Spare Axis (Unbound) | Unbound"</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -2561,7 +2561,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>"Turret Gimbal Limiter"</value>
+                <value>"Turret Gimbal Limiter | Turret"</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -2591,7 +2591,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>"Vertical Strafe (Up/Down)"</value>
+                <value>"Vertical Strafe (Up/Down) | Flight Control"</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -2689,7 +2689,7 @@
             </target-mode>
             <property type="string">
                 <name>action-label</name>
-                <value>"Master Mode Cycle" Cycle into Nav mode.</value>
+                <value>"Master Mode Cycle | Flight Control" Cycle into Nav mode.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -2761,7 +2761,7 @@
             </target-mode>
             <property type="string">
                 <name>action-label</name>
-                <value>"Modifier" Hold-only Modifier mode (chord layer). Reverts on release.</value>
+                <value>"Modifier | Modifier" Hold-only Modifier mode (chord layer). Reverts on release.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -3091,7 +3091,7 @@
             </macro-action>
             <property type="string">
                 <name>action-label</name>
-                <value>"Reset Freelook" Recenters freelook: holds F4 + the freelook vJoy button for 0.5s, then releases.</value>
+                <value>"Reset Freelook | Camera" Recenters freelook: holds F4 + the freelook vJoy button for 0.5s, then releases.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -4429,7 +4429,7 @@
             </target-mode>
             <property type="string">
                 <name>action-label</name>
-                <value>"Cycle to Auxiliary Mode" Cycle into Aux mode.</value>
+                <value>"Cycle to Auxiliary Mode | Miscellaneous" Cycle into Aux mode.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -4485,7 +4485,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>"Yaw"</value>
+                <value>"Yaw | Flight Control"</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -4515,7 +4515,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>"Pitch"</value>
+                <value>"Pitch | Flight Control"</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -4545,7 +4545,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>"Spare Axis (Unbound)"</value>
+                <value>"Spare Axis (Unbound) | Unbound"</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -4625,7 +4625,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>"Camera Tilt (Mouse Y)" Routed to mouse Y so you can free-look up/down while flying in 3rd person.</value>
+                <value>"Camera Tilt (Mouse Y) | Camera" Routed to mouse Y so you can free-look up/down while flying in 3rd person.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -4705,7 +4705,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>"Camera Pan (Mouse X)" Routed to mouse X so you can free-look left/right while flying in 3rd person.</value>
+                <value>"Camera Pan (Mouse X) | Camera" Routed to mouse X so you can free-look left/right while flying in 3rd person.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -4735,7 +4735,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>"Roll"</value>
+                <value>"Roll | Flight Control"</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -4833,7 +4833,7 @@
             </target-mode>
             <property type="string">
                 <name>action-label</name>
-                <value>"Cycle to Auxiliary Mode" Cycle into Aux mode.</value>
+                <value>"Cycle to Auxiliary Mode | Miscellaneous" Cycle into Aux mode.</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -5651,7 +5651,7 @@
             </macro-action>
             <property type="string">
                 <name>action-label</name>
-                <value>"Light Amp Toggle" Clean 100ms tap on light-amp vJoy button. Activation-mode must stay "release" (not "both").</value>
+                <value>"Light Amp Toggle | Miscellaneous" Clean 100ms tap on light-amp vJoy button. Activation-mode must stay "release" (not "both").</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -9644,7 +9644,7 @@
             </macro-action>
             <property type="string">
                 <name>action-label</name>
-                <value>"Dock/Undock" Brief Right Alt+N tap (50ms chord) -- SC docking toggle</value>
+                <value>"Dock/Undock | Flight Control" Brief Right Alt+N tap (50ms chord) -- SC docking toggle</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
