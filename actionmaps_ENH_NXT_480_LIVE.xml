@@ -323,7 +323,6 @@
     <rebind input="js2_ "/>
    </action>
    <action name="v_transform_cycle">
-    <rebind input="js1_button18"/>
     <rebind input="js1_button17"/>
    </action>
    <action name="v_yaw">
@@ -476,11 +475,9 @@
   </actionmap>
   <actionmap name="spaceship_scanning">
    <action name="v_dec_scan_focus_level">
-    <rebind input="js1_button29"/>
     <rebind input="js1_button38"/>
    </action>
    <action name="v_inc_scan_focus_level">
-    <rebind input="js1_button28"/>
     <rebind input="js1_button36"/>
    </action>
    <action name="v_scanning_trigger_scan">
@@ -490,7 +487,6 @@
   <actionmap name="spaceship_mining">
    <action name="v_decrease_mining_throttle">
     <rebind input="js1_button29"/>
-    <rebind input="js2_button43"/>
    </action>
    <action name="v_increase_mining_throttle">
     <rebind input="js1_button28"/>
@@ -516,26 +512,21 @@
   </actionmap>
   <actionmap name="spaceship_salvage">
    <action name="tractor_beam_vehicle_decrease_distance">
-    <rebind input="js1_button24"/>
     <rebind input="js1_button38"/>
    </action>
    <action name="tractor_beam_vehicle_increase_distance">
-    <rebind input="js1_button23"/>
     <rebind input="js1_button36"/>
    </action>
    <action name="v_salvage_beam_spacing_abs">
     <rebind input="js1_rotz"/>
    </action>
    <action name="v_salvage_cycle_modifiers_left">
-    <rebind input="js2_button14" activationMode="double_tap"/>
     <rebind input="js2_button44"/>
    </action>
    <action name="v_salvage_cycle_modifiers_right">
-    <rebind input="js2_button12" activationMode="double_tap"/>
     <rebind input="js2_button42"/>
    </action>
    <action name="v_salvage_cycle_modifiers_structural">
-    <rebind input="js2_button13" activationMode="double_tap"/>
     <rebind input="js2_button43"/>
    </action>
    <action name="v_salvage_decrease_beam_spacing">
@@ -694,11 +685,9 @@
   </actionmap>
   <actionmap name="spaceship_missiles">
    <action name="v_weapon_bombing_hud_range_decrease">
-    <rebind input="js1_button29"/>
     <rebind input="js1_button38"/>
    </action>
    <action name="v_weapon_bombing_hud_range_increase">
-    <rebind input="js1_button28"/>
     <rebind input="js1_button36"/>
    </action>
    <action name="v_weapon_bombing_hud_range_reset">
@@ -975,11 +964,9 @@
   </actionmap>
   <actionmap name="tractor_beam">
    <action name="tractor_beam_decrease_distance">
-    <rebind input="js1_button24"/>
     <rebind input="js1_button38"/>
    </action>
    <action name="tractor_beam_increase_distance">
-    <rebind input="js1_button23"/>
     <rebind input="js1_button36"/>
    </action>
   </actionmap>
