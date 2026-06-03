@@ -325,6 +325,9 @@
    <action name="v_transform_cycle">
     <rebind input="js1_button18"/>
    </action>
+   <action name="v_vtol_toggle">
+    <rebind input="js1_button17"/>
+   </action>
    <action name="v_yaw">
     <rebind input="js2_x"/>
    </action>
