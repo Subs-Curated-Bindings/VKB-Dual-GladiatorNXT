@@ -609,10 +609,10 @@
    <rebind input="js2_y"/>
   </action>
   <action name="turret_remote_cycle_next">
-   <rebind input="js1_button22"/>
+   <rebind input="js2_ "/>
   </action>
   <action name="turret_remote_cycle_prev">
-   <rebind input="js1_button24"/>
+   <rebind input="js2_ "/>
   </action>
   <action name="turret_remote_exit">
    <rebind input="js2_button17"/>
