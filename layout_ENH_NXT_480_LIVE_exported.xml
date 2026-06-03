@@ -346,7 +346,7 @@
    <rebind input="js2_ "/>
   </action>
   <action name="v_transform_cycle">
-   <rebind input="js1_button17"/>
+   <rebind input="js1_button18"/>
   </action>
   <action name="v_yaw">
    <rebind input="js2_x"/>
@@ -499,11 +499,9 @@
  <actionmap name="spaceship_scanning">
   <action name="v_dec_scan_focus_level">
    <rebind input="js1_button38"/>
-   <rebind input="js1_button29"/>
   </action>
   <action name="v_inc_scan_focus_level">
    <rebind input="js1_button36"/>
-   <rebind input="js1_button28"/>
   </action>
   <action name="v_scanning_trigger_scan">
    <rebind input="js2_button1"/>
@@ -537,11 +535,9 @@
  </actionmap>
  <actionmap name="spaceship_salvage">
   <action name="tractor_beam_vehicle_decrease_distance">
-   <rebind input="js1_button38"/>
    <rebind input="js1_button29"/>
   </action>
   <action name="tractor_beam_vehicle_increase_distance">
-   <rebind input="js1_button36"/>
    <rebind input="js1_button28"/>
   </action>
   <action name="v_salvage_beam_spacing_abs">
@@ -713,11 +709,9 @@
  <actionmap name="spaceship_missiles">
   <action name="v_weapon_bombing_hud_range_decrease">
    <rebind input="js1_button38"/>
-   <rebind input="js1_button29"/>
   </action>
   <action name="v_weapon_bombing_hud_range_increase">
    <rebind input="js1_button36"/>
-   <rebind input="js1_button28"/>
   </action>
   <action name="v_weapon_bombing_hud_range_reset">
    <rebind input="js1_button40"/>
@@ -1051,9 +1045,6 @@
   <action name="eva_view_pitch_down">
    <rebind input="js2_ "/>
   </action>
-  <action name="eva_view_pitch_mouse">
-   <rebind input="mo1_maxis_y"/>
-  </action>
   <action name="eva_view_pitch_up">
    <rebind input="js2_ "/>
   </action>
@@ -1062,9 +1053,6 @@
   </action>
   <action name="eva_view_yaw_left">
    <rebind input="js2_ "/>
-  </action>
-  <action name="eva_view_yaw_mouse">
-   <rebind input="mo1_maxis_x"/>
   </action>
   <action name="eva_view_yaw_right">
    <rebind input="js2_ "/>
