@@ -6039,7 +6039,7 @@
         <action id="f3040bcd-5044-4f3a-9ce5-23620ded2983" type="description">
             <property type="string">
                 <name>description</name>
-                <value>MAIN-TRIG-L — After Burner Toggle</value>
+                <value>MAIN-TRIG-L</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6053,7 +6053,7 @@
         <action id="acdad481-b2ff-4828-8e08-6ab7ca8b164f" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-A2 — [H] Master Mode Cycle Nav &amp; SCM, Operator Mode Cycle</value>
+                <value>L-A2</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6067,7 +6067,7 @@
         <action id="02f3d1e4-a0a1-4933-b7cf-a0c6e315ba03" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-B1 — Precision Aiming, [H] Precision Max Zoom</value>
+                <value>L-B1</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6081,7 +6081,7 @@
         <action id="bd067832-f074-4140-a16c-7f925c6e04b8" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-A3.up — Flight Ready</value>
+                <value>L-A3.up</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6095,7 +6095,7 @@
         <action id="00c671c2-4082-48d6-af2e-b296a8b02e9f" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-A3.down — Landing Gear, [H] Auto Land, Toggle Docking Mode</value>
+                <value>L-A3.down</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6109,7 +6109,7 @@
         <action id="ee0f2236-5fef-4a3d-a88f-fba3a355e010" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-A3.left — Open Doors Toggle</value>
+                <value>L-A3.left</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6123,7 +6123,7 @@
         <action id="ecaabc0a-d2a4-4003-9012-f2d36c0f28a9" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-A3.press-in — Request Landing, Request Jumpgate</value>
+                <value>L-A3.press-in</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6137,7 +6137,7 @@
         <action id="5ae1fb75-c526-4259-871e-71a28f9c104d" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-A4.up — Camera Cycle View</value>
+                <value>L-A4.up</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6151,7 +6151,7 @@
         <action id="6bed52bf-5a31-4b06-8ba4-271176895e03" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-A4.right — Dynamic Zoom, [H] Missile Cinematic Camera</value>
+                <value>L-A4.right</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6165,7 +6165,7 @@
         <action id="a8758ca7-50ec-4ca0-8cab-3ae763696db5" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-A4.down — [H] Look Behind</value>
+                <value>L-A4.down</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6179,7 +6179,7 @@
         <action id="86ad3c09-f0a4-47e3-a3c1-4ca8ab352168" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-A4.left — Head Tracking On/Off</value>
+                <value>L-A4.left</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6193,7 +6193,7 @@
         <action id="d25f4910-59cd-49c6-89c2-d9a9bb1ce417" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-A4.press-in — Freelook</value>
+                <value>L-A4.press-in</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6207,7 +6207,7 @@
         <action id="c3cfa230-c362-4056-9611-583236f74288" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-C1.up — Stagger Mode, Remote Turret 1</value>
+                <value>L-C1.up</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6221,7 +6221,7 @@
         <action id="2a2f137c-b228-4dcb-b0ad-6c7f7a853188" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-C1.right — E.S.P. Toggle / Turret E.S.P, Remote Turret 3</value>
+                <value>L-C1.right</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6235,7 +6235,7 @@
         <action id="eef19089-f009-49aa-8e61-66704ca5fb1d" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-C1.down — Turret Gyro Mode, Start/Pause Stop Watch</value>
+                <value>L-C1.down</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6249,7 +6249,7 @@
         <action id="83fce59e-ce8b-4799-a15d-6e1c14e00153" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-C1.left — Toggle Lead/Lag Pip / Turret VJoy, Remote Turret 2</value>
+                <value>L-C1.left</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6263,7 +6263,7 @@
         <action id="fbd56998-4f24-4f3c-a255-f81421e44479" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-C1.press-in — Gimbal Cycle Fixed/Auto, [H] Recenter Turret, Salvage Gimbal Reset</value>
+                <value>L-C1.press-in</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6277,7 +6277,7 @@
         <action id="3b075a48-036c-4907-9c1d-1dfea6b20423" type="description">
             <property type="string">
                 <name>description</name>
-                <value>RAPID-TRIG-L — Trigger Up: Scan Ping, [H] Light Amplification</value>
+                <value>RAPID-TRIG-L</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6291,7 +6291,7 @@
         <action id="c7756cf9-5131-4984-82a1-f770b700a01f" type="description">
             <property type="string">
                 <name>description</name>
-                <value>RAPID-TRIG-L — Trigger Down: Space Brake</value>
+                <value>RAPID-TRIG-L</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6305,7 +6305,7 @@
         <action id="4f3377e4-f662-4785-b2c8-e60e5b0966c8" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-EN1.up — Mining Laser PWR / Scanning Angle / Bomb Range / Tractor Distance (Inc)</value>
+                <value>L-EN1.up</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6319,7 +6319,7 @@
         <action id="03473a21-dc42-429d-9cc9-28cf887d243b" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-EN1.down — Mining Laser PWR / Scanning Angle / Bomb Range / Tractor Distance (Dec)</value>
+                <value>L-EN1.down</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6333,7 +6333,7 @@
         <action id="5fbedf2d-f5da-48f8-8377-fd57b649fee0" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-SW1.up — Close Doors</value>
+                <value>L-SW1.up</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6347,7 +6347,7 @@
         <action id="cf7f420a-c77e-4843-806c-707b695189ff" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-SW1.down — Open Doors</value>
+                <value>L-SW1.down</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6361,7 +6361,7 @@
         <action id="fb9613b3-e126-4873-bc45-1d24456d4c8b" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-F1 — Request Cargo</value>
+                <value>L-F1</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6375,7 +6375,7 @@
         <action id="a840c0c1-8c3a-4f10-a84c-53b9e5192580" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-F3 — Cycle Config / Turret Change Position</value>
+                <value>L-F3</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6389,7 +6389,7 @@
         <action id="1edf2dee-b67d-4621-a236-c3949fdd6f58" type="description">
             <property type="string">
                 <name>description</name>
-                <value>MAIN-TRIG-R.stage-1 — Stage 1: Fire Selected Weapon Group, Fire Weapon Group 2</value>
+                <value>MAIN-TRIG-R.stage-1</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6403,7 +6403,7 @@
         <action id="d822caa1-2c48-4f75-8080-3408f2ecaab7" type="description">
             <property type="string">
                 <name>description</name>
-                <value>MAIN-TRIG-R.stage-2 — Stage 2: Fire Weapon Group 3</value>
+                <value>MAIN-TRIG-R.stage-2</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6417,7 +6417,7 @@
         <action id="d58598ec-b308-4144-852c-dadcddb55a75" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-A2 — [H] Select Mining/Salvage Mode, Self Repair All Toggle</value>
+                <value>R-A2</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6431,7 +6431,7 @@
         <action id="6eb47849-6d0e-4ab7-a544-41f107c75be6" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-B1 — Decoupled Toggle</value>
+                <value>R-B1</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6445,7 +6445,7 @@
         <action id="3dba2a47-5e7b-4026-8b97-822b74c1d0ef" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-D1 — [H] VOIP PTT, [DT] Chat Window</value>
+                <value>R-D1</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6459,7 +6459,7 @@
         <action id="2d32e1f9-7369-4335-a443-0b8a512e6cc5" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-A3.up — Inc. Mining Laser Power (Slow), Fire Fracture, Missile Count Up</value>
+                <value>R-A3.up</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6473,7 +6473,7 @@
         <action id="e8af0ce5-86f9-4f4b-9322-4417aae86b50" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-A3.right — Missile Type Next, Fire Right Tool</value>
+                <value>R-A3.right</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6487,7 +6487,7 @@
         <action id="c92386b3-4790-4285-8ecd-4ce80f410810" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-A3.down — Missile Count Down, Fire Disintegrate</value>
+                <value>R-A3.down</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6501,7 +6501,7 @@
         <action id="a361ae81-325e-4943-b1d9-68f1e3270041" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-A3.left — Missile Type Previous, Fire Left Tool</value>
+                <value>R-A3.left</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6515,7 +6515,7 @@
         <action id="1a480764-a62c-499e-a532-5bc8c45a2488" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-A3.press-in — Reset Missile Count, Cycle Fracture/Extraction, Beam Axis Toggle</value>
+                <value>R-A3.press-in</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6529,7 +6529,7 @@
         <action id="9415bc5e-26bb-4f98-b1e7-3f04eba2d69f" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-A4.down — [DT] Attackers Target Backward</value>
+                <value>R-A4.down</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6543,7 +6543,7 @@
         <action id="8f11a6a2-d6b8-4a91-b0e2-65ed14aba84b" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-A4.right — Hostile Target Forward</value>
+                <value>R-A4.right</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6557,7 +6557,7 @@
         <action id="ea1393ae-a337-416e-9360-7f73bddb829e" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-A4.up — Hostile Target Closest</value>
+                <value>R-A4.up</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6571,7 +6571,7 @@
         <action id="f58bf2c1-54d1-4382-80c2-700ffef77118" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-A4.left — Hostile Target Backward</value>
+                <value>R-A4.left</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6585,7 +6585,7 @@
         <action id="8ca1ae94-71c3-4131-a026-02ddc384e8df" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-A4.press-in — EyeTracker Target / Target Under Reticle</value>
+                <value>R-A4.press-in</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6599,7 +6599,7 @@
         <action id="9d0b62d3-2819-47c3-91c4-0469b614b742" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-C1.up — Mining Module 1, Focus Fracture, Shields Forward</value>
+                <value>R-C1.up</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6613,7 +6613,7 @@
         <action id="1601524d-871a-493f-b38c-bd3e2d5c7bf3" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-C1.right — Shields Right, Mining Module 2, Focus Right Tool</value>
+                <value>R-C1.right</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6627,7 +6627,7 @@
         <action id="0926085b-ac3c-4279-bc42-6c422923ae42" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-C1.down — Shields Aft, Focus Disintegration</value>
+                <value>R-C1.down</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6641,7 +6641,7 @@
         <action id="64c7eab6-e6b8-417b-8dc5-8d988bd6846e" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-C1.left — Shields Left, Mining Module 3, Focus Left Tool</value>
+                <value>R-C1.left</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6655,7 +6655,7 @@
         <action id="206f23a8-dbc5-4e85-b148-10ce8c1fc1f6" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-C1.press-in — Shields Reset, Focus All Salvage Heads</value>
+                <value>R-C1.press-in</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6669,7 +6669,7 @@
         <action id="5e09606e-93e5-4b25-b4bf-96bbf8914590" type="description">
             <property type="string">
                 <name>description</name>
-                <value>RAPID-TRIG-R — Trigger Up: Decoy, [H] Multi Decoy</value>
+                <value>RAPID-TRIG-R</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6683,7 +6683,7 @@
         <action id="52d3469a-840d-49d7-9974-f05d50d5ae49" type="description">
             <property type="string">
                 <name>description</name>
-                <value>RAPID-TRIG-R — Trigger Down: Noise / Multi Decoy</value>
+                <value>RAPID-TRIG-R</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6697,7 +6697,7 @@
         <action id="2708fb02-dc4f-461c-81e9-e757915235d4" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-EN1.up — Salvage Beam Spacing Inc</value>
+                <value>R-EN1.up</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6711,7 +6711,7 @@
         <action id="3c15aa95-af91-4d63-a2c0-d33c718cb140" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-EN1.down — Salvage Beam Spacing Dec</value>
+                <value>R-EN1.down</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6725,7 +6725,7 @@
         <action id="11f5eac7-8b3a-4bc5-bc3d-53f6e036fb17" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-SW1.up — Decoy Burst Size Inc</value>
+                <value>R-SW1.up</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6739,7 +6739,7 @@
         <action id="f1e8adeb-7157-4291-8358-eef6db674779" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-SW1.down — Decoy Burst Size Dec</value>
+                <value>R-SW1.down</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6753,7 +6753,7 @@
         <action id="ee9fda0d-8ad6-47dc-8f67-5c71b5fafaa9" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-F1 — Lights</value>
+                <value>R-F1</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6767,7 +6767,7 @@
         <action id="29c88f2e-ef45-4a0c-9a7f-b47c6ecb9f79" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-F2 — Exit Seat / Turret, Quick Exit</value>
+                <value>R-F2</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6781,7 +6781,7 @@
         <action id="db8f98ad-019e-4530-baf5-ed6539b58809" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-F3 — Port Lock Toggle</value>
+                <value>R-F3</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6795,7 +6795,7 @@
         <action id="716179ba-4e65-474c-8dcb-d1ed6f9f64ec" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-A3.up [Modifier] — Toggle Power On/Off</value>
+                <value>L-A3.up</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6809,7 +6809,7 @@
         <action id="a0268ca2-4456-4c29-b787-acd6726f92d9" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-A3.down [Modifier] — Thruster Power Toggle Landing Gear</value>
+                <value>L-A3.down</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6823,7 +6823,7 @@
         <action id="d11926d6-a1a8-4993-8deb-50b39f5f38c4" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-A3.left [Modifier] — Weapon Power Toggle Open Doors Toggle</value>
+                <value>L-A3.left</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6837,7 +6837,7 @@
         <action id="b0920119-08d1-482d-8107-2f9fd0396945" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-A4.up [Modifier] — Inc. Scanning Angle | Inc. Bomb Range | Inc. Tractor Distance Camera (3rd Person)</value>
+                <value>L-A4.up</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6851,7 +6851,7 @@
         <action id="babd39ef-91f1-469a-948d-5aadd7c740dc" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-A4.right [Modifier] — Toggle Docking Camera</value>
+                <value>L-A4.right</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6865,7 +6865,7 @@
         <action id="66d0f11b-9922-4c7e-ac8b-eeea9c95d778" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-A4.down [Modifier] — Dec. Tractor Distance | Dec. Bomb Range | Dec Scanning Angle</value>
+                <value>L-A4.down</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6879,7 +6879,7 @@
         <action id="ffcd628f-006a-4587-93bb-9503687ee40d" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-A4.left [Modifier] — Reset Head Tracking</value>
+                <value>L-A4.left</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6893,7 +6893,7 @@
         <action id="44e1635a-d032-4eb7-bacb-0c1cb8fb79b6" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-A4.press-in [Modifier] — Reset Range</value>
+                <value>L-A4.press-in</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6907,7 +6907,7 @@
         <action id="93a868ed-ce83-4344-81b7-46a3648d6003" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-C1.right [Modifier] — Adv.HUD Toggle</value>
+                <value>L-C1.right</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6921,7 +6921,7 @@
         <action id="b8c314f5-85cd-4e45-9e09-f96a37f7185d" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-D1 [Modifier] — [H] VOIP PTT Proximity | Hail Target | Accept Notiﬁcation | [DT] Decline Notiﬁcation</value>
+                <value>R-D1</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6935,7 +6935,7 @@
         <action id="a6a7e385-754d-46ac-ae38-b4988720bd00" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-A3.right [Modifier] — Right Modiﬁer Cycle</value>
+                <value>R-A3.right</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6949,7 +6949,7 @@
         <action id="9784e5b6-1013-4539-a76a-2fdffe823f3d" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-A3.down [Modifier] — Cycle Structural Modes Dec. Mining Laser Power (Slow)</value>
+                <value>R-A3.down</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6963,7 +6963,7 @@
         <action id="d5153eec-dfe7-41f9-85d0-ecbe6966b424" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-A3.left [Modifier] — Left Modiﬁer Cycle</value>
+                <value>R-A3.left</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6977,7 +6977,7 @@
         <action id="8e96c2ce-6103-443d-868d-3c7a0e61701d" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-A4.down [Modifier] — Attackers Target Forward Attackers Target Closest</value>
+                <value>R-A4.down</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -6991,7 +6991,7 @@
         <action id="28b5debe-359e-48cf-b61c-a104d32272bb" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-A4.right [Modifier] — Sub Target Forward</value>
+                <value>R-A4.right</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -7005,7 +7005,7 @@
         <action id="9a271a98-9f71-4c86-b49d-36338493e463" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-A4.up [Modifier] — Sub Target Reset Main</value>
+                <value>R-A4.up</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -7019,7 +7019,7 @@
         <action id="e115c418-f4a1-41ab-8221-18ea35bb092d" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-A4.left [Modifier] — Sub Target Backward</value>
+                <value>R-A4.left</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -7033,7 +7033,7 @@
         <action id="877eb6a6-7007-4328-aae9-9cd870df2633" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-A4.press-in [Modifier] — Pin Selected | [H] Unpin Selected</value>
+                <value>R-A4.press-in</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -7047,7 +7047,7 @@
         <action id="fb29b665-bf23-4c4f-9596-80a27c798a95" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-C1.up [Modifier] — [H] Select MFD Up 1 Mining Module 1 Focus Fracture Shields Fore</value>
+                <value>R-C1.up</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -7061,7 +7061,7 @@
         <action id="fece65aa-909d-46ab-8602-b55edbc7aaba" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-C1.right [Modifier] — [H] Select MFD Right 1 | Cycle MFD Page Forward 1 | [DT] Select Right Cast 1</value>
+                <value>R-C1.right</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -7075,7 +7075,7 @@
         <action id="fc2e0565-5e9c-4d5d-b5ee-04fa07b1d06f" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-C1.down [Modifier] — [H] Select MFD Down 1</value>
+                <value>R-C1.down</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -7089,7 +7089,7 @@
         <action id="8b860477-1055-40f8-96f9-5f5297597eaf" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-C1.left [Modifier] — [H] Select MFD Left 1 | Cycle MFD Page Backward 1 | [DT] Select Left Cast 1</value>
+                <value>R-C1.left</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -7103,7 +7103,7 @@
         <action id="ed07e72e-de86-47e0-b33a-415a0944a076" type="description">
             <property type="string">
                 <name>description</name>
-                <value>RAPID-TRIG-R (Trigger Up) [Modifier] — Next Weapon Preset | [DT] EMP/QID Preset Trigger Down Noise, | Prev. Weapon Preset</value>
+                <value>RAPID-TRIG-R</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -7117,7 +7117,7 @@
         <action id="dbf0bd92-e59b-4840-9769-727ac2e38ee8" type="description">
             <property type="string">
                 <name>description</name>
-                <value>RAPID-TRIG-R (Trigger Down) [Modifier] — Next Weapon Preset | [DT] EMP/QID Preset Trigger Down Noise, | Prev. Weapon Preset</value>
+                <value>RAPID-TRIG-R</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -7131,7 +7131,7 @@
         <action id="e538acb8-1bc2-4267-9ff1-cacdd8c69a0f" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-F1 [Modifier] — Light Ampliﬁcation</value>
+                <value>R-F1</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -7145,7 +7145,7 @@
         <action id="1668b0a2-36a8-4d3c-b74c-e4177b9fdb69" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-F2 [Modifier] — [H] Eject</value>
+                <value>R-F2</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -7159,7 +7159,7 @@
         <action id="56ad6c84-c2ed-40bf-96bb-778d7b30cb2a" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-F3 [Modifier] — Lock Doors Toggle</value>
+                <value>R-F3</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -7173,7 +7173,7 @@
         <action id="e6efdc0f-0a48-4b61-bd84-6428d8fa05c5" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-A1 (8-way hat) — up=Increase Limiter Increase Limiter | left=Cruise Control Toggle | right=Set Trim Toggle/[H] Set Trim 100% | press-in=Mode Switch To Analog Axis Unbound</value>
+                <value>L-A1</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -7201,7 +7201,7 @@
         <action id="858704a6-50f1-4df7-8f3b-b58c22520300" type="description">
             <property type="string">
                 <name>description</name>
-                <value>R-A1 (8-way hat) — up=[H] Capacitor Reset | down=Thruster Cap Increase/[H] Thruster Set to Max 1 | left=Weapon Cap Increase/[H] Weapon Set to Max 1 | right=Shield Cap Increase/[H] Shield Set to Max 1</value>
+                <value>R-A1</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -7397,7 +7397,7 @@
         <action id="a5095bc8-2f90-4a90-b834-10aade49aab5" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-A3.right [Modifier] — Shields Power Toggle</value>
+                <value>L-A3.right</value>
             </property>
             <property type="string">
                 <name>action-label</name>
@@ -7411,7 +7411,7 @@
         <action id="72357998-186d-42dc-9ce0-91a8538d0e70" type="description">
             <property type="string">
                 <name>description</name>
-                <value>L-F2 — VTOL Cycle (virtual placeholder; actual VTOL fires via btn 125/128 macros)</value>
+                <value>L-F2</value>
             </property>
             <property type="string">
                 <name>action-label</name>
