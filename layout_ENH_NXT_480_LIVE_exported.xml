@@ -250,7 +250,7 @@
    <rebind input="js1_hat1_left"/>
   </action>
   <action name="v_ifcs_toggle_esp">
-   <rebind input="js1_button22"/>
+   <rebind input="js1_button23"/>
   </action>
   <action name="v_ifcs_toggle_gforce_safety">
    <rebind input="js1_button51"/>
@@ -600,16 +600,16 @@
  </actionmap>
  <actionmap name="turret_movement">
   <action name="turret_gyromode">
-   <rebind input="js1_button23"/>
+   <rebind input="js1_button51"/>
   </action>
   <action name="turret_pitch">
    <rebind input="js2_y"/>
   </action>
   <action name="turret_remote_cycle_next">
-   <rebind input="js2_ "/>
+   <rebind input="js1_button22"/>
   </action>
   <action name="turret_remote_cycle_prev">
-   <rebind input="js2_ "/>
+   <rebind input="js1_button24"/>
   </action>
   <action name="turret_remote_exit">
    <rebind input="js2_button17"/>
@@ -626,7 +626,7 @@
    <rebind input="js1_button18"/>
   </action>
   <action name="turret_esp_toggle">
-   <rebind input="js1_button22"/>
+   <rebind input="js1_button23"/>
   </action>
   <action name="turret_limiter_rel">
    <rebind input="js1_roty"/>
@@ -1235,7 +1235,7 @@
    <rebind input="js2_button35" activationMode="double_tap"/>
   </action>
   <action name="pl_exit">
-   <rebind input="js1_button53"/>
+   <rebind input="js2_button47"/>
   </action>
   <action name="respawn">
    <rebind input="js2_button1"/>
