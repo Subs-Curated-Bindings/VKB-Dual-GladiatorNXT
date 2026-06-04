@@ -30,7 +30,7 @@
 
     WORKFLOW (typical case -- right after loading the NXT layout):
       1. Fully close Star Citizen and the RSI Launcher.
-      2. Double-click "Bindings Toolkit [ENH][NXT][4.8.0][LIVE].bat".
+      2. Double-click "Bindings Toolkit [ENH][NXT][4.8.1][LIVE].bat".
       3. Pick the channel (or All) and the operation.
       4. Launch SC, verify in Customization > Keybindings.
 
@@ -51,18 +51,18 @@
 .PARAMETER ProfilePath
     Path to the JG R14 profile XML to operate on (used only by NonEvoFlip).
     Defaults to the profile sibling-of-this-script:
-        ..\Joystick Gremlin Profile [ENH][NXT][4.8.0][LIVE][R14].xml
+        ..\Joystick Gremlin Profile [ENH][NXT][4.8.1][LIVE][R14].xml
     Override if you've moved the profile into JG's own profiles folder.
 
 .EXAMPLE
-    .\Bindings Toolkit [ENH][NXT][4.8.0][LIVE].ps1
+    .\Bindings Toolkit [ENH][NXT][4.8.1][LIVE].ps1
     Show the menu, prompt for channel as needed.
 
 .EXAMPLE
-    .\Bindings Toolkit [ENH][NXT][4.8.0][LIVE].ps1 -Action MFD -Channel LIVE
+    .\Bindings Toolkit [ENH][NXT][4.8.1][LIVE].ps1 -Action MFD -Channel LIVE
 
 .EXAMPLE
-    .\Bindings Toolkit [ENH][NXT][4.8.0][LIVE].ps1 -Action Invert -Channel PTU
+    .\Bindings Toolkit [ENH][NXT][4.8.1][LIVE].ps1 -Action Invert -Channel PTU
 #>
 [CmdletBinding()]
 param(
@@ -1014,7 +1014,7 @@ function Show-StackHealth {
     }
 
     # --- JG's currently-loaded profile (parsed from window title) ---
-    $shipped = Join-Path $ScriptRoot '..\Joystick Gremlin Profile [ENH][NXT][4.8.0][LIVE][R14].xml'
+    $shipped = Join-Path $ScriptRoot '..\Joystick Gremlin Profile [ENH][NXT][4.8.1][LIVE][R14].xml'
     $shipped = [System.IO.Path]::GetFullPath($shipped)
     $loaded = Get-JoystickGremlinLoadedProfile -ShippedProfile $shipped
     if (-not $loaded.JgRunning) {
@@ -1393,7 +1393,7 @@ function Invoke-NonEvoAxisFlip-Profile {
     # Resolve default profile path if caller didn't supply one.
     if (-not $ProfilePath) {
         $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
-        $default = Join-Path (Split-Path -Parent $scriptDir) 'Joystick Gremlin Profile [ENH][NXT][4.8.0][LIVE][R14].xml'
+        $default = Join-Path (Split-Path -Parent $scriptDir) 'Joystick Gremlin Profile [ENH][NXT][4.8.1][LIVE][R14].xml'
         $ProfilePath = $default
     }
 
@@ -1403,7 +1403,7 @@ function Invoke-NonEvoAxisFlip-Profile {
         Write-Host "    $ProfilePath" -ForegroundColor Red
         Write-Host ""
         Write-Host "  If you moved the profile, re-run with:" -ForegroundColor Yellow
-        Write-Host "    .\Bindings Toolkit [ENH][NXT][4.8.0][LIVE].ps1 -Action NonEvoFlip -ProfilePath '<path>'" -ForegroundColor Yellow
+        Write-Host "    .\Bindings Toolkit [ENH][NXT][4.8.1][LIVE].ps1 -Action NonEvoFlip -ProfilePath '<path>'" -ForegroundColor Yellow
         return
     }
 
