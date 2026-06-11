@@ -3889,7 +3889,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>R-A4.down</value>
+                <value>R-A4.up</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -3941,7 +3941,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>R-A4.up</value>
+                <value>R-A4.down</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -5063,7 +5063,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>R-A4.down</value>
+                <value>R-A4.up</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
@@ -5115,7 +5115,7 @@
             </property>
             <property type="string">
                 <name>action-label</name>
-                <value>R-A4.up</value>
+                <value>R-A4.down</value>
             </property>
             <property type="activation-mode">
                 <name>activation-mode</name>
