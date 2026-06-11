@@ -738,7 +738,7 @@ function Get-HidHideStatus {
 function Get-JoystickGremlinLoadedProfile {
     param([string]$ShippedProfile)
     # JG R14 puts the loaded profile path in its window title, format:
-    #   "<full path>.xml - Joystick Gremlin"
+    #   "<full path>.xml - Joystick Gremlin[ R14.x]"  (version suffix optional)
     # That's the authoritative signal for what file JG has open right now --
     # works whether the user loaded the shipped profile or did Save As to a
     # different name/location. Also hash-compare the LOADED file's contents
@@ -750,7 +750,7 @@ function Get-JoystickGremlinLoadedProfile {
     }
     $title = $proc.MainWindowTitle
     $loadedPath = $null
-    if ($title -match '^(.+\.xml)\s+-\s+Joystick Gremlin\s*$') {
+    if ($title -match '^(.+\.xml)\s+-\s+Joystick Gremlin') {
         $loadedPath = $Matches[1].Trim()
     }
     $shippedExists = (Test-Path -LiteralPath $ShippedProfile)
