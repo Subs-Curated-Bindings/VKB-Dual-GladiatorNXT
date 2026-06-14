@@ -28,4 +28,6 @@ Load the profile in **Joystick Gremlin R14**, inject the layout into Star Citize
 
 ---
 
+Built on **[Joystick Gremlin](https://github.com/WhiteMagic/JoystickGremlin)** (WhiteMagic) and **[HidHide](https://github.com/nefarius/HidHide)** (Nefarius) — please support those projects.
+
 Part of **[SubliminalsTV Curated Bindings](https://github.com/SubliminalsTV-curated-binds)**.
